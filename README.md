@@ -1,16 +1,28 @@
-## Water Politics
+## Western Watersheds & Biodiversity
 
 ### Topic: 
-I want to design a map that reveals something interesting about water politics. I plan to investigate who has rights to water, who/what owns it, how it's used/dispersed, whether or not it's contaminated, etc. in order to help the user understand that access to water should be a basic human right, but (I strongly suspect) there is an increasing need to be vigilant and to pay attention to what states/cities are doing with public resources.
+Examine the relationship between reclaimation projects in western watersheds and threatened species.
 
-Exactly what I map will depend on the data sets that I'm able to find. This might be a series of maps covering different aspects of water politics in different parts of the US (or world?). 
+Questions to think about:
+1. What do I want to get out of this project?
+2. What will the user get out of the deliverable?
+3. What does a successful map or implementation of the interface look like?
 
-#### Potential data sources:
-* [Food and Agriculture Organization of the United Nations](http://www.fao.org/nr/water/aquastat/main/index.stm "AQUASTAT")
-* [Food and Water Watch](https://www.foodandwaterwatch.org/library "various fact sheets might link to interesting data sets")
-* [USGS](https://water.usgs.gov/watuse/ "Water Use in the United States")
-* [California Natural Resources Agency](https://data.cnra.ca.gov/group/water "Water Data Sets")
-* [California Water Boards](https://www.waterboards.ca.gov/waterrights/water_issues/programs/diversion_use/water_use.html "Reporting for Water Right Holders")
+#### Resources
+* There's a whole [Bureau of Reclaimation](https://www.usbr.gov) that has project information, news releases, and the [Reclamation Water Information System](https://water.usbr.gov/) which has "machine readable water datasets to use as input for models and analyses via automated data exchange via webservice.
+* USBR made a neat storymap on [Irrigation Demand Projections](https://usbr.maps.arcgis.com/apps/MapJournal/index.html?appid=f08c6c521fe64e259b3da9771b948204).
+* The EPA has an [EnviroAtlas](https://www.epa.gov/enviroatlas/enviroatlas-data-download-step-2) with data downloads. Their [interactive map](https://enviroatlas.epa.gov/enviroatlas/interactivemap/) has data on species at risk.
+* Endangered species info is available at [FWS](https://www.fws.gov/endangered/species/index.html).
+* [Western Waters Digital Library](http://westernwaters.org) has primary and secondary resources on water in the western US. Archival materials. This would be a good source for old maps to georeference (among many other things).
+* [Western Watersheds Project](https://www.westernwatersheds.org/about/) has news releases, action alerts, some general info about [species protection](https://www.westernwatersheds.org/issues/species/).
+* Some potentially useful data from [Fish & Wildlife](https://ecos.fws.gov/ServCat/). Maybe [FWS Ecrosystem Regions](https://ecos.fws.gov/ServCat/Reference/Profile/74343)? will have interesting/useful layers?
+* USGS has a [Watershed Boundary Dataset](https://www.usgs.gov/core-science-systems/ngp/national-hydrography/watershed-boundary-dataset?qt-science_support_page_related_con=4#qt-science_support_page_related_con) that may be useful as a layer.
+* USGS's [ScienceBase-Catalog](https://www.sciencebase.gov/catalog/) may have other potential layers.
+* USGS has [water budget](https://cida.usgs.gov/nwc-static/waterbudget-viz/) info - water budgets are "used to understand the movement of water into and out of a watershed". There might be something interesting here?
 
+#### Story maps for inspiration
+Following are some storymaps that I've enjoyed.
+* [Borderline](https://www.washingtonpost.com/graphics/2018/national/us-mexico-border-flyover/?utm_term=.27ecb945b600), Washington Post
+* [Murder with impunity](https://www.washingtonpost.com/graphics/2018/politics/midterm-election-precinct-results/?utm_term=.cba9b1786834), Washington Post.
 
 
