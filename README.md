@@ -1,17 +1,24 @@
 ## Western Watersheds & Biodiversity
 
 ### Topic: 
-Examine the relationship between reclaimation projects in western watersheds and threatened species.
+Examine the relationship between reclaimation projects in western watersheds and threatened species...
 
 Questions to think about:
 1. What do I want to get out of this project?
+*I would like to understand more about the impact reclamation projects have on native species*
 2. What will the user get out of the deliverable?
+*A neat story map that has some information about the impact water projects have on the environment*
 3. What does a successful map or implementation of the interface look like?
+*I'm not sure yet, but I'm saving storymaps for inspriation below.* 
+
+##### Note (2/11/19):
+*I have downloaded a number of large, confusing datasets about watersheds. This section will be updated once I figure out which ones I want to add to my repo*
 
 #### Resources
 * There's a whole [Bureau of Reclaimation](https://www.usbr.gov) that has project information, news releases, and the [Reclamation Water Information System](https://water.usbr.gov/) which has "machine readable water datasets to use as input for models and analyses via automated data exchange via webservice.
 * USBR made a neat storymap on [Irrigation Demand Projections](https://usbr.maps.arcgis.com/apps/MapJournal/index.html?appid=f08c6c521fe64e259b3da9771b948204).
-* The EPA has an [EnviroAtlas](https://www.epa.gov/enviroatlas/enviroatlas-data-download-step-2) with data downloads. Their [interactive map](https://enviroatlas.epa.gov/enviroatlas/interactivemap/) has data on species at risk.
+* The EPA has an [EnviroAtlas](https://www.epa.gov/enviroatlas/enviroatlas-data-download-step-2) with data downloads. Their [interactive map](https://enviroatlas.epa.gov/enviroatlas/interactivemap/) has data on species at risk. 
+* The EPA also has a [Surf Your Watershed](https://www.epa.gov/waterdata/surf-your-watershed) page that has, among other things, breakdowns of the 10 EPA regions (I am interested in 8-10) and (THERE IS SO MUCH DATA) and [national GIS datasets](https://www.epa.gov/wsio/wsio-indicator-data-library#huc).
 * Endangered species info is available at [FWS](https://www.fws.gov/endangered/species/index.html).
 * [Western Waters Digital Library](http://westernwaters.org) has primary and secondary resources on water in the western US. Archival materials. This would be a good source for old maps to georeference (among many other things).
 * [Western Watersheds Project](https://www.westernwatersheds.org/about/) has news releases, action alerts, some general info about [species protection](https://www.westernwatersheds.org/issues/species/).
