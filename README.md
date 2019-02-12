@@ -26,6 +26,7 @@ Questions to think about:
 * USGS has a [Watershed Boundary Dataset](https://www.usgs.gov/core-science-systems/ngp/national-hydrography/watershed-boundary-dataset?qt-science_support_page_related_con=4#qt-science_support_page_related_con) that may be useful as a layer.
 * USGS's [ScienceBase-Catalog](https://www.sciencebase.gov/catalog/) may have other potential layers.
 * USGS has [water budget](https://cida.usgs.gov/nwc-static/waterbudget-viz/) info - water budgets are "used to understand the movement of water into and out of a watershed". There might be something interesting here?
+* The [Center for Biological Diversity](https://www.biologicaldiversity.org) has some basic information about endangered amphibians, birds, fish, invertebrates, mammals, plants, and reptiles.
 
 #### Story maps for inspiration
 Following are some storymaps that I've enjoyed.
