@@ -9,10 +9,13 @@ Questions to think about:
 2. What will the user get out of the deliverable?
 *A neat story map that has some information about the impact water projects have on the environment*
 3. What does a successful map or implementation of the interface look like?
-*I'm not sure yet, but I'm saving storymaps for inspriation below.* 
+*I'm not sure yet, but I'm saving storymaps for inspriation below. Possible solution: start with map of watersheds & intro narrative, map of reclamation projects & more copy, close up maps of areas with at-risk species (could be birds, plants, mammals, reptiles, etc.)...more copy. 
 
-##### Note (2/11/19):
-*I have downloaded a number of large, confusing datasets about watersheds. This section will be updated once I figure out which ones I want to add to my repo*
+##### Data:
+*I have downloaded a number of large, confusing datasets about watersheds.*
+* USGS has shapefiles for watersheds. I put a sample one in my data folder. 
+* USBR has a [Reclamation Water Information System](https://water.usbr.gov/) which has an API. I would like to figure out how to get the point data for the project sites from this source (it's clearly available on this [map](https://water.usbr.gov/RWISmap.php) - I don't know how to get to it yet.
+* THe EPA WSIO has at-risk species info by Hyrologic Unit Code (HUC12), which can be joined to the USGS shapefile. There is A LOT of info in this file, I hid many of the columns, but need to spend more time checking to see if there is anything else that would be useful. Not sure if historic info is available.
 
 #### Resources
 * There's a whole [Bureau of Reclaimation](https://www.usbr.gov) that has project information, news releases, and the [Reclamation Water Information System](https://water.usbr.gov/) which has "machine readable water datasets to use as input for models and analyses via automated data exchange via webservice.
