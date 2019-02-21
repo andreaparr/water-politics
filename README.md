@@ -17,7 +17,7 @@ Questions to think about:
 * THe EPA WSIO has at-risk species info by Hyrologic Unit Code (HUC12), which can be joined to the USGS shapefile. There is A LOT of info in this file, I hid many of the columns, but need to spend more time checking to see if there is anything else that would be useful. Not sure if historic info is available.
 
 I'm currently looking at these two layers in Carto and QGIS. Here's what some sample data I've pulled into Carto looks like
-![Plants](Images/carto-data.png)
+![Plants](data/carto-data.png)
 This shows one of four watershed regions I'm looking at. The dark colors show regions with at risk terrestrial plants. 
 
 * USBR has a [Reclamation Water Information System](https://water.usbr.gov/) which has an API. I would like to figure out how to get the point data for the project sites from this source (it's clearly available on this [map](https://water.usbr.gov/RWISmap.php) - I don't know how to get to it yet.
