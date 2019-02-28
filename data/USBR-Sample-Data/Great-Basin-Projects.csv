@@ -1,0 +1,49 @@
+# SITE INFORMATION #
+description,state,latitude,longitude,timezone,install,horizontalDatum,verticalDatum,verticalAccuracy,elevationMethod,tzOffset,activeFlag,type,responsibility,agencyRegion,siteid,elevation
+DRI - Antelope Valley; Nevada Weather Station,NV,40.093889,-117.168889,US/Pacific,6/11/2011,,m,0,agrimet_map,,,agrimet,dri,PN,anvn,1484.6808
+UCC - Blue Creek; Utah Weather Station,UT,41.962167,-112.491167,US/Mountain,,,m,0,agrimet_map,,,agrimet,ucc,PN,blcu,1575.816
+UCC - BearLake; Utah Weather Station,UT,41.933628,-111.420137,US/Mountain,,,ft,0,,,,agrimet,ucc,PN,blou,1979.9808
+UCC - Beryl Junction; Utah Weather Station,UT,37.7196,-113.7020167,US/Mountain,,,ft,0,,,,agrimet,ucc,PN,brju,1580.9976
+UCC - Buckhorn; Utah Weather Station,UT,38.0399,-112.711483,US/Mountain,,,m,0,agrimet_map,,,agrimet,ucc,PN,bucu,1773.936
+DRI - Bridgeport Valley; Nevada Weather Station,NV,38.223056,-119.252222,US/Pacific,7/12/2012,,m,0,agrimet_map,,,agrimet,dri,PN,bvpc,1979.676
+CAUSEY RESERVOIR,UT,41.29839722,-111.5873889,US/Mountain,,,,0,,,,reservoir,,UC,causey,5692
+UCC - Cedar City; Utah Weather Station,UT,37.67296667,-113.1371667,US/Mountain,,,m,0,agrimet_map,,,agrimet,ucc,PN,cedu,1685.2392
+Cokeville; Wyoming AgriMet Weather Station,ID,42.077831,-110.95611,US/Mountain,3/9/2015,,m,0,agrimet_map,,,agrimet,pnro,PN,ckvy,1887
+UCC - Corinne; Utah Weather Station,UT,41.51915,-112.17395,US/Mountain,,,m,0,agrimet_map,,,agrimet,ucc,PN,crnu,1291.7424
+DRI - Carson Valley; Nevada Weather Station,NV,38.992778,-119.803889,US/Pacific,8/10/2010,,m,0,agrimet_map,,,agrimet,dri,PN,cvan,1425.5496
+DEER CREEK RESERVOIR; UTAH,UT,40.40741667,-111.5276389,US/Mountain,,,,0,,,,reservoir,,UC,deercreek,5417
+UCC - Drainage Farm; Utah Weather Station,UT,41.76295,-111.87895,US/Mountain,,,m,0,agrimet_map,,,agrimet,ucc,PN,drfu,1351.788
+EAST CANYON RESERVOIR,UT,40.91017,-111.59293,US/Mountain,,,,0,,,,reservoir,,UC,eastcanyon,5903
+ECHO RESERVOIR,UT,40.96538889,-111.4313611,US/Mountain,,,,0,,,,reservoir,,UC,echoreservoir,5560
+Eureka; Nevada AgriMet Weather Station,NV,39.68527,-115.97861,US/Pacific,6/1/1987,,m,0,agrimet_map,,,agrimet,pnro,PN,eurn,1797.41
+UCC - Evan's Farm; Utah Weather Station,UT,41.6945,-111.8331667,US/Mountain,,,m,0,agrimet_map,,,agrimet,ucc,PN,evfu,1382.268
+Evanston; Wyoming AgriMet Weather Station,WY,41.19713,-111.02937,US/Mountain,3/9/2015,,,0,,,,agrimet,pnro,PN,evty,2080
+Fallon; Nevada AgriMet Weather Station,NV,39.4575,-118.77388,US/Pacific,4/1/2001,,m,0,agrimet_map,,,agrimet,pnro,PN,faln,1208.53
+UCC - Flowell; Utah Weather Station,UT,38.9571,-112.0004,US/Mountain,,,m,0,agrimet_map,,,agrimet,ucc,PN,flou,1443.228
+Grace; Idaho AgriMet Weather Station,ID,42.51496,-111.73606,US/Mountain,3/13/2014,,m,0,agrimet_map,,,agrimet,pnro,PN,grei,1661
+Grantsville; Utah AgriMet Weather Station,UT,40.530544,-112.756527,US/Mountain,3/10/2015,,m,0,agrimet_map,,,agrimet,pnro,PN,grtu,1331
+DRI - Hualapai Flat; Nevada Weather Station,NV,40.901111,-119.333056,US/Pacific,10/12/2012,,m,0,agrimet_map,,,agrimet,dri,PN,huan,1235.964
+HYRUM RESERVOIR,UT,41.62663889,-111.8715556,US/Mountain,,,,0,,,,reservoir,,UC,hyrum,4672
+JORDANELLE RESERVOIR,UT,40.59666667,-111.422,US/Mountain,,,,0,,,,reservoir,,UC,jordanelle,6130
+UCC - Laketown ; Utah Weather Station,UT,41.8379,-111.3343833,US/Mountain,,,m,0,agrimet_map,,,agrimet,ucc,PN,laku,1816.3032
+UCC - Lewiston; Utah Weather Station,UT,41.95213333,-111.8690333,US/Mountain,,,m,0,agrimet_map,,,agrimet,ucc,PN,lewu,1375.8672
+UCC - Logan Golf; Utah Weather Station,UT,41.73868333,-111.8035333,US/Mountain,,,m,0,agrimet_map,,,agrimet,ucc,PN,lggu,1465.4784
+LOST CREEK RESERVOIR,UT,41.18377778,-111.3995278,US/Mountain,,,,0,,,,reservoir,,UC,lostcreek,6005
+Montpelier; Idaho Weather Station,ID,42.25452,-111.33773,US/Mountain,,,m,0,agrimet_map,,,agrimet,pnro,PN,mnpi,1823
+Monroe; Utah AgriMet Weather Station,UT,38.634188,-112.157598,US/Mountain,3/11/2015,,m,0,agrimet_map,,,agrimet,pnro,PN,mnru,1648
+DRI - Mason Valley WMA; Nevada Weather Station,NV,39.106667,-119.147222,US/Pacific,4/10/2011,,m,0,agrimet_map,,,agrimet,dri,PN,msvn,1318.8696
+UCC - Murray; Utah Weather Station,UT,40.63133333,-111.9198,US/Mountain,,,m,0,agrimet_map,,,agrimet,ucc,PN,muru,1307.592
+UCC - Nephi; Utah Weather Station,UT,39.68941667,-111.8767833,US/Mountain,,,m,0,agrimet_map,,,agrimet,ucc,PN,nepu,1524.6096
+NEWTON RESERVOIR,UT,41.89555556,-111.9736111,US/Mountain,,,,0,,,,reservoir,,UC,newton,4775.9
+DRI - North Spring Valley; Nevada Weather Station,NV,39.458056,-114.506667,US/Pacific,6/11/2011,,m,0,agrimet_map,,,agrimet,dri,PN,nsvn,1719.6816
+UCC - Panguitch; Utah Weather Station,UT,37.86858333,-112.4217667,US/Mountain,,,m,0,agrimet_map,,,agrimet,ucc,PN,panu,1996.44
+UCC - Parowan; Utah Weather Station,UT,37.86226667,-112.8810667,US/Mountain,,,m,0,agrimet_map,,,agrimet,ucc,PN,paru,1758.696
+PINEVIEW RESERVOIR,UT,41.25480556,-111.8416111,US/Mountain,,,,0,,,,reservoir,,UC,pineview,4818
+Preston; Idaho Weather Station,ID,42.10715,-111.89363,US/Mountain,11/5/2014,,m,0,agrimet_map,,,agrimet,pnro,PN,psti,1335
+DRI - Paradise Valley; Nevada Weather Station,NV,41.185556,-117.660278,US/Pacific,11/10/2010,,m,0,agrimet_map,,,agrimet,dri,PN,pvan,1341.12
+UCC - Randolph; Utah Weather Station,UT,41.83266667,-111.0877167,US/Mountain,,,m,0,agrimet_map,,,agrimet,ucc,PN,rdhu,1909.2672
+ROCKPORT RESERVOIR,UT,40.78869444,-111.4025556,US/Mountain,,,,0,,,,reservoir,,UC,rockportreservoir,6037
+Scipio; Utah AgriMet Weather Station,UT,39.22009,-112.098476,US/Mountain,3/13/2015,,m,0,agrimet_map,,,agrimet,pnro,PN,scpu,1627
+# SERIES DATA #
+
+

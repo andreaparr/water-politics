@@ -1,0 +1,217 @@
+# SITE INFORMATION #
+description,state,latitude,longitude,timezone,install,horizontalDatum,verticalDatum,verticalAccuracy,elevationMethod,tzOffset,activeFlag,type,responsibility,agencyRegion,siteid,elevation
+Agency Lake Ranch; Oregon AgriMet Weather Station,OR,42.56527,-121.9825,US/Pacific,5/3/2000,,m,0,agrimet_map,,,agrimet,pnro,PN,agko,1264.92
+Beatty; Oregon AgriMet Weather Station,OR,42.47805,-121.27388,US/Pacific,10/19/2004,,m,0,agrimet_map,,,agrimet,pnro,PN,bato,1316.74
+Lake Berryessa And Monticello Dam,CA,38.513,-122.104,US/Pacific,,,,0,,,,reservoir,,MP,ber,456
+Beardsley Dam And Reservoir,CA,38.203,-120.075,US/Pacific,,,,0,,,,reservoir,,MP,brd,3398
+Cachuma Lake And Bradbury Dam; Cachuma Project,CA,34.583,-119.98,US/Pacific,,,,0,,,,reservoir,,MP,cch,781
+Cedarville; California AgriMet Weather Station,CA,41.58527,-120.17138,US/Pacific,4/1/1985,,m,0,agrimet_map,,,agrimet,pnro,PN,cedc,1402.08
+Donnells Reservoir,CA,38.329,-119.96,US/Pacific,,,,0,,,,reservoir,,MP,don,4835
+Folsom Lake; Dam; And Powerplant,CA,38.683,-121.183,US/Pacific,,,,0,,,,reservoir,,MP,fol,466
+Keswick Dam; Reservoir; And Powerplant,CA,40.601,-122.443,US/Pacific,,,,0,,,,reservoir,,MP,kes,596
+Klamath Falls; Oregon AgriMet Weather Station,OR,42.16472,-121.755,US/Pacific,3/30/1999,,m,0,agrimet_map,,,agrimet,pnro,PN,kflo,1249.68
+Lakeview; Oregon AgriMet Weather Station,OR,42.12222,-120.52305,US/Pacific,4/1/1988,,m,0,agrimet_map,,,agrimet,pnro,PN,lako,1453.9
+Lewiston Dam; Lake; And Judge Francis Carr Powerplant,CA,40.727,-122.793,US/Pacific,,,,0,,,,reservoir,,MP,lew,1870
+Lorella; Oregon AgriMet Weather Station,OR,42.07777,-121.22416,US/Pacific,4/1/2001,,m,0,agrimet_map,,,agrimet,pnro,PN,loro,1267.97
+Millerton Lake; Friant Dam; Madera And Friant Kern Canals,CA,37.001,-119.705,US/Pacific,,,,0,,,,reservoir,,MP,milfrnt,581
+Lake Natoma; Nimbus Dam And Powerplant,CA,38.65,-121.183,US/Pacific,,,,0,,,,reservoir,,MP,nat,132
+DRI - Rogers Spring; Nevada Weather Station,NV,36.478333,-116.330833,US/Pacific,9/10/2010,,m,0,agrimet_map,,,agrimet,dri,PN,rogn,688.848
+Shasta Lake; Dam And Powerplant,CA,40.718,-122.42,US/Pacific,,,,0,,,,reservoir,,MP,sha,1067
+Tulloch Lake; Dam; And Powerplant,CA,37.875,-120.603,US/Pacific,,,,0,,,,reservoir,,MP,tul,515
+Whiskeytown Dam; Lake; And Spring Creek Powerplant,CA,40.598,-122.537,US/Pacific,,,,0,,,,reservoir,,MP,whi,1210
+Worden; Oregon AgriMet Weather Station,OR,42.0125,-121.7875,US/Pacific,4/19/2000,,m,0,agrimet_map,,,agrimet,pnro,PN,wrdo,1243.58
+# SERIES DATA #
+Site,Site ID,Parameter,Date,Value,Units
+Agency Lake Ranch; Oregon AgriMet Weather Station,agko,Precipitation,2019-02-24 00:00:00,0.39,Inches
+Agency Lake Ranch; Oregon AgriMet Weather Station,agko,Precipitation,2019-02-23 00:00:00,0.12,Inches
+Agency Lake Ranch; Oregon AgriMet Weather Station,agko,Precipitation,2019-02-22 00:00:00,0,Inches
+Agency Lake Ranch; Oregon AgriMet Weather Station,agko,Precipitation,2019-02-21 00:00:00,0.01,Inches
+Agency Lake Ranch; Oregon AgriMet Weather Station,agko,Precipitation,2019-02-20 00:00:00,0.02,Inches
+Agency Lake Ranch; Oregon AgriMet Weather Station,agko,Precipitation,2019-02-19 00:00:00,0.01,Inches
+Agency Lake Ranch; Oregon AgriMet Weather Station,agko,Precipitation,2019-02-18 00:00:00,0.03,Inches
+Agency Lake Ranch; Oregon AgriMet Weather Station,agko,Precipitation,2019-02-17 00:00:00,0.04,Inches
+Agency Lake Ranch; Oregon AgriMet Weather Station,agko,Precipitation,2019-02-16 00:00:00,0.08,Inches
+Agency Lake Ranch; Oregon AgriMet Weather Station,agko,Precipitation,2019-02-15 00:00:00,0.01,Inches
+Agency Lake Ranch; Oregon AgriMet Weather Station,agko,Precipitation,2019-02-14 00:00:00,1.12,Inches
+Agency Lake Ranch; Oregon AgriMet Weather Station,agko,Precipitation,2019-02-13 00:00:00,0.29,Inches
+Agency Lake Ranch; Oregon AgriMet Weather Station,agko,Precipitation,2019-02-12 00:00:00,0,Inches
+Agency Lake Ranch; Oregon AgriMet Weather Station,agko,Precipitation,2019-02-11 00:00:00,0,Inches
+Agency Lake Ranch; Oregon AgriMet Weather Station,agko,Precipitation,2019-02-10 00:00:00,0.06,Inches
+Agency Lake Ranch; Oregon AgriMet Weather Station,agko,Precipitation,2019-02-09 00:00:00,0,Inches
+Agency Lake Ranch; Oregon AgriMet Weather Station,agko,Precipitation,2019-02-08 00:00:00,0.03,Inches
+Agency Lake Ranch; Oregon AgriMet Weather Station,agko,Precipitation,2019-02-07 00:00:00,0,Inches
+Agency Lake Ranch; Oregon AgriMet Weather Station,agko,Precipitation,2019-02-06 00:00:00,0.01,Inches
+Agency Lake Ranch; Oregon AgriMet Weather Station,agko,Precipitation,2019-02-05 00:00:00,0,Inches
+Agency Lake Ranch; Oregon AgriMet Weather Station,agko,Precipitation,2019-02-04 00:00:00,0,Inches
+Agency Lake Ranch; Oregon AgriMet Weather Station,agko,Precipitation,2019-02-03 00:00:00,0.11,Inches
+Agency Lake Ranch; Oregon AgriMet Weather Station,agko,Precipitation,2019-02-02 00:00:00,0.15,Inches
+Agency Lake Ranch; Oregon AgriMet Weather Station,agko,Precipitation,2019-02-01 00:00:00,0.17,Inches
+Beatty; Oregon AgriMet Weather Station,bato,Precipitation,2019-02-24 00:00:00,0,Inches
+Beatty; Oregon AgriMet Weather Station,bato,Precipitation,2019-02-23 00:00:00,0,Inches
+Beatty; Oregon AgriMet Weather Station,bato,Precipitation,2019-02-22 00:00:00,-0.01,Inches
+Beatty; Oregon AgriMet Weather Station,bato,Precipitation,2019-02-21 00:00:00,0.01,Inches
+Beatty; Oregon AgriMet Weather Station,bato,Precipitation,2019-02-20 00:00:00,0.03,Inches
+Beatty; Oregon AgriMet Weather Station,bato,Precipitation,2019-02-19 00:00:00,0,Inches
+Beatty; Oregon AgriMet Weather Station,bato,Precipitation,2019-02-18 00:00:00,0,Inches
+Beatty; Oregon AgriMet Weather Station,bato,Precipitation,2019-02-17 00:00:00,0.01,Inches
+Beatty; Oregon AgriMet Weather Station,bato,Precipitation,2019-02-16 00:00:00,0.02,Inches
+Beatty; Oregon AgriMet Weather Station,bato,Precipitation,2019-02-15 00:00:00,0.01,Inches
+Beatty; Oregon AgriMet Weather Station,bato,Precipitation,2019-02-14 00:00:00,0.65,Inches
+Beatty; Oregon AgriMet Weather Station,bato,Precipitation,2019-02-13 00:00:00,0.57,Inches
+Beatty; Oregon AgriMet Weather Station,bato,Precipitation,2019-02-12 00:00:00,0.05,Inches
+Beatty; Oregon AgriMet Weather Station,bato,Precipitation,2019-02-11 00:00:00,0,Inches
+Beatty; Oregon AgriMet Weather Station,bato,Precipitation,2019-02-10 00:00:00,0.01,Inches
+Beatty; Oregon AgriMet Weather Station,bato,Precipitation,2019-02-09 00:00:00,0.15,Inches
+Beatty; Oregon AgriMet Weather Station,bato,Precipitation,2019-02-08 00:00:00,0.02,Inches
+Beatty; Oregon AgriMet Weather Station,bato,Precipitation,2019-02-07 00:00:00,0,Inches
+Beatty; Oregon AgriMet Weather Station,bato,Precipitation,2019-02-06 00:00:00,0.01,Inches
+Beatty; Oregon AgriMet Weather Station,bato,Precipitation,2019-02-05 00:00:00,0.04,Inches
+Beatty; Oregon AgriMet Weather Station,bato,Precipitation,2019-02-04 00:00:00,0.37,Inches
+Beatty; Oregon AgriMet Weather Station,bato,Precipitation,2019-02-03 00:00:00,0.09,Inches
+Beatty; Oregon AgriMet Weather Station,bato,Precipitation,2019-02-02 00:00:00,0.06,Inches
+Beatty; Oregon AgriMet Weather Station,bato,Precipitation,2019-02-01 00:00:00,0.03,Inches
+Cedarville; California AgriMet Weather Station,cedc,Precipitation,2019-02-24 00:00:00,0.01,Inches
+Cedarville; California AgriMet Weather Station,cedc,Precipitation,2019-02-23 00:00:00,0,Inches
+Cedarville; California AgriMet Weather Station,cedc,Precipitation,2019-02-22 00:00:00,0,Inches
+Cedarville; California AgriMet Weather Station,cedc,Precipitation,2019-02-21 00:00:00,0,Inches
+Cedarville; California AgriMet Weather Station,cedc,Precipitation,2019-02-20 00:00:00,0.11,Inches
+Cedarville; California AgriMet Weather Station,cedc,Precipitation,2019-02-19 00:00:00,0,Inches
+Cedarville; California AgriMet Weather Station,cedc,Precipitation,2019-02-18 00:00:00,0,Inches
+Cedarville; California AgriMet Weather Station,cedc,Precipitation,2019-02-17 00:00:00,0.05,Inches
+Cedarville; California AgriMet Weather Station,cedc,Precipitation,2019-02-16 00:00:00,0.13,Inches
+Cedarville; California AgriMet Weather Station,cedc,Precipitation,2019-02-15 00:00:00,0.04,Inches
+Cedarville; California AgriMet Weather Station,cedc,Precipitation,2019-02-14 00:00:00,1.02,Inches
+Cedarville; California AgriMet Weather Station,cedc,Precipitation,2019-02-13 00:00:00,0.54,Inches
+Cedarville; California AgriMet Weather Station,cedc,Precipitation,2019-02-12 00:00:00,0.01,Inches
+Cedarville; California AgriMet Weather Station,cedc,Precipitation,2019-02-11 00:00:00,0,Inches
+Cedarville; California AgriMet Weather Station,cedc,Precipitation,2019-02-10 00:00:00,0.01,Inches
+Cedarville; California AgriMet Weather Station,cedc,Precipitation,2019-02-09 00:00:00,0.26,Inches
+Cedarville; California AgriMet Weather Station,cedc,Precipitation,2019-02-08 00:00:00,0,Inches
+Cedarville; California AgriMet Weather Station,cedc,Precipitation,2019-02-07 00:00:00,0,Inches
+Cedarville; California AgriMet Weather Station,cedc,Precipitation,2019-02-06 00:00:00,0.02,Inches
+Cedarville; California AgriMet Weather Station,cedc,Precipitation,2019-02-05 00:00:00,0.02,Inches
+Cedarville; California AgriMet Weather Station,cedc,Precipitation,2019-02-04 00:00:00,0.13,Inches
+Cedarville; California AgriMet Weather Station,cedc,Precipitation,2019-02-03 00:00:00,0.07,Inches
+Cedarville; California AgriMet Weather Station,cedc,Precipitation,2019-02-02 00:00:00,0.5,Inches
+Cedarville; California AgriMet Weather Station,cedc,Precipitation,2019-02-01 00:00:00,0.02,Inches
+Klamath Falls; Oregon AgriMet Weather Station,kflo,Precipitation,2019-02-24 00:00:00,0.02,Inches
+Klamath Falls; Oregon AgriMet Weather Station,kflo,Precipitation,2019-02-23 00:00:00,0.02,Inches
+Klamath Falls; Oregon AgriMet Weather Station,kflo,Precipitation,2019-02-22 00:00:00,0.01,Inches
+Klamath Falls; Oregon AgriMet Weather Station,kflo,Precipitation,2019-02-21 00:00:00,0,Inches
+Klamath Falls; Oregon AgriMet Weather Station,kflo,Precipitation,2019-02-20 00:00:00,0.08,Inches
+Klamath Falls; Oregon AgriMet Weather Station,kflo,Precipitation,2019-02-19 00:00:00,0.06,Inches
+Klamath Falls; Oregon AgriMet Weather Station,kflo,Precipitation,2019-02-18 00:00:00,0.01,Inches
+Klamath Falls; Oregon AgriMet Weather Station,kflo,Precipitation,2019-02-17 00:00:00,0.02,Inches
+Klamath Falls; Oregon AgriMet Weather Station,kflo,Precipitation,2019-02-16 00:00:00,0.01,Inches
+Klamath Falls; Oregon AgriMet Weather Station,kflo,Precipitation,2019-02-15 00:00:00,0.05,Inches
+Klamath Falls; Oregon AgriMet Weather Station,kflo,Precipitation,2019-02-14 00:00:00,0.85,Inches
+Klamath Falls; Oregon AgriMet Weather Station,kflo,Precipitation,2019-02-13 00:00:00,0.4,Inches
+Klamath Falls; Oregon AgriMet Weather Station,kflo,Precipitation,2019-02-12 00:00:00,0.01,Inches
+Klamath Falls; Oregon AgriMet Weather Station,kflo,Precipitation,2019-02-11 00:00:00,0,Inches
+Klamath Falls; Oregon AgriMet Weather Station,kflo,Precipitation,2019-02-10 00:00:00,0.08,Inches
+Klamath Falls; Oregon AgriMet Weather Station,kflo,Precipitation,2019-02-09 00:00:00,0.15,Inches
+Klamath Falls; Oregon AgriMet Weather Station,kflo,Precipitation,2019-02-08 00:00:00,0.01,Inches
+Klamath Falls; Oregon AgriMet Weather Station,kflo,Precipitation,2019-02-07 00:00:00,0,Inches
+Klamath Falls; Oregon AgriMet Weather Station,kflo,Precipitation,2019-02-06 00:00:00,0.01,Inches
+Klamath Falls; Oregon AgriMet Weather Station,kflo,Precipitation,2019-02-05 00:00:00,0.02,Inches
+Klamath Falls; Oregon AgriMet Weather Station,kflo,Precipitation,2019-02-04 00:00:00,0.25,Inches
+Klamath Falls; Oregon AgriMet Weather Station,kflo,Precipitation,2019-02-03 00:00:00,0.09,Inches
+Klamath Falls; Oregon AgriMet Weather Station,kflo,Precipitation,2019-02-02 00:00:00,0.03,Inches
+Klamath Falls; Oregon AgriMet Weather Station,kflo,Precipitation,2019-02-01 00:00:00,0,Inches
+Lakeview; Oregon AgriMet Weather Station,lako,Precipitation,2019-02-24 00:00:00,0,Inches
+Lakeview; Oregon AgriMet Weather Station,lako,Precipitation,2019-02-23 00:00:00,0,Inches
+Lakeview; Oregon AgriMet Weather Station,lako,Precipitation,2019-02-22 00:00:00,0,Inches
+Lakeview; Oregon AgriMet Weather Station,lako,Precipitation,2019-02-21 00:00:00,0.01,Inches
+Lakeview; Oregon AgriMet Weather Station,lako,Precipitation,2019-02-20 00:00:00,0.03,Inches
+Lakeview; Oregon AgriMet Weather Station,lako,Precipitation,2019-02-19 00:00:00,0,Inches
+Lakeview; Oregon AgriMet Weather Station,lako,Precipitation,2019-02-18 00:00:00,0.01,Inches
+Lakeview; Oregon AgriMet Weather Station,lako,Precipitation,2019-02-17 00:00:00,0,Inches
+Lakeview; Oregon AgriMet Weather Station,lako,Precipitation,2019-02-16 00:00:00,0.04,Inches
+Lakeview; Oregon AgriMet Weather Station,lako,Precipitation,2019-02-15 00:00:00,0.03,Inches
+Lakeview; Oregon AgriMet Weather Station,lako,Precipitation,2019-02-14 00:00:00,0.89,Inches
+Lakeview; Oregon AgriMet Weather Station,lako,Precipitation,2019-02-13 00:00:00,0.62,Inches
+Lakeview; Oregon AgriMet Weather Station,lako,Precipitation,2019-02-12 00:00:00,0.22,Inches
+Lakeview; Oregon AgriMet Weather Station,lako,Precipitation,2019-02-11 00:00:00,0,Inches
+Lakeview; Oregon AgriMet Weather Station,lako,Precipitation,2019-02-10 00:00:00,0.04,Inches
+Lakeview; Oregon AgriMet Weather Station,lako,Precipitation,2019-02-09 00:00:00,0.1,Inches
+Lakeview; Oregon AgriMet Weather Station,lako,Precipitation,2019-02-08 00:00:00,0.03,Inches
+Lakeview; Oregon AgriMet Weather Station,lako,Precipitation,2019-02-07 00:00:00,0,Inches
+Lakeview; Oregon AgriMet Weather Station,lako,Precipitation,2019-02-06 00:00:00,0.01,Inches
+Lakeview; Oregon AgriMet Weather Station,lako,Precipitation,2019-02-05 00:00:00,0.07,Inches
+Lakeview; Oregon AgriMet Weather Station,lako,Precipitation,2019-02-04 00:00:00,0.09,Inches
+Lakeview; Oregon AgriMet Weather Station,lako,Precipitation,2019-02-03 00:00:00,0.06,Inches
+Lakeview; Oregon AgriMet Weather Station,lako,Precipitation,2019-02-02 00:00:00,0.23,Inches
+Lakeview; Oregon AgriMet Weather Station,lako,Precipitation,2019-02-01 00:00:00,0.08,Inches
+Lorella; Oregon AgriMet Weather Station,loro,Precipitation,2019-02-24 00:00:00,0,Inches
+Lorella; Oregon AgriMet Weather Station,loro,Precipitation,2019-02-23 00:00:00,0,Inches
+Lorella; Oregon AgriMet Weather Station,loro,Precipitation,2019-02-22 00:00:00,0,Inches
+Lorella; Oregon AgriMet Weather Station,loro,Precipitation,2019-02-21 00:00:00,0,Inches
+Lorella; Oregon AgriMet Weather Station,loro,Precipitation,2019-02-20 00:00:00,0,Inches
+Lorella; Oregon AgriMet Weather Station,loro,Precipitation,2019-02-19 00:00:00,0,Inches
+Lorella; Oregon AgriMet Weather Station,loro,Precipitation,2019-02-18 00:00:00,0,Inches
+Lorella; Oregon AgriMet Weather Station,loro,Precipitation,2019-02-17 00:00:00,0.02,Inches
+Lorella; Oregon AgriMet Weather Station,loro,Precipitation,2019-02-16 00:00:00,0.04,Inches
+Lorella; Oregon AgriMet Weather Station,loro,Precipitation,2019-02-15 00:00:00,0.02,Inches
+Lorella; Oregon AgriMet Weather Station,loro,Precipitation,2019-02-14 00:00:00,0.49,Inches
+Lorella; Oregon AgriMet Weather Station,loro,Precipitation,2019-02-13 00:00:00,0.31,Inches
+Lorella; Oregon AgriMet Weather Station,loro,Precipitation,2019-02-12 00:00:00,0.03,Inches
+Lorella; Oregon AgriMet Weather Station,loro,Precipitation,2019-02-11 00:00:00,0,Inches
+Lorella; Oregon AgriMet Weather Station,loro,Precipitation,2019-02-10 00:00:00,0.02,Inches
+Lorella; Oregon AgriMet Weather Station,loro,Precipitation,2019-02-09 00:00:00,0.07,Inches
+Lorella; Oregon AgriMet Weather Station,loro,Precipitation,2019-02-08 00:00:00,0,Inches
+Lorella; Oregon AgriMet Weather Station,loro,Precipitation,2019-02-07 00:00:00,0,Inches
+Lorella; Oregon AgriMet Weather Station,loro,Precipitation,2019-02-06 00:00:00,0.01,Inches
+Lorella; Oregon AgriMet Weather Station,loro,Precipitation,2019-02-05 00:00:00,0.02,Inches
+Lorella; Oregon AgriMet Weather Station,loro,Precipitation,2019-02-04 00:00:00,0.2,Inches
+Lorella; Oregon AgriMet Weather Station,loro,Precipitation,2019-02-03 00:00:00,0.21,Inches
+Lorella; Oregon AgriMet Weather Station,loro,Precipitation,2019-02-02 00:00:00,0.06,Inches
+Lorella; Oregon AgriMet Weather Station,loro,Precipitation,2019-02-01 00:00:00,0.04,Inches
+DRI - Rogers Spring; Nevada Weather Station,rogn,Precipitation,2019-02-24 00:00:00,0,Inches
+DRI - Rogers Spring; Nevada Weather Station,rogn,Precipitation,2019-02-23 00:00:00,0,Inches
+DRI - Rogers Spring; Nevada Weather Station,rogn,Precipitation,2019-02-22 00:00:00,0,Inches
+DRI - Rogers Spring; Nevada Weather Station,rogn,Precipitation,2019-02-21 00:00:00,0,Inches
+DRI - Rogers Spring; Nevada Weather Station,rogn,Precipitation,2019-02-20 00:00:00,0,Inches
+DRI - Rogers Spring; Nevada Weather Station,rogn,Precipitation,2019-02-19 00:00:00,0,Inches
+DRI - Rogers Spring; Nevada Weather Station,rogn,Precipitation,2019-02-18 00:00:00,0,Inches
+DRI - Rogers Spring; Nevada Weather Station,rogn,Precipitation,2019-02-17 00:00:00,0,Inches
+DRI - Rogers Spring; Nevada Weather Station,rogn,Precipitation,2019-02-16 00:00:00,0,Inches
+DRI - Rogers Spring; Nevada Weather Station,rogn,Precipitation,2019-02-15 00:00:00,0,Inches
+DRI - Rogers Spring; Nevada Weather Station,rogn,Precipitation,2019-02-14 00:00:00,0.62,Inches
+DRI - Rogers Spring; Nevada Weather Station,rogn,Precipitation,2019-02-13 00:00:00,0,Inches
+DRI - Rogers Spring; Nevada Weather Station,rogn,Precipitation,2019-02-12 00:00:00,0,Inches
+DRI - Rogers Spring; Nevada Weather Station,rogn,Precipitation,2019-02-11 00:00:00,0,Inches
+DRI - Rogers Spring; Nevada Weather Station,rogn,Precipitation,2019-02-10 00:00:00,0,Inches
+DRI - Rogers Spring; Nevada Weather Station,rogn,Precipitation,2019-02-09 00:00:00,0,Inches
+DRI - Rogers Spring; Nevada Weather Station,rogn,Precipitation,2019-02-08 00:00:00,0,Inches
+DRI - Rogers Spring; Nevada Weather Station,rogn,Precipitation,2019-02-07 00:00:00,0,Inches
+DRI - Rogers Spring; Nevada Weather Station,rogn,Precipitation,2019-02-06 00:00:00,0,Inches
+DRI - Rogers Spring; Nevada Weather Station,rogn,Precipitation,2019-02-05 00:00:00,0,Inches
+DRI - Rogers Spring; Nevada Weather Station,rogn,Precipitation,2019-02-04 00:00:00,0.01,Inches
+DRI - Rogers Spring; Nevada Weather Station,rogn,Precipitation,2019-02-03 00:00:00,0,Inches
+DRI - Rogers Spring; Nevada Weather Station,rogn,Precipitation,2019-02-02 00:00:00,0.46,Inches
+DRI - Rogers Spring; Nevada Weather Station,rogn,Precipitation,2019-02-01 00:00:00,0,Inches
+Worden; Oregon AgriMet Weather Station,wrdo,Precipitation,2019-02-24 00:00:00,0,Inches
+Worden; Oregon AgriMet Weather Station,wrdo,Precipitation,2019-02-23 00:00:00,0,Inches
+Worden; Oregon AgriMet Weather Station,wrdo,Precipitation,2019-02-22 00:00:00,0.01,Inches
+Worden; Oregon AgriMet Weather Station,wrdo,Precipitation,2019-02-21 00:00:00,0,Inches
+Worden; Oregon AgriMet Weather Station,wrdo,Precipitation,2019-02-20 00:00:00,0.03,Inches
+Worden; Oregon AgriMet Weather Station,wrdo,Precipitation,2019-02-19 00:00:00,0,Inches
+Worden; Oregon AgriMet Weather Station,wrdo,Precipitation,2019-02-18 00:00:00,0,Inches
+Worden; Oregon AgriMet Weather Station,wrdo,Precipitation,2019-02-17 00:00:00,0,Inches
+Worden; Oregon AgriMet Weather Station,wrdo,Precipitation,2019-02-16 00:00:00,0.1,Inches
+Worden; Oregon AgriMet Weather Station,wrdo,Precipitation,2019-02-15 00:00:00,0,Inches
+Worden; Oregon AgriMet Weather Station,wrdo,Precipitation,2019-02-14 00:00:00,0.72,Inches
+Worden; Oregon AgriMet Weather Station,wrdo,Precipitation,2019-02-13 00:00:00,0.26,Inches
+Worden; Oregon AgriMet Weather Station,wrdo,Precipitation,2019-02-12 00:00:00,0.03,Inches
+Worden; Oregon AgriMet Weather Station,wrdo,Precipitation,2019-02-11 00:00:00,0,Inches
+Worden; Oregon AgriMet Weather Station,wrdo,Precipitation,2019-02-10 00:00:00,0.03,Inches
+Worden; Oregon AgriMet Weather Station,wrdo,Precipitation,2019-02-09 00:00:00,0.04,Inches
+Worden; Oregon AgriMet Weather Station,wrdo,Precipitation,2019-02-08 00:00:00,0.02,Inches
+Worden; Oregon AgriMet Weather Station,wrdo,Precipitation,2019-02-07 00:00:00,0,Inches
+Worden; Oregon AgriMet Weather Station,wrdo,Precipitation,2019-02-06 00:00:00,0.01,Inches
+Worden; Oregon AgriMet Weather Station,wrdo,Precipitation,2019-02-05 00:00:00,0.02,Inches
+Worden; Oregon AgriMet Weather Station,wrdo,Precipitation,2019-02-04 00:00:00,0.25,Inches
+Worden; Oregon AgriMet Weather Station,wrdo,Precipitation,2019-02-03 00:00:00,0.1,Inches
+Worden; Oregon AgriMet Weather Station,wrdo,Precipitation,2019-02-02 00:00:00,0.03,Inches
+Worden; Oregon AgriMet Weather Station,wrdo,Precipitation,2019-02-01 00:00:00,0,Inches
+

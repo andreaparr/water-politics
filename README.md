@@ -9,18 +9,24 @@ Questions to think about:
 2. What will the user get out of the deliverable?
 *A neat story map that has some information about the impact water projects have on the environment*
 3. What does a successful map or implementation of the interface look like?
-*I'm not sure yet, but I'm saving storymaps for inspriation below. Possible solution: start with map of watersheds & intro narrative, map of reclamation projects & more copy, close up maps of areas with at-risk species (could be birds, plants, mammals, reptiles, etc.)...more copy. 
+*My current vision is to create a journalistic story map with the following elements:* 
+*Map with watershed boundaries in the western US*
+*Locations of water reclamation projects*
+*Show at risk species (choropleth map of watersheds)*
+*Zoom into specific areas to show local impact (maybe this layer has proportional symbols? Not sure yet.)*
 
 #### Data:
-*I have downloaded a number of large, confusing datasets about watersheds.*
-* USGS has shapefiles for watersheds. 
-* THe EPA WSIO has at-risk species info by Hyrologic Unit Code (HUC12), which can be joined to the USGS shapefile. There is A LOT of info in this file, I hid many of the columns, but need to spend more time checking to see if there is anything else that would be useful. Not sure if historic info is available.
+Right now, I am working with three layers
+* USGS has shapefiles for watersheds ([data](https://www.dropbox.com/sh/txe3smog4r5r38y/AAA3iljQvraeKnZ7YX98Sge8a?dl=0) is in Dropbox)
+* THe EPA WSIO has at-risk species info by Hyrologic Unit Code (HUC12), which can be joined to the USGS shapefile. There is A LOT of info in this file, I hid many of the columns, but need to spend more time checking to see if there is anything else that would be useful. Not sure if historic info is available. (a simplified version of this is available in the data folder)
 
-I'm currently looking at these two layers in Carto and QGIS. Here's what some sample data I've pulled into Carto looks like
+I pulled some of the above data into Carto to see what it looks like: 
 ![Plants](data/carto-data.png)
-This shows one of four watershed regions I'm looking at. The dark colors show regions with at risk terrestrial plants. 
+This shows one of four watershed regions I'm looking at. The dark colors show regions with at risk terrestrial plants. Go to [Carto](https://nmp.carto.com/u/andrearparr/builder/24622971-ae34-44de-bff6-853731208def/embed) for more.
 
-* USBR has a [Reclamation Water Information System](https://water.usbr.gov/) which has an API. I would like to figure out how to get the point data for the project sites from this source (it's clearly available on this [map](https://water.usbr.gov/RWISmap.php) - I don't know how to get to it yet.
+* USBR has a [Reclamation Water Information System](https://water.usbr.gov/) which has an API. I've pulled in some sample point data from this [map](https://water.usbr.gov/RWISmap.php), which is available in the data folder. Note that the sample data is just for select reclamation sites that had info available from February 2019. 
+
+My next step is to create a prototype map using Leaflet. Once I have a working map with all four watershed layers, EPA at-risk species data, and point data for reclamation sites, I will narrow the project down to a few sites to focus on. I hope to interview people with expertise in water projects/biodiversity. This isn't my area of expertise, so I am trying to approach this topic like a journalist (starting with the data).
 
 #### Resources
 * There's a whole [Bureau of Reclaimation](https://www.usbr.gov) that has project information, news releases, and the [Reclamation Water Information System](https://water.usbr.gov/) which has "machine readable water datasets to use as input for models and analyses via automated data exchange via webservice.

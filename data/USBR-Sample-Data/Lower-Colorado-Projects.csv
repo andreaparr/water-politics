@@ -1,0 +1,22 @@
+# SITE INFORMATION #
+description,state,latitude,longitude,timezone,install,horizontalDatum,verticalDatum,verticalAccuracy,elevationMethod,tzOffset,activeFlag,type,responsibility,agencyRegion,siteid,elevation
+Colorado River Below Big Bend,AZ,35.0917,-114.6328,US/Mountain,,,,0,,,,stream,,LC,bbblc,488.4
+Colorado River Below Interstate Bridge,AZ,33.6006,-114.5497,US/Mountain,,,,0,,,,stream,,LC,biblc,
+Colorado River Below McIntyre Park,AZ,33.5164,-114.5692,US/Mountain,,,,0,,,,stream,,LC,bmplc,
+Colorado River Below Needles Bridge,CA,34.8181,-114.5908,US/Pacific,,,,0,,,,stream,,LC,bnblc,
+Colorado River Below Oxbow Bridge,AZ,33.3683,-114.7264,US/Mountain,,,,0,,,,stream,,LC,boblc,
+CAP Canal Export,AZ,34.2889,-114.1031,US/Mountain,,,,0,,,,diversion,,LC,cap,
+Colorado River at Cibola Gage,AZ,33.2322,-114.6817,US/Mountain,,,,0,,,,stream,,LC,clc,214.5
+Lake Mohave,AZ,35.2042,-114.5858,US/Mountain,,,,0,,,,reservoir,,LC,ddmlc,
+Lake Mead,NV,36.0153,-114.7378,US/Pacific,,,,0,,,,reservoir,,LC,hdmlc,
+DRI - Moapa Valley; Nevada Weather Station,NV,36.569722,-114.458889,US/Pacific,2/10/2010,,m,0,agrimet_map,,,agrimet,dri,PN,moan,398.6784
+MWD Canal Export,CA,34.3164,-114.1564,US/Pacific,,,,0,,,,diversion,,LC,mwd,
+Lake Havasu,AZ,34.3067,-114.1364,US/Mountain,,,,0,,,,reservoir,,LC,pdmlc,
+Colorado River at Parker Gage,CA,34.1428,-114.3189,US/Pacific,,,,0,,,,stream,,LC,pglc,347.3
+DRI - Pahranagat NWR; Nevada Weather Station,NV,37.245556,-115.106389,US/Pacific,7/10/2010,,m,0,agrimet_map,,,agrimet,dri,PN,pwln,982.98
+Colorado River at River Section 41,AZ,34.6986,-114.4664,US/Mountain,,,,0,,,,stream,,LC,rs41lc,455.3
+Colorado River at Taylor Ferry,AZ,33.4508,-114.6353,US/Mountain,,,,0,,,,stream,,LC,tflc,236
+Colorado River at Water Wheel,AZ,33.9206,-114.5356,US/Mountain,,,,0,,,,stream,,LC,wwlc,305.91
+# SERIES DATA #
+
+

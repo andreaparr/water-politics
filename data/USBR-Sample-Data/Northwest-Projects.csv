@@ -1,0 +1,860 @@
+# SITE INFORMATION #
+description,state,latitude,longitude,timezone,install,horizontalDatum,verticalDatum,verticalAccuracy,elevationMethod,tzOffset,activeFlag,type,responsibility,agencyRegion,siteid,elevation
+Aberdeen; Idaho Weather Station,ID,42.953333,-112.82667,US/Mountain,3/20/1991,,m,0,agrimet_map,,,agrimet,noaa,PN,abei,1341
+INL - Blackfoot;  Idaho  Weather Station,ID,43.18985,-112.3332,US/Mountain,,,m,0,agrimet_map,,,agrimet,noaa,PN,acki,1377.696
+Afton; Wyoming AgriMet Weather Station,WY,42.73333,-110.93583,US/Mountain,11/1/1980,,m,0,agrimet_map,,,agrimet,pnro,PN,afty,1892.81
+Ashton; Idaho AgriMet Weather Station,ID,44.025,-111.46666,US/Mountain,6/1/1987,,m,0,agrimet_map,,,agrimet,pnro,PN,ahti,1615.44
+Snake River above Reservoir near Alpine; WY,WY,43.19627073,-110.8895682,US/Mountain,00:00.0,13022500,ft,0,Bill_KML,,,stream,usgs/pnro,PN,alpy,5684
+American Falls Reservoir at American Falls; ID,ID,42.77916,-112.87917,US/Mountain,00:00.0,,ft,0,cma_google,,,reservoir,pnro,PN,amf,4370
+Snake River at Neeley; ID,ID,42.767518,-112.879474,US/Mountain,,13077000,ft,0,Bill_KML,,,stream,usgs/pnro,PN,amfi,4242
+Anderson Ranch Dam and Reservoir; ID,ID,43.358363055000041,-115.446731902000000,Mountain UTC-7:00,,WGS84,NAVD88,0,,-7,,reservoir,pnro,PN,and,3880.000000000000000
+Aurora; Oregon AgriMet Weather Station,OR,45.28194,-122.75027,US/Pacific,10/22/1998,,m,0,agrimet_map,,,agrimet,pnro,PN,arao,42.67
+Arrowrock Dam and Reservoir; ID,ID,43.595400000000041,-115.922500000000000,Mountain UTC-7:00,,WGS84,NAVD88,0,,-7,,reservoir,pnro,PN,ark,3216.000000000000000
+Bandon; Oregon AgriMet Weather Station,OR,43.09111,-124.41722,US/Pacific,5/1/1985,,m,0,agrimet_map,,,agrimet,pnro,PN,bano,24.38
+Agency Valley (Beulah) Dam and Reservoir; OR,OR,43.911354704000082,-118.157181059000000,Mountain UTC-7:00,,WGS84,NAVD88,0,,-7,,reservoir,pnro,PN,beu,3305.000000000000000
+Bend; Oregon AgriMet Weather Station,OR,44.0475,-121.32027,US/Pacific,5/1/2003,,m,0,agrimet_map,,,agrimet,pnro,PN,bewo,1103.38
+Boise Fairgrounds Weather Station,ID,43.65303,-116.27417,US/Mountain,8/15/2013,,m,0,agrimet_map,,,agrimet,pnro,PN,bfgi,800
+Snake River near Blackfoot; ID,ID,43.12513846,-112.518792,US/Mountain,00:00.0,13069500,ft,0,Bill_KML,,,stream,usgs/pnro,PN,bfti,4400
+Baker Valley; Oregon Agrimet Weather Station,OR,44.88277,-117.96277,US/Pacific,4/1/2001,,m,0,agrimet_map,,,agrimet,pnro,PN,bkvo,1042.42
+Bonneville Dam AgriMet; Washington AgriMet Weather Station,WA,45.64777,-121.93111,US/Pacific,4/13/2002,,m,0,agrimet_map,,,agrimet,pnro,PN,bndw,24.38
+Boise; Idaho AgriMet Weather Station,ID,43.60027,-116.17694,US/Mountain,7/26/1995,,m,0,agrimet_map,,,agrimet,pnro,PN,boii,829.06
+Brookings; Oregon AgriMet Weather Station,OR,42.03,-124.24083,US/Pacific,9/27/1999,,m,0,agrimet_map,,,agrimet,pnro,PN,brko,24.38
+Bully Creek Dam and Reservoir near Vale; OR,OR,44.014802639000038,-117.397088463000000,Mountain UTC-7:00,,WGS84,NAVD88,0,,-7,,reservoir,pnro,PN,bul,2516.000000000000000
+Coeur d'Alene Fairgrounds; Idaho Weather Station,ID,47.71797,-116.78418,US/Pacific,,,m,0,agrimet_map,,,agrimet,pnro,PN,cdai,620
+Chamokane; Washington AgriMet Weather Station,WA,48.03138,-117.73916,US/Pacific,11/27/2007,,m,0,agrimet_map,,,agrimet,pnro,PN,chaw,594.36
+Christmas Valley; Oregon AgriMet Weather Station,OR,43.24138,-120.72805,US/Pacific,4/1/1985,,m,0,agrimet_map,,,agrimet,pnro,PN,chvo,1312.16
+Chief Joseph Dam; Washington AgriMet Weather Station,WA,47.99083,-119.63555,US/Pacific,4/15/2002,,m,0,agrimet_map,,,agrimet,pnro,PN,cjdw,301.75
+LAKE COMO RESERVOIR,MT,46.06111,-114.23333,,,,,0,,,,reservoir,,PN,cmo,
+Corvallis; Montana AgriMet Weather Station,MT,46.33333,-114.08333,US/Mountain,4/1/1984,,m,0,agrimet_map,,,agrimet,pnro,PN,covm,1096.37
+Creston; Montana AgriMet Weather Station,MT,48.1875,-114.12777,US/Mountain,4/1/1988,,m,0,agrimet_map,,,agrimet,pnro,PN,crsm,899.16
+Corvallis; Oregon AgriMet Weather Station,OR,44.63416,-123.19,US/Pacific,2/1/1990,,m,0,agrimet_map,,,agrimet,pnro,PN,crvo,70.1
+Dee Flat; Oregon AgriMet Weather Station,OR,45.58638,-121.64055,US/Pacific,11/1/1988,,m,0,agrimet_map,,,agrimet,pnro,PN,defo,350.52
+Dworshak - Dent Acres; Idaho AgriMet Weather Station,ID,46.62333,-116.22055,US/Mountain,4/19/2002,,m,0,agrimet_map,,,agrimet,pnro,PN,deni,499.87
+Deer Lodge; Montana AgriMet Weather Station,MT,46.33555,-112.76666,US/Mountain,6/4/1998,,m,0,agrimet_map,,,agrimet,pnro,PN,drlm,1426.46
+Deer Park; Washington Weather Station,WA,47.954642,-117.433522,US/Pacific,6/25/2014,,m,0,agrimet_map,,,agrimet,pnro,PN,drpw,662.94
+Detroit Lake; Oregon AgriMet Weather Station,OR,44.73,-122.17916,US/Pacific,4/19/2002,,m,0,agrimet_map,,,agrimet,pnro,PN,dtro,510.54
+Downey; Idaho Weather Station,ID,42.43355,-112.12929,US/Mountain,3/27/2015,,m,0,agrimet_map,,,agrimet,pnro,PN,dwni,1483
+INL - Material Fuels Complex; Idaho,ID,43.594133,-112.651733,US/Mountain,,,ft,0,,,,agrimet,noaa,PN,ebri,1687.335958
+Echo; Oregon AgriMet Weather Station,OR,45.71861,-119.31111,US/Pacific,3/1/1988,,m,0,agrimet_map,,,agrimet,pnro,PN,echo,231.65
+Entiat Fish Hatchery; Washington Weather Station,WA,47.69796,-120.32373,US/Pacific,9/26/2013,,m,0,agrimet_map,,,agrimet,pnro,PN,efhw,315
+Fairfield; Idaho AgriMet Weather Station,ID,43.31305,-114.82222,US/Mountain,6/1/1987,,m,0,agrimet_map,,,agrimet,pnro,PN,fafi,1535.58
+Snake River near Flagg Ranch; WY,WY,44.09914518,-110.667458,US/Mountain,00:00.0,13010065,ft,0,Bill_KML,,,stream,usgs/pnro,PN,flgy,0
+Forest Grove; Oregon AgriMet Weather Station,OR,45.55305,-123.08361,US/Pacific,5/1/1989,,m,0,agrimet_map,,,agrimet,pnro,PN,fogo,54.86
+Fort Hall; Idaho AgriMet Weather Station,ID,43.07138,-112.43111,US/Mountain,11/15/1992,,m,0,agrimet_map,,,agrimet,pnro,PN,fthi,1354.84
+Grand Coulee Dam; Washington AgriMet Weather Station,WA,47.94527,-118.95361,US/Pacific,4/16/2002,,m,0,agrimet_map,,,agrimet,pnro,PN,gcdw,402.34
+Grand View; Idaho AgriMet Weather Station,ID,42.9125,-116.05611,US/Mountain,10/1/1992,,m,0,agrimet_map,,,agrimet,pnro,PN,gdvi,786.38
+George; Washington AgriMet Weather Station,WA,47.04388,-119.64222,US/Pacific,5/1/1986,,m,0,agrimet_map,,,agrimet,pnro,PN,gerw,350.52
+Glenns Ferry; Idaho AgriMet Weather Station,ID,42.86666,-115.35694,US/Mountain,11/15/1992,,m,0,agrimet_map,,,agrimet,pnro,PN,gfri,922.02
+Goldendale; Washington AgriMet Weather Station,WA,45.81194,-120.82444,US/Pacific,10/24/1991,,m,0,agrimet_map,,,agrimet,pnro,PN,golw,512.06
+Greys River above Reservoir near Alpine; WY,WY,43.14296552,-110.9767506,US/Mountain,00:00.0,13023000,ft,0,Bill_KML,,,stream,usgs/pnro,PN,grey,5720
+Grassy Lake near Moran; WY,WY,44.12965909,-110.8193888,US/Mountain,00:00.0,,ft,0,cma_google,,,reservoir,pnro,PN,grs,7135
+INL - Hamer;  Idaho Weather Station,ID,44.007417,-112.238833,US/Mountain,,,m,0,agrimet_map,,,agrimet,noaa,PN,hami,1476.1464
+Snake River near Heise; ID,ID,43.61239853,-111.6598844,US/Mountain,00:00.0,13037500,ft,0,Bill_KML,,,stream,usgs/pnro,PN,heii,5015
+Henrys Lake Dam on Henrys Fork nr. Lake; ID,ID,44.597222,-111.353611,US/Mountain,00:00.0,,ft,0,cma_google,,,reservoir,pnro,PN,hen,6457
+Henrys Fork near Lake; ID,ID,44.59521279,-111.3495995,US/Mountain,00:00.0,13039500,ft,0,Bill_KML,,,stream,usgs/pnro,PN,heni,6451
+Hermiston; Oregon AgriMet Weather Station,OR,45.82111,-119.52138,US/Pacific,5/1/1983,,m,0,agrimet_map,,,agrimet,pnro,PN,hero,167.64
+HUNGRY HORSE RES NR HUNGRY HORSE; MT,MT,48.34111,-114.01334,,,,,0,,,,reservoir,,PN,hgh,
+Hood River; Oregon AgriMet Weather Station,OR,45.68444,-121.51805,US/Pacific,5/1/1987,,m,0,agrimet_map,,,agrimet,pnro,PN,hoxo,155.45
+Hereford; Oregon AgriMet Weather Station,OR,44.48805,-118.02,US/Pacific,4/28/1998,,m,0,agrimet_map,,,agrimet,pnro,PN,hrfo,1097.28
+Harrah; Washington AgriMet Weather Station,WA,46.38472,-120.57444,US/Pacific,5/1/1987,,m,0,agrimet_map,,,agrimet,pnro,PN,hrhw,259.08
+Hermiston R & E Center; Oregon AgriMet Weather Station,OR,45.81944,-119.28333,US/Pacific,7/15/1993,,m,0,agrimet_map,,,agrimet,pnro,PN,hrmo,185.01
+INL - Richfield;  Idaho Weather Station,ID,43.0606,-114.134583,US/Mountain,,,m,0,agrimet_map,,,agrimet,noaa,PN,ichi,1328.3184
+INL - Idaho Falls;  Idaho Weather Station,ID,43.504133,-112.050133,US/Mountain,,,m,0,agrimet_map,,,agrimet,noaa,PN,ifai,1435.3032
+INL - INTEC/Grid 3; Idaho,ID,43.5897,-112.730267,US/Mountain,,,ft,0,,,,agrimet,noaa,PN,igri,1606.627297
+Imbler; Oregon AgriMet Weather Station,OR,45.43333,-117.96666,US/Pacific,4/1/1994,,m,0,agrimet_map,,,agrimet,pnro,PN,imbo,838.2
+Island Park Dam and Reservoir; ID,ID,44.41893154,-111.3984276,US/Mountain,00:00.0,,ft,0,cma_google,,,reservoir,pnro,PN,isl,6302
+Henrys Fork near Island Park; ID,ID,44.41639,-111.39472,US/Mountain,00:00.0,13042500,ft,0,Bill_KML,,,stream,usgs/pnro,PN,isli,6225
+Jackson Lake at Dam on Snake River near Moran; WY,WY,43.8575325,-110.5897446,US/Mountain,00:00.0,13011000,ft,0,cma_google,,,reservoir,usgs/pnro,PN,jck,6789
+Snake River below Flat Creek near Jackson; WY,WY,43.37207473,-110.7386719,US/Mountain,00:00.0,13018750,ft,0,Bill_KML,,,stream,usgs/pnro,PN,jksy,5950
+Kettle Falls; Washington AgriMet Weather Station,WA,48.595,-118.12416,US/Pacific,4/17/2002,,m,0,agrimet_map,,,agrimet,pnro,PN,kflw,408.43
+Kettle Butte; Idaho Weather Station,ID,43.54861111,-112.3258333,US/Mountain,10/15/1995,,m,0,agrimet_map,,,agrimet,noaa,PN,ktbi,1565
+Lake Bryan - Rice Bar; Washington AgriMet Weather Station,WA,46.6975,-117.65416,US/Pacific,4/19/2002,,m,0,agrimet_map,,,agrimet,pnro,PN,lbrw,192.02
+Legrow; Washington AgriMet Weather Station,WA,46.20527,-118.93611,US/Pacific,7/1/1986,,m,0,agrimet_map,,,agrimet,pnro,PN,legw,176.78
+Liberty Lake; Washington Weather Station,WA,47.66533,-117.087208,US/Pacific,11/18/2014,,m,0,agrimet_map,,,agrimet,pnro,PN,libw,632
+Lind; Washington AgriMet Weather Station,WA,46.86722,-118.73944,US/Pacific,5/1/1983,,m,0,agrimet_map,,,agrimet,pnro,PN,lidw,449.58
+INL - Specific Manufacturing Capability; Idaho,ID,43.859767,-112.730267,US/Mountain,,,ft,0,,,,agrimet,noaa,PN,lofi,1571.52231
+Snake River at Lorenzo; ID,ID,43.73536074,-111.8781013,US/Mountain,00:00.0,13038500,ft,0,Bill_KML,,,stream,usgs/pnro,PN,lori,4856
+Little Wood River above High Five Creek; ID,ID,43.49306,-114.05723,US/Mountain,00:00.0,13147900,ft,0,Bill_KML,,,stream,usgs/pnro,PN,lwoi,5320
+Malta; Idaho AgriMet Weather Station,ID,42.4375,-113.41388,US/Mountain,6/1/1983,,m,0,agrimet_map,,,agrimet,pnro,PN,mali,1344.17
+Manson; Washington AgriMet Weather Station,WA,47.91694,-120.12444,US/Pacific,11/3/1993,,m,0,agrimet_map,,,agrimet,pnro,PN,masw,601.07
+Moody Farms East Satellite; Oregon Weather Station,OR,44.87789,-121.07621,US/Pacific,9/10/2013 0:00,,ft,0,,,,agrimet,pnro,PN,mdeo,399
+Medford; Oregon AgriMet Weather Station,OR,42.33111,-122.93777,US/Pacific,5/1/1989,,m,0,agrimet_map,,,agrimet,pnro,PN,mdfo,408.43
+INL - Minidoka;  Idaho Weather Station,ID,42.804417,-113.58965,US/Mountain,,,m,0,agrimet_map,,,agrimet,noaa,PN,mdki,1306.068
+Moody Farms North Satellite; Oregon Weather Station,OR,44.87365,-121.06748,US/Pacific,9/10/2013 0:00,,ft,0,,,,agrimet,pnro,PN,mdno,402
+Moody Farms South Satellite; Oregon Weather Station,OR,44.86472,-121.06508,US/Pacific,9/10/2013 0:00,,ft,0,,,,agrimet,pnro,PN,mdso,426
+Moody Farms West Satellite; Oregon Weather Station,OR,44.86941,-121.07948,US/Pacific,9/10/2013 0:00,,ft,0,,,,agrimet,pnro,PN,mdto,384
+Moody Farms Control Station; Oregon Weather Station,OR,44.86912,-121.0683,US/Pacific,9/9/2013,,m,0,agrimet_map,,,agrimet,pnro,PN,mdxo,391
+Milner Dam and Reservoir; Idaho,ID,42.52389407,-114.0376039,US/Mountain,00:00.0,,ft,0,cma_google,,,reservoir,pnro,PN,mil,4123
+Minidoka Dam and Lake Walcott; ID,ID,42.67083,-113.48333,US/Mountain,00:00.0,,ft,0,cma_google,,,reservoir,pnro,PN,min,4200
+Snake River near Minidoka; ID,ID,42.67289753,-113.5003366,US/Mountain,00:00.0,13081500,ft,0,Bill_KML,,,stream,usgs/pnro,PN,mini,4132
+Monteview; Idaho Weather Station,ID,44.015,-112.5358333,US/Mountain,10/15/1995,,m,0,agrimet_map,,,agrimet,pnro,PN,mnti,1480
+Madras; Oregon AgriMet Weather Station,OR,44.68,-121.14861,US/Pacific,5/1/1984,,m,0,agrimet_map,,,agrimet,pnro,PN,mrso,743.71
+Middle Warm Springs; Oregon Weather Station,OR,44.85424,-121.1479,US/Pacific,9/12/2013,,m,0,agrimet_map,,,agrimet,pnro,PN,mwso,432
+Nampa; Idaho AgriMet Weather Station,ID,43.43722,-116.64527,US/Mountain,3/11/1996,,m,0,agrimet_map,,,agrimet,pnro,PN,nmpi,823.57
+Odessa; Washington AgriMet Weather Station,WA,47.30888,-118.87861,US/Pacific,4/1/1984,,m,0,agrimet_map,,,agrimet,pnro,PN,odsw,502.92
+Omak; Washington AgriMet Weather Station,WA,48.4025,-119.57611,US/Pacific,1/1/1989,,m,0,agrimet_map,,,agrimet,pnro,PN,omaw,376.43
+Ontario; Oregon AgriMet Weather Station,OR,43.97777,-117.01527,US/Mountain,4/30/1992,,m,0,agrimet_map,,,agrimet,pnro,PN,onto,688.85
+Osgood; Idaho AgriMet Weather Station,ID,43.58884,-112.07568,US/Mountain,3/13/2014,,m,0,agrimet_map,,,agrimet,pnro,PN,osgi,1471
+INL - Howe; Idaho Weather Station,ID,43.784117,-112.977317,US/Mountain,,,m,0,agrimet_map,,,agrimet,noaa,PN,owei,1467.612
+Palisades Reservoir near Irwin; ID,ID,43.3381653,-111.2063599,US/Mountain,00:00.0,,ft,0,cma_google,,,reservoir,pnro,PN,pal,5353
+Snake River near Irwin; ID,ID,43.35089974,-111.2188817,US/Mountain,00:00.0,13032500,ft,0,Bill_KML,,,stream,usgs/pnro,PN,pali,5353
+Parkdale; Oregon AgriMet Weather Station,OR,45.54444,-121.61666,US/Pacific,11/1/1988,,m,0,agrimet_map,,,agrimet,pnro,PN,paro,451.1
+Prairie City; Oregon AgriMet Weather Station,OR,44.44083,-118.62777,US/Pacific,4/1/1989,,m,0,agrimet_map,,,agrimet,pnro,PN,pcyo,1143.61
+Picabo; Idaho AgriMet Weather Station,ID,43.31166,-114.16583,US/Mountain,5/1/1982,,m,0,agrimet_map,,,agrimet,pnro,PN,pici,1493.52
+Parma; Idaho AgriMet Weather Station,ID,43.8,-116.93333,US/Mountain,3/1/1986,,m,0,agrimet_map,,,agrimet,pnro,PN,pmai,702.56
+Pine Grove; Oregon AgriMet Weather Station,OR,45.65222,-121.50916,US/Pacific,11/1/1988,,m,0,agrimet_map,,,agrimet,pnro,PN,pngo,188.98
+Powell Butte; Oregon AgriMet Weather Station,OR,44.24833,-120.94972,US/Pacific,9/21/1993,,m,0,agrimet_map,,,agrimet,pnro,PN,pobo,975.36
+Post Falls; Idaho Weather Station,ID,47.713664,-116.970096,US/Pacific,11/18/2014,,m,0,agrimet_map,,,agrimet,pnro,PN,psfi,665
+Round Butte; Montana AgriMet Weather Station,MT,47.53944,-114.28055,US/Mountain,3/1/1989,,m,0,agrimet_map,,,agrimet,pnro,PN,rdbm,926.59
+Henrys Fork near Rexburg; ID,ID,43.82587015,-111.9050308,US/Mountain,00:00.0,13056500,ft,0,Bill_KML,,,stream,usgs/pnro,PN,rexi,4806
+Rigby; Idaho AgriMet Weather Station,ID,43.6772,-111.87922,US/Mountain,3/13/2014,,m,0,agrimet_map,,,agrimet,pnro,PN,rgbi,1488
+Ririe Dam and Lake near Ririe; ID,ID,43.5821394,-111.7428411,US/Mountain,00:00.0,,ft,0,cma_google,,,reservoir,pnro,PN,rir,5119
+Willow Creek below Ririe Dam (comp from RIR),ID,43.5821394,-111.7428411,US/Mountain,,0,ft,0,,,,stream,pnro,PN,riri,5119
+INL - Roberts;  Idaho Weather Station,ID,43.743517,-112.121117,US/Mountain,,,m,0,agrimet_map,,,agrimet,noaa,PN,robi,1450.848
+Rupert; Idaho AgriMet Weather Station,ID,42.59555,-113.87388,US/Mountain,3/1/1988,,m,0,agrimet_map,,,agrimet,pnro,PN,rpti,1266.44
+INL - Arco;  Idaho Weather Station,ID,43.62455,-113.2971,US/Mountain,,,m,0,agrimet_map,,,agrimet,noaa,PN,rrci,1627.3272
+Ririe; Idaho AgriMet Weather Station,ID,43.610345,-111.700605,US/Mountain,3/13/2014,,m,0,agrimet_map,,,agrimet,pnro,PN,rrii,1547
+Rathdrum Prairie; Idaho AgriMet Weather Station,ID,47.8,-116.83333,US/Pacific,4/9/2008,,m,0,agrimet_map,,,agrimet,pnro,PN,rthi,673.61
+Rexburg; Idaho AgriMet Weather Station,ID,43.85,-111.76666,US/Mountain,6/1/1987,,m,0,agrimet_map,,,agrimet,pnro,PN,rxgi,1485.9
+Salt River above Reservoir near Etna; WY,WY,43.07963521,-111.0373464,US/Mountain,00:00.0,13027500,ft,0,Bill_KML,,,stream,usgs/pnro,PN,saly,5676
+Seven Bays Marina; Washington AgriMet Weather Station,WA,47.85527,-118.34111,US/Pacific,4/16/2002,,m,0,agrimet_map,,,agrimet,pnro,PN,sbmw,417.58
+Scoggins Dam & Henry Hagg Lake nr Forest Grove; OR,OR,45.471600000000080,-123.200199990000000,Pacific UTC-8:00,,WGS84,NAVD88,0,,-8,,reservoir,pnro,PN,sco,200.000000000000000
+Shelley; Idaho Weather Station,ID,43.43452,-112.14273,US/Mountain,3/13/2014,,m,0,agrimet_map,,,agrimet,pnro,PN,shli,1417
+Snake River near Shelley; ID,ID,43.41305556,-112.135,US/Mountain,00:00.0,13060000,ft,0,Bill_KML,,,stream,usgs/pnro,PN,shyi,4599
+Snake River near Idaho Falls; ID,ID,43.604722,-112.058611,US/Mountain,00:00.0,13057155,ft,0,,,,stream,usgs,PN,sifi,4740
+Saint Ignatius; Montana AgriMet Weather Station,MT,47.32527,-114.08416,US/Mountain,4/1/1991,,m,0,agrimet_map,,,agrimet,pnro,PN,sigm,908.3
+Silcott Island; Washington AgriMet Weather Station,WA,46.41861,-117.18472,US/Pacific,4/19/2002,,m,0,agrimet_map,,,agrimet,pnro,PN,silw,251.46
+Silverwood WWTP Athol; Idaho Weather Station,ID,47.901142,-116.71243,US/Pacific,6/26/2014,,m,0,agrimet_map,,,agrimet,pnro,PN,slwi,712.3176
+Snake River at Blackfoot; ID,ID,43.19730611,-112.3693021,US/Mountain,00:00.0,13062500,ft,0,Bill_KML,,,stream,usgs/pnro,PN,snai,4490
+Spirit Lake; Washington Weather Station,ID,47.987552,-116.884978,US/Pacific,11/19/2014,,m,0,agrimet_map,,,agrimet,pnro,PN,spli,756
+INL - Sugar City;  Idaho Weather Station,ID,43.896583,-111.737617,US/Mountain,,,m,0,agrimet_map,,,agrimet,noaa,PN,sugi,1491.996
+INL - Taber;  Idaho Weather Station,ID,43.318683,-112.6918,US/Mountain,,,m,0,agrimet_map,,,agrimet,noaa,PN,tabi,1441.704
+Teton River near St. Anthony; ID,ID,43.92704859,-111.613803,US/Mountain,00:00.0,13055000,ft,0,Bill_KML,,,stream,usgs/pnro,PN,teai,4972
+INL - Terreton;  Idaho Weather Station,ID,43.841683,-112.41825,US/Mountain,,,m,0,agrimet_map,,,agrimet,noaa,PN,teri,1460.6016
+Twin Falls Fairgrounds; Filer Idaho,ID,42.568782,-114.601548,US/Mountain,8/21/2013,,m,0,agrimet_map,,,agrimet,pnro,PN,tfgi,1147
+Terraton; Idaho AgriMet Weather Station,ID,43.8704,-112.26394,US/Mountain,3/13/2014,,m,0,agrimet_map,,,agrimet,pnro,PN,trti,1478
+Twin Falls (Kimberly) Idaho AgriMet Weather Station  7E,ID,42.54611,-114.34527,US/Mountain,3/1/1990,,m,0,agrimet_map,,,agrimet,pnro,PN,twfi,1194.82
+Little Wood Dam and Reservoir near Carey; ID,ID,43.42528,-114.02723,US/Mountain,00:00.0,,ft,0,cma_google,,,reservoir,pnro,PN,wod,5100
+Little Wood River near Carey; ID,ID,43.38995741,-113.9996779,US/Mountain,00:00.0,13148500,ft,0,Bill_KML,,,stream,usgs/pnro,PN,wodi,4991
+# SERIES DATA #
+Site,Site ID,Parameter,Date,Value,Units
+LAKE COMO RESERVOIR,cmo,Reservoir Storage,2019-02-24 00:00:00,15026.4,Acre feet
+LAKE COMO RESERVOIR,cmo,Reservoir Storage,2019-02-23 00:00:00,14940.6,Acre feet
+LAKE COMO RESERVOIR,cmo,Reservoir Storage,2019-02-22 00:00:00,14901.3,Acre feet
+LAKE COMO RESERVOIR,cmo,Reservoir Storage,2019-02-21 00:00:00,14878,Acre feet
+LAKE COMO RESERVOIR,cmo,Reservoir Storage,2019-02-20 00:00:00,14838.8,Acre feet
+LAKE COMO RESERVOIR,cmo,Reservoir Storage,2019-02-19 00:00:00,14807.9,Acre feet
+LAKE COMO RESERVOIR,cmo,Reservoir Storage,2019-02-18 00:00:00,14768.6,Acre feet
+LAKE COMO RESERVOIR,cmo,Reservoir Storage,2019-02-17 00:00:00,14729.7,Acre feet
+LAKE COMO RESERVOIR,cmo,Reservoir Storage,2019-02-16 00:00:00,14690.4,Acre feet
+LAKE COMO RESERVOIR,cmo,Reservoir Storage,2019-02-15 00:00:00,14651.5,Acre feet
+LAKE COMO RESERVOIR,cmo,Reservoir Storage,2019-02-14 00:00:00,14597,Acre feet
+LAKE COMO RESERVOIR,cmo,Reservoir Storage,2019-02-13 00:00:00,14542.1,Acre feet
+LAKE COMO RESERVOIR,cmo,Reservoir Storage,2019-02-12 00:00:00,14495.2,Acre feet
+LAKE COMO RESERVOIR,cmo,Reservoir Storage,2019-02-11 00:00:00,14440.6,Acre feet
+LAKE COMO RESERVOIR,cmo,Reservoir Storage,2019-02-10 00:00:00,14386.5,Acre feet
+LAKE COMO RESERVOIR,cmo,Reservoir Storage,2019-02-09 00:00:00,14347.5,Acre feet
+LAKE COMO RESERVOIR,cmo,Reservoir Storage,2019-02-08 00:00:00,14301,Acre feet
+LAKE COMO RESERVOIR,cmo,Reservoir Storage,2019-02-07 00:00:00,14262.5,Acre feet
+LAKE COMO RESERVOIR,cmo,Reservoir Storage,2019-02-06 00:00:00,14216,Acre feet
+LAKE COMO RESERVOIR,cmo,Reservoir Storage,2019-02-05 00:00:00,14177.5,Acre feet
+LAKE COMO RESERVOIR,cmo,Reservoir Storage,2019-02-04 00:00:00,14123,Acre feet
+LAKE COMO RESERVOIR,cmo,Reservoir Storage,2019-02-03 00:00:00,14069,Acre feet
+LAKE COMO RESERVOIR,cmo,Reservoir Storage,2019-02-02 00:00:00,13984,Acre feet
+LAKE COMO RESERVOIR,cmo,Reservoir Storage,2019-02-01 00:00:00,13937.5,Acre feet
+LAKE COMO RESERVOIR,cmo,Reservoir Elevation,2019-02-24 00:00:00,4218.77,Feet
+LAKE COMO RESERVOIR,cmo,Reservoir Elevation,2019-02-23 00:00:00,4218.66,Feet
+LAKE COMO RESERVOIR,cmo,Reservoir Elevation,2019-02-22 00:00:00,4218.61,Feet
+LAKE COMO RESERVOIR,cmo,Reservoir Elevation,2019-02-21 00:00:00,4218.58,Feet
+LAKE COMO RESERVOIR,cmo,Reservoir Elevation,2019-02-20 00:00:00,4218.53,Feet
+LAKE COMO RESERVOIR,cmo,Reservoir Elevation,2019-02-19 00:00:00,4218.49,Feet
+LAKE COMO RESERVOIR,cmo,Reservoir Elevation,2019-02-18 00:00:00,4218.44,Feet
+LAKE COMO RESERVOIR,cmo,Reservoir Elevation,2019-02-17 00:00:00,4218.39,Feet
+LAKE COMO RESERVOIR,cmo,Reservoir Elevation,2019-02-16 00:00:00,4218.34,Feet
+LAKE COMO RESERVOIR,cmo,Reservoir Elevation,2019-02-15 00:00:00,4218.29,Feet
+LAKE COMO RESERVOIR,cmo,Reservoir Elevation,2019-02-14 00:00:00,4218.22,Feet
+LAKE COMO RESERVOIR,cmo,Reservoir Elevation,2019-02-13 00:00:00,4218.15,Feet
+LAKE COMO RESERVOIR,cmo,Reservoir Elevation,2019-02-12 00:00:00,4218.09,Feet
+LAKE COMO RESERVOIR,cmo,Reservoir Elevation,2019-02-11 00:00:00,4218.02,Feet
+LAKE COMO RESERVOIR,cmo,Reservoir Elevation,2019-02-10 00:00:00,4217.95,Feet
+LAKE COMO RESERVOIR,cmo,Reservoir Elevation,2019-02-09 00:00:00,4217.9,Feet
+LAKE COMO RESERVOIR,cmo,Reservoir Elevation,2019-02-08 00:00:00,4217.84,Feet
+LAKE COMO RESERVOIR,cmo,Reservoir Elevation,2019-02-07 00:00:00,4217.79,Feet
+LAKE COMO RESERVOIR,cmo,Reservoir Elevation,2019-02-06 00:00:00,4217.73,Feet
+LAKE COMO RESERVOIR,cmo,Reservoir Elevation,2019-02-05 00:00:00,4217.68,Feet
+LAKE COMO RESERVOIR,cmo,Reservoir Elevation,2019-02-04 00:00:00,4217.61,Feet
+LAKE COMO RESERVOIR,cmo,Reservoir Elevation,2019-02-03 00:00:00,4217.54,Feet
+LAKE COMO RESERVOIR,cmo,Reservoir Elevation,2019-02-02 00:00:00,4217.43,Feet
+LAKE COMO RESERVOIR,cmo,Reservoir Elevation,2019-02-01 00:00:00,4217.37,Feet
+HUNGRY HORSE RES NR HUNGRY HORSE; MT,hgh,Reservoir Storage,2019-02-24 00:00:00,2736660,Acre feet
+HUNGRY HORSE RES NR HUNGRY HORSE; MT,hgh,Reservoir Storage,2019-02-23 00:00:00,2741140,Acre feet
+HUNGRY HORSE RES NR HUNGRY HORSE; MT,hgh,Reservoir Storage,2019-02-22 00:00:00,2746240,Acre feet
+HUNGRY HORSE RES NR HUNGRY HORSE; MT,hgh,Reservoir Storage,2019-02-21 00:00:00,2750120,Acre feet
+HUNGRY HORSE RES NR HUNGRY HORSE; MT,hgh,Reservoir Storage,2019-02-20 00:00:00,2755430,Acre feet
+HUNGRY HORSE RES NR HUNGRY HORSE; MT,hgh,Reservoir Storage,2019-02-19 00:00:00,2759530,Acre feet
+HUNGRY HORSE RES NR HUNGRY HORSE; MT,hgh,Reservoir Storage,2019-02-18 00:00:00,2764040,Acre feet
+HUNGRY HORSE RES NR HUNGRY HORSE; MT,hgh,Reservoir Storage,2019-02-17 00:00:00,2768960,Acre feet
+HUNGRY HORSE RES NR HUNGRY HORSE; MT,hgh,Reservoir Storage,2019-02-16 00:00:00,2773070,Acre feet
+HUNGRY HORSE RES NR HUNGRY HORSE; MT,hgh,Reservoir Storage,2019-02-15 00:00:00,2777790,Acre feet
+HUNGRY HORSE RES NR HUNGRY HORSE; MT,hgh,Reservoir Storage,2019-02-14 00:00:00,2780670,Acre feet
+HUNGRY HORSE RES NR HUNGRY HORSE; MT,hgh,Reservoir Storage,2019-02-13 00:00:00,2785610,Acre feet
+HUNGRY HORSE RES NR HUNGRY HORSE; MT,hgh,Reservoir Storage,2019-02-12 00:00:00,2789530,Acre feet
+HUNGRY HORSE RES NR HUNGRY HORSE; MT,hgh,Reservoir Storage,2019-02-11 00:00:00,2793030,Acre feet
+HUNGRY HORSE RES NR HUNGRY HORSE; MT,hgh,Reservoir Storage,2019-02-10 00:00:00,2798190,Acre feet
+HUNGRY HORSE RES NR HUNGRY HORSE; MT,hgh,Reservoir Storage,2019-02-09 00:00:00,2802320,Acre feet
+HUNGRY HORSE RES NR HUNGRY HORSE; MT,hgh,Reservoir Storage,2019-02-08 00:00:00,2808120,Acre feet
+HUNGRY HORSE RES NR HUNGRY HORSE; MT,hgh,Reservoir Storage,2019-02-07 00:00:00,2812480,Acre feet
+HUNGRY HORSE RES NR HUNGRY HORSE; MT,hgh,Reservoir Storage,2019-02-06 00:00:00,2817450,Acre feet
+HUNGRY HORSE RES NR HUNGRY HORSE; MT,hgh,Reservoir Storage,2019-02-05 00:00:00,2822430,Acre feet
+HUNGRY HORSE RES NR HUNGRY HORSE; MT,hgh,Reservoir Storage,2019-02-04 00:00:00,2826380,Acre feet
+HUNGRY HORSE RES NR HUNGRY HORSE; MT,hgh,Reservoir Storage,2019-02-03 00:00:00,2832010,Acre feet
+HUNGRY HORSE RES NR HUNGRY HORSE; MT,hgh,Reservoir Storage,2019-02-02 00:00:00,2834910,Acre feet
+HUNGRY HORSE RES NR HUNGRY HORSE; MT,hgh,Reservoir Storage,2019-02-01 00:00:00,2840540,Acre feet
+HUNGRY HORSE RES NR HUNGRY HORSE; MT,hgh,Reservoir Elevation,2019-02-24 00:00:00,3526.89,Feet
+HUNGRY HORSE RES NR HUNGRY HORSE; MT,hgh,Reservoir Elevation,2019-02-23 00:00:00,3527.11,Feet
+HUNGRY HORSE RES NR HUNGRY HORSE; MT,hgh,Reservoir Elevation,2019-02-22 00:00:00,3527.36,Feet
+HUNGRY HORSE RES NR HUNGRY HORSE; MT,hgh,Reservoir Elevation,2019-02-21 00:00:00,3527.55,Feet
+HUNGRY HORSE RES NR HUNGRY HORSE; MT,hgh,Reservoir Elevation,2019-02-20 00:00:00,3527.81,Feet
+HUNGRY HORSE RES NR HUNGRY HORSE; MT,hgh,Reservoir Elevation,2019-02-19 00:00:00,3528.01,Feet
+HUNGRY HORSE RES NR HUNGRY HORSE; MT,hgh,Reservoir Elevation,2019-02-18 00:00:00,3528.23,Feet
+HUNGRY HORSE RES NR HUNGRY HORSE; MT,hgh,Reservoir Elevation,2019-02-17 00:00:00,3528.47,Feet
+HUNGRY HORSE RES NR HUNGRY HORSE; MT,hgh,Reservoir Elevation,2019-02-16 00:00:00,3528.67,Feet
+HUNGRY HORSE RES NR HUNGRY HORSE; MT,hgh,Reservoir Elevation,2019-02-15 00:00:00,3528.9,Feet
+HUNGRY HORSE RES NR HUNGRY HORSE; MT,hgh,Reservoir Elevation,2019-02-14 00:00:00,3529.04,Feet
+HUNGRY HORSE RES NR HUNGRY HORSE; MT,hgh,Reservoir Elevation,2019-02-13 00:00:00,3529.28,Feet
+HUNGRY HORSE RES NR HUNGRY HORSE; MT,hgh,Reservoir Elevation,2019-02-12 00:00:00,3529.47,Feet
+HUNGRY HORSE RES NR HUNGRY HORSE; MT,hgh,Reservoir Elevation,2019-02-11 00:00:00,3529.64,Feet
+HUNGRY HORSE RES NR HUNGRY HORSE; MT,hgh,Reservoir Elevation,2019-02-10 00:00:00,3529.89,Feet
+HUNGRY HORSE RES NR HUNGRY HORSE; MT,hgh,Reservoir Elevation,2019-02-09 00:00:00,3530.09,Feet
+HUNGRY HORSE RES NR HUNGRY HORSE; MT,hgh,Reservoir Elevation,2019-02-08 00:00:00,3530.37,Feet
+HUNGRY HORSE RES NR HUNGRY HORSE; MT,hgh,Reservoir Elevation,2019-02-07 00:00:00,3530.58,Feet
+HUNGRY HORSE RES NR HUNGRY HORSE; MT,hgh,Reservoir Elevation,2019-02-06 00:00:00,3530.82,Feet
+HUNGRY HORSE RES NR HUNGRY HORSE; MT,hgh,Reservoir Elevation,2019-02-05 00:00:00,3531.06,Feet
+HUNGRY HORSE RES NR HUNGRY HORSE; MT,hgh,Reservoir Elevation,2019-02-04 00:00:00,3531.25,Feet
+HUNGRY HORSE RES NR HUNGRY HORSE; MT,hgh,Reservoir Elevation,2019-02-03 00:00:00,3531.52,Feet
+HUNGRY HORSE RES NR HUNGRY HORSE; MT,hgh,Reservoir Elevation,2019-02-02 00:00:00,3531.66,Feet
+HUNGRY HORSE RES NR HUNGRY HORSE; MT,hgh,Reservoir Elevation,2019-02-01 00:00:00,3531.93,Feet
+HUNGRY HORSE RES NR HUNGRY HORSE; MT,hgh,Reservoir Release,2019-02-24 00:00:00,3047.74,cubic feet per second
+HUNGRY HORSE RES NR HUNGRY HORSE; MT,hgh,Reservoir Release,2019-02-23 00:00:00,2999.9,cubic feet per second
+HUNGRY HORSE RES NR HUNGRY HORSE; MT,hgh,Reservoir Release,2019-02-22 00:00:00,3009.72,cubic feet per second
+HUNGRY HORSE RES NR HUNGRY HORSE; MT,hgh,Reservoir Release,2019-02-21 00:00:00,3025.86,cubic feet per second
+HUNGRY HORSE RES NR HUNGRY HORSE; MT,hgh,Reservoir Release,2019-02-20 00:00:00,2988.1,cubic feet per second
+HUNGRY HORSE RES NR HUNGRY HORSE; MT,hgh,Reservoir Release,2019-02-19 00:00:00,2958.35,cubic feet per second
+HUNGRY HORSE RES NR HUNGRY HORSE; MT,hgh,Reservoir Release,2019-02-18 00:00:00,2949.61,cubic feet per second
+HUNGRY HORSE RES NR HUNGRY HORSE; MT,hgh,Reservoir Release,2019-02-17 00:00:00,2891.71,cubic feet per second
+HUNGRY HORSE RES NR HUNGRY HORSE; MT,hgh,Reservoir Release,2019-02-16 00:00:00,2908.45,cubic feet per second
+HUNGRY HORSE RES NR HUNGRY HORSE; MT,hgh,Reservoir Release,2019-02-15 00:00:00,2919.42,cubic feet per second
+HUNGRY HORSE RES NR HUNGRY HORSE; MT,hgh,Reservoir Release,2019-02-14 00:00:00,2985.83,cubic feet per second
+HUNGRY HORSE RES NR HUNGRY HORSE; MT,hgh,Reservoir Release,2019-02-13 00:00:00,3096.26,cubic feet per second
+HUNGRY HORSE RES NR HUNGRY HORSE; MT,hgh,Reservoir Release,2019-02-12 00:00:00,3166.02,cubic feet per second
+HUNGRY HORSE RES NR HUNGRY HORSE; MT,hgh,Reservoir Release,2019-02-11 00:00:00,3263.94,cubic feet per second
+HUNGRY HORSE RES NR HUNGRY HORSE; MT,hgh,Reservoir Release,2019-02-10 00:00:00,3279.82,cubic feet per second
+HUNGRY HORSE RES NR HUNGRY HORSE; MT,hgh,Reservoir Release,2019-02-09 00:00:00,3228,cubic feet per second
+HUNGRY HORSE RES NR HUNGRY HORSE; MT,hgh,Reservoir Release,2019-02-08 00:00:00,3193.26,cubic feet per second
+HUNGRY HORSE RES NR HUNGRY HORSE; MT,hgh,Reservoir Release,2019-02-07 00:00:00,3266.02,cubic feet per second
+HUNGRY HORSE RES NR HUNGRY HORSE; MT,hgh,Reservoir Release,2019-02-06 00:00:00,3303.32,cubic feet per second
+HUNGRY HORSE RES NR HUNGRY HORSE; MT,hgh,Reservoir Release,2019-02-05 00:00:00,3367.43,cubic feet per second
+HUNGRY HORSE RES NR HUNGRY HORSE; MT,hgh,Reservoir Release,2019-02-04 00:00:00,3232.85,cubic feet per second
+HUNGRY HORSE RES NR HUNGRY HORSE; MT,hgh,Reservoir Release,2019-02-03 00:00:00,2912.9,cubic feet per second
+HUNGRY HORSE RES NR HUNGRY HORSE; MT,hgh,Reservoir Release,2019-02-02 00:00:00,3032.74,cubic feet per second
+HUNGRY HORSE RES NR HUNGRY HORSE; MT,hgh,Reservoir Release,2019-02-01 00:00:00,3185.45,cubic feet per second
+American Falls Reservoir at American Falls; ID,amf,Reservoir Storage,2019-02-24 00:00:00,1543590,Acre feet
+American Falls Reservoir at American Falls; ID,amf,Reservoir Storage,2019-02-23 00:00:00,1539560,Acre feet
+American Falls Reservoir at American Falls; ID,amf,Reservoir Storage,2019-02-22 00:00:00,1535660,Acre feet
+American Falls Reservoir at American Falls; ID,amf,Reservoir Storage,2019-02-21 00:00:00,1531230,Acre feet
+American Falls Reservoir at American Falls; ID,amf,Reservoir Storage,2019-02-20 00:00:00,1527900,Acre feet
+American Falls Reservoir at American Falls; ID,amf,Reservoir Storage,2019-02-19 00:00:00,1521820,Acre feet
+American Falls Reservoir at American Falls; ID,amf,Reservoir Storage,2019-02-18 00:00:00,1515600,Acre feet
+American Falls Reservoir at American Falls; ID,amf,Reservoir Storage,2019-02-17 00:00:00,1507400,Acre feet
+American Falls Reservoir at American Falls; ID,amf,Reservoir Storage,2019-02-16 00:00:00,1499070,Acre feet
+American Falls Reservoir at American Falls; ID,amf,Reservoir Storage,2019-02-15 00:00:00,1487960,Acre feet
+American Falls Reservoir at American Falls; ID,amf,Reservoir Storage,2019-02-14 00:00:00,1478030,Acre feet
+American Falls Reservoir at American Falls; ID,amf,Reservoir Storage,2019-02-13 00:00:00,1469280,Acre feet
+American Falls Reservoir at American Falls; ID,amf,Reservoir Storage,2019-02-12 00:00:00,1460600,Acre feet
+American Falls Reservoir at American Falls; ID,amf,Reservoir Storage,2019-02-11 00:00:00,1454120,Acre feet
+American Falls Reservoir at American Falls; ID,amf,Reservoir Storage,2019-02-10 00:00:00,1443750,Acre feet
+American Falls Reservoir at American Falls; ID,amf,Reservoir Storage,2019-02-09 00:00:00,1437270,Acre feet
+American Falls Reservoir at American Falls; ID,amf,Reservoir Storage,2019-02-08 00:00:00,1428590,Acre feet
+American Falls Reservoir at American Falls; ID,amf,Reservoir Storage,2019-02-07 00:00:00,1420940,Acre feet
+American Falls Reservoir at American Falls; ID,amf,Reservoir Storage,2019-02-06 00:00:00,1411390,Acre feet
+American Falls Reservoir at American Falls; ID,amf,Reservoir Storage,2019-02-05 00:00:00,1402360,Acre feet
+American Falls Reservoir at American Falls; ID,amf,Reservoir Storage,2019-02-04 00:00:00,1395360,Acre feet
+American Falls Reservoir at American Falls; ID,amf,Reservoir Storage,2019-02-03 00:00:00,1382010,Acre feet
+American Falls Reservoir at American Falls; ID,amf,Reservoir Storage,2019-02-02 00:00:00,1372980,Acre feet
+American Falls Reservoir at American Falls; ID,amf,Reservoir Storage,2019-02-01 00:00:00,1363500,Acre feet
+American Falls Reservoir at American Falls; ID,amf,Reservoir Elevation,2019-02-24 00:00:00,4352.24,Feet
+American Falls Reservoir at American Falls; ID,amf,Reservoir Elevation,2019-02-23 00:00:00,4352.17,Feet
+American Falls Reservoir at American Falls; ID,amf,Reservoir Elevation,2019-02-22 00:00:00,4352.1,Feet
+American Falls Reservoir at American Falls; ID,amf,Reservoir Elevation,2019-02-21 00:00:00,4352.02,Feet
+American Falls Reservoir at American Falls; ID,amf,Reservoir Elevation,2019-02-20 00:00:00,4351.96,Feet
+American Falls Reservoir at American Falls; ID,amf,Reservoir Elevation,2019-02-19 00:00:00,4351.85,Feet
+American Falls Reservoir at American Falls; ID,amf,Reservoir Elevation,2019-02-18 00:00:00,4351.74,Feet
+American Falls Reservoir at American Falls; ID,amf,Reservoir Elevation,2019-02-17 00:00:00,4351.59,Feet
+American Falls Reservoir at American Falls; ID,amf,Reservoir Elevation,2019-02-16 00:00:00,4351.44,Feet
+American Falls Reservoir at American Falls; ID,amf,Reservoir Elevation,2019-02-15 00:00:00,4351.24,Feet
+American Falls Reservoir at American Falls; ID,amf,Reservoir Elevation,2019-02-14 00:00:00,4351.06,Feet
+American Falls Reservoir at American Falls; ID,amf,Reservoir Elevation,2019-02-13 00:00:00,4350.9,Feet
+American Falls Reservoir at American Falls; ID,amf,Reservoir Elevation,2019-02-12 00:00:00,4350.74,Feet
+American Falls Reservoir at American Falls; ID,amf,Reservoir Elevation,2019-02-11 00:00:00,4350.62,Feet
+American Falls Reservoir at American Falls; ID,amf,Reservoir Elevation,2019-02-10 00:00:00,4350.43,Feet
+American Falls Reservoir at American Falls; ID,amf,Reservoir Elevation,2019-02-09 00:00:00,4350.31,Feet
+American Falls Reservoir at American Falls; ID,amf,Reservoir Elevation,2019-02-08 00:00:00,4350.15,Feet
+American Falls Reservoir at American Falls; ID,amf,Reservoir Elevation,2019-02-07 00:00:00,4350.01,Feet
+American Falls Reservoir at American Falls; ID,amf,Reservoir Elevation,2019-02-06 00:00:00,4349.83,Feet
+American Falls Reservoir at American Falls; ID,amf,Reservoir Elevation,2019-02-05 00:00:00,4349.66,Feet
+American Falls Reservoir at American Falls; ID,amf,Reservoir Elevation,2019-02-04 00:00:00,4349.53,Feet
+American Falls Reservoir at American Falls; ID,amf,Reservoir Elevation,2019-02-03 00:00:00,4349.28,Feet
+American Falls Reservoir at American Falls; ID,amf,Reservoir Elevation,2019-02-02 00:00:00,4349.11,Feet
+American Falls Reservoir at American Falls; ID,amf,Reservoir Elevation,2019-02-01 00:00:00,4348.93,Feet
+Grassy Lake near Moran; WY,grs,Reservoir Storage,2019-02-24 00:00:00,13042,Acre feet
+Grassy Lake near Moran; WY,grs,Reservoir Storage,2019-02-23 00:00:00,13012,Acre feet
+Grassy Lake near Moran; WY,grs,Reservoir Storage,2019-02-22 00:00:00,12997,Acre feet
+Grassy Lake near Moran; WY,grs,Reservoir Storage,2019-02-21 00:00:00,12994,Acre feet
+Grassy Lake near Moran; WY,grs,Reservoir Storage,2019-02-20 00:00:00,12991,Acre feet
+Grassy Lake near Moran; WY,grs,Reservoir Storage,2019-02-19 00:00:00,12982,Acre feet
+Grassy Lake near Moran; WY,grs,Reservoir Storage,2019-02-18 00:00:00,12977,Acre feet
+Grassy Lake near Moran; WY,grs,Reservoir Storage,2019-02-17 00:00:00,12971,Acre feet
+Grassy Lake near Moran; WY,grs,Reservoir Storage,2019-02-16 00:00:00,12965,Acre feet
+Grassy Lake near Moran; WY,grs,Reservoir Storage,2019-02-15 00:00:00,12956,Acre feet
+Grassy Lake near Moran; WY,grs,Reservoir Storage,2019-02-14 00:00:00,12944,Acre feet
+Grassy Lake near Moran; WY,grs,Reservoir Storage,2019-02-13 00:00:00,12915,Acre feet
+Grassy Lake near Moran; WY,grs,Reservoir Storage,2019-02-12 00:00:00,12874,Acre feet
+Grassy Lake near Moran; WY,grs,Reservoir Storage,2019-02-11 00:00:00,12865,Acre feet
+Grassy Lake near Moran; WY,grs,Reservoir Storage,2019-02-10 00:00:00,12850,Acre feet
+Grassy Lake near Moran; WY,grs,Reservoir Storage,2019-02-09 00:00:00,12839,Acre feet
+Grassy Lake near Moran; WY,grs,Reservoir Storage,2019-02-08 00:00:00,12833,Acre feet
+Grassy Lake near Moran; WY,grs,Reservoir Storage,2019-02-07 00:00:00,12821,Acre feet
+Grassy Lake near Moran; WY,grs,Reservoir Storage,2019-02-06 00:00:00,12821,Acre feet
+Grassy Lake near Moran; WY,grs,Reservoir Storage,2019-02-05 00:00:00,12818,Acre feet
+Grassy Lake near Moran; WY,grs,Reservoir Storage,2019-02-04 00:00:00,12806,Acre feet
+Grassy Lake near Moran; WY,grs,Reservoir Storage,2019-02-03 00:00:00,12786,Acre feet
+Grassy Lake near Moran; WY,grs,Reservoir Storage,2019-02-02 00:00:00,12769,Acre feet
+Grassy Lake near Moran; WY,grs,Reservoir Storage,2019-02-01 00:00:00,12754,Acre feet
+Grassy Lake near Moran; WY,grs,Reservoir Elevation,2019-02-24 00:00:00,7202.98,Feet
+Grassy Lake near Moran; WY,grs,Reservoir Elevation,2019-02-23 00:00:00,7202.88,Feet
+Grassy Lake near Moran; WY,grs,Reservoir Elevation,2019-02-22 00:00:00,7202.83,Feet
+Grassy Lake near Moran; WY,grs,Reservoir Elevation,2019-02-21 00:00:00,7202.82,Feet
+Grassy Lake near Moran; WY,grs,Reservoir Elevation,2019-02-20 00:00:00,7202.81,Feet
+Grassy Lake near Moran; WY,grs,Reservoir Elevation,2019-02-19 00:00:00,7202.78,Feet
+Grassy Lake near Moran; WY,grs,Reservoir Elevation,2019-02-18 00:00:00,7202.76,Feet
+Grassy Lake near Moran; WY,grs,Reservoir Elevation,2019-02-17 00:00:00,7202.74,Feet
+Grassy Lake near Moran; WY,grs,Reservoir Elevation,2019-02-16 00:00:00,7202.72,Feet
+Grassy Lake near Moran; WY,grs,Reservoir Elevation,2019-02-15 00:00:00,7202.69,Feet
+Grassy Lake near Moran; WY,grs,Reservoir Elevation,2019-02-14 00:00:00,7202.65,Feet
+Grassy Lake near Moran; WY,grs,Reservoir Elevation,2019-02-13 00:00:00,7202.55,Feet
+Grassy Lake near Moran; WY,grs,Reservoir Elevation,2019-02-12 00:00:00,7202.41,Feet
+Grassy Lake near Moran; WY,grs,Reservoir Elevation,2019-02-11 00:00:00,7202.38,Feet
+Grassy Lake near Moran; WY,grs,Reservoir Elevation,2019-02-10 00:00:00,7202.33,Feet
+Grassy Lake near Moran; WY,grs,Reservoir Elevation,2019-02-09 00:00:00,7202.29,Feet
+Grassy Lake near Moran; WY,grs,Reservoir Elevation,2019-02-08 00:00:00,7202.27,Feet
+Grassy Lake near Moran; WY,grs,Reservoir Elevation,2019-02-07 00:00:00,7202.23,Feet
+Grassy Lake near Moran; WY,grs,Reservoir Elevation,2019-02-06 00:00:00,7202.23,Feet
+Grassy Lake near Moran; WY,grs,Reservoir Elevation,2019-02-05 00:00:00,7202.22,Feet
+Grassy Lake near Moran; WY,grs,Reservoir Elevation,2019-02-04 00:00:00,7202.18,Feet
+Grassy Lake near Moran; WY,grs,Reservoir Elevation,2019-02-03 00:00:00,7202.11,Feet
+Grassy Lake near Moran; WY,grs,Reservoir Elevation,2019-02-02 00:00:00,7202.05,Feet
+Grassy Lake near Moran; WY,grs,Reservoir Elevation,2019-02-01 00:00:00,7202,Feet
+Henrys Lake Dam on Henrys Fork nr. Lake; ID,hen,Reservoir Storage,2019-02-24 00:00:00,85369,Acre feet
+Henrys Lake Dam on Henrys Fork nr. Lake; ID,hen,Reservoir Storage,2019-02-23 00:00:00,85238,Acre feet
+Henrys Lake Dam on Henrys Fork nr. Lake; ID,hen,Reservoir Storage,2019-02-22 00:00:00,85173,Acre feet
+Henrys Lake Dam on Henrys Fork nr. Lake; ID,hen,Reservoir Storage,2019-02-21 00:00:00,85108,Acre feet
+Henrys Lake Dam on Henrys Fork nr. Lake; ID,hen,Reservoir Storage,2019-02-20 00:00:00,85173,Acre feet
+Henrys Lake Dam on Henrys Fork nr. Lake; ID,hen,Reservoir Storage,2019-02-19 00:00:00,85043,Acre feet
+Henrys Lake Dam on Henrys Fork nr. Lake; ID,hen,Reservoir Storage,2019-02-18 00:00:00,85043,Acre feet
+Henrys Lake Dam on Henrys Fork nr. Lake; ID,hen,Reservoir Storage,2019-02-17 00:00:00,84978,Acre feet
+Henrys Lake Dam on Henrys Fork nr. Lake; ID,hen,Reservoir Storage,2019-02-16 00:00:00,85108,Acre feet
+Henrys Lake Dam on Henrys Fork nr. Lake; ID,hen,Reservoir Storage,2019-02-15 00:00:00,84848,Acre feet
+Henrys Lake Dam on Henrys Fork nr. Lake; ID,hen,Reservoir Storage,2019-02-14 00:00:00,84783,Acre feet
+Henrys Lake Dam on Henrys Fork nr. Lake; ID,hen,Reservoir Storage,2019-02-13 00:00:00,84653,Acre feet
+Henrys Lake Dam on Henrys Fork nr. Lake; ID,hen,Reservoir Storage,2019-02-12 00:00:00,84848,Acre feet
+Henrys Lake Dam on Henrys Fork nr. Lake; ID,hen,Reservoir Storage,2019-02-11 00:00:00,84913,Acre feet
+Henrys Lake Dam on Henrys Fork nr. Lake; ID,hen,Reservoir Storage,2019-02-10 00:00:00,84848,Acre feet
+Henrys Lake Dam on Henrys Fork nr. Lake; ID,hen,Reservoir Storage,2019-02-09 00:00:00,84589,Acre feet
+Henrys Lake Dam on Henrys Fork nr. Lake; ID,hen,Reservoir Storage,2019-02-08 00:00:00,84395,Acre feet
+Henrys Lake Dam on Henrys Fork nr. Lake; ID,hen,Reservoir Storage,2019-02-07 00:00:00,84395,Acre feet
+Henrys Lake Dam on Henrys Fork nr. Lake; ID,hen,Reservoir Storage,2019-02-06 00:00:00,84395,Acre feet
+Henrys Lake Dam on Henrys Fork nr. Lake; ID,hen,Reservoir Storage,2019-02-05 00:00:00,84459,Acre feet
+Henrys Lake Dam on Henrys Fork nr. Lake; ID,hen,Reservoir Storage,2019-02-04 00:00:00,84330,Acre feet
+Henrys Lake Dam on Henrys Fork nr. Lake; ID,hen,Reservoir Storage,2019-02-03 00:00:00,83751,Acre feet
+Henrys Lake Dam on Henrys Fork nr. Lake; ID,hen,Reservoir Storage,2019-02-02 00:00:00,83623,Acre feet
+Henrys Lake Dam on Henrys Fork nr. Lake; ID,hen,Reservoir Storage,2019-02-01 00:00:00,83304,Acre feet
+Henrys Lake Dam on Henrys Fork nr. Lake; ID,hen,Reservoir Elevation,2019-02-24 00:00:00,15.94,Feet
+Henrys Lake Dam on Henrys Fork nr. Lake; ID,hen,Reservoir Elevation,2019-02-23 00:00:00,15.92,Feet
+Henrys Lake Dam on Henrys Fork nr. Lake; ID,hen,Reservoir Elevation,2019-02-22 00:00:00,15.91,Feet
+Henrys Lake Dam on Henrys Fork nr. Lake; ID,hen,Reservoir Elevation,2019-02-21 00:00:00,15.9,Feet
+Henrys Lake Dam on Henrys Fork nr. Lake; ID,hen,Reservoir Elevation,2019-02-20 00:00:00,15.91,Feet
+Henrys Lake Dam on Henrys Fork nr. Lake; ID,hen,Reservoir Elevation,2019-02-19 00:00:00,15.89,Feet
+Henrys Lake Dam on Henrys Fork nr. Lake; ID,hen,Reservoir Elevation,2019-02-18 00:00:00,15.89,Feet
+Henrys Lake Dam on Henrys Fork nr. Lake; ID,hen,Reservoir Elevation,2019-02-17 00:00:00,15.88,Feet
+Henrys Lake Dam on Henrys Fork nr. Lake; ID,hen,Reservoir Elevation,2019-02-16 00:00:00,15.9,Feet
+Henrys Lake Dam on Henrys Fork nr. Lake; ID,hen,Reservoir Elevation,2019-02-15 00:00:00,15.86,Feet
+Henrys Lake Dam on Henrys Fork nr. Lake; ID,hen,Reservoir Elevation,2019-02-14 00:00:00,15.85,Feet
+Henrys Lake Dam on Henrys Fork nr. Lake; ID,hen,Reservoir Elevation,2019-02-13 00:00:00,15.83,Feet
+Henrys Lake Dam on Henrys Fork nr. Lake; ID,hen,Reservoir Elevation,2019-02-12 00:00:00,15.86,Feet
+Henrys Lake Dam on Henrys Fork nr. Lake; ID,hen,Reservoir Elevation,2019-02-11 00:00:00,15.87,Feet
+Henrys Lake Dam on Henrys Fork nr. Lake; ID,hen,Reservoir Elevation,2019-02-10 00:00:00,15.86,Feet
+Henrys Lake Dam on Henrys Fork nr. Lake; ID,hen,Reservoir Elevation,2019-02-09 00:00:00,15.82,Feet
+Henrys Lake Dam on Henrys Fork nr. Lake; ID,hen,Reservoir Elevation,2019-02-08 00:00:00,15.79,Feet
+Henrys Lake Dam on Henrys Fork nr. Lake; ID,hen,Reservoir Elevation,2019-02-07 00:00:00,15.79,Feet
+Henrys Lake Dam on Henrys Fork nr. Lake; ID,hen,Reservoir Elevation,2019-02-06 00:00:00,15.79,Feet
+Henrys Lake Dam on Henrys Fork nr. Lake; ID,hen,Reservoir Elevation,2019-02-05 00:00:00,15.8,Feet
+Henrys Lake Dam on Henrys Fork nr. Lake; ID,hen,Reservoir Elevation,2019-02-04 00:00:00,15.78,Feet
+Henrys Lake Dam on Henrys Fork nr. Lake; ID,hen,Reservoir Elevation,2019-02-03 00:00:00,15.69,Feet
+Henrys Lake Dam on Henrys Fork nr. Lake; ID,hen,Reservoir Elevation,2019-02-02 00:00:00,15.67,Feet
+Henrys Lake Dam on Henrys Fork nr. Lake; ID,hen,Reservoir Elevation,2019-02-01 00:00:00,15.62,Feet
+Island Park Dam and Reservoir; ID,isl,Reservoir Storage,2019-02-24 00:00:00,118398,Acre feet
+Island Park Dam and Reservoir; ID,isl,Reservoir Storage,2019-02-23 00:00:00,118247,Acre feet
+Island Park Dam and Reservoir; ID,isl,Reservoir Storage,2019-02-22 00:00:00,118174,Acre feet
+Island Park Dam and Reservoir; ID,isl,Reservoir Storage,2019-02-21 00:00:00,118247,Acre feet
+Island Park Dam and Reservoir; ID,isl,Reservoir Storage,2019-02-20 00:00:00,118398,Acre feet
+Island Park Dam and Reservoir; ID,isl,Reservoir Storage,2019-02-19 00:00:00,118549,Acre feet
+Island Park Dam and Reservoir; ID,isl,Reservoir Storage,2019-02-18 00:00:00,118622,Acre feet
+Island Park Dam and Reservoir; ID,isl,Reservoir Storage,2019-02-17 00:00:00,118773,Acre feet
+Island Park Dam and Reservoir; ID,isl,Reservoir Storage,2019-02-16 00:00:00,119002,Acre feet
+Island Park Dam and Reservoir; ID,isl,Reservoir Storage,2019-02-15 00:00:00,119458,Acre feet
+Island Park Dam and Reservoir; ID,isl,Reservoir Storage,2019-02-14 00:00:00,119458,Acre feet
+Island Park Dam and Reservoir; ID,isl,Reservoir Storage,2019-02-13 00:00:00,119380,Acre feet
+Island Park Dam and Reservoir; ID,isl,Reservoir Storage,2019-02-12 00:00:00,119154,Acre feet
+Island Park Dam and Reservoir; ID,isl,Reservoir Storage,2019-02-11 00:00:00,119228,Acre feet
+Island Park Dam and Reservoir; ID,isl,Reservoir Storage,2019-02-10 00:00:00,119380,Acre feet
+Island Park Dam and Reservoir; ID,isl,Reservoir Storage,2019-02-09 00:00:00,119228,Acre feet
+Island Park Dam and Reservoir; ID,isl,Reservoir Storage,2019-02-08 00:00:00,119228,Acre feet
+Island Park Dam and Reservoir; ID,isl,Reservoir Storage,2019-02-07 00:00:00,119306,Acre feet
+Island Park Dam and Reservoir; ID,isl,Reservoir Storage,2019-02-06 00:00:00,119458,Acre feet
+Island Park Dam and Reservoir; ID,isl,Reservoir Storage,2019-02-05 00:00:00,119907,Acre feet
+Island Park Dam and Reservoir; ID,isl,Reservoir Storage,2019-02-04 00:00:00,119980,Acre feet
+Island Park Dam and Reservoir; ID,isl,Reservoir Storage,2019-02-03 00:00:00,119907,Acre feet
+Island Park Dam and Reservoir; ID,isl,Reservoir Storage,2019-02-02 00:00:00,119532,Acre feet
+Island Park Dam and Reservoir; ID,isl,Reservoir Storage,2019-02-01 00:00:00,119306,Acre feet
+Island Park Dam and Reservoir; ID,isl,Reservoir Elevation,2019-02-24 00:00:00,6300.84,Feet
+Island Park Dam and Reservoir; ID,isl,Reservoir Elevation,2019-02-23 00:00:00,6300.82,Feet
+Island Park Dam and Reservoir; ID,isl,Reservoir Elevation,2019-02-22 00:00:00,6300.81,Feet
+Island Park Dam and Reservoir; ID,isl,Reservoir Elevation,2019-02-21 00:00:00,6300.82,Feet
+Island Park Dam and Reservoir; ID,isl,Reservoir Elevation,2019-02-20 00:00:00,6300.84,Feet
+Island Park Dam and Reservoir; ID,isl,Reservoir Elevation,2019-02-19 00:00:00,6300.86,Feet
+Island Park Dam and Reservoir; ID,isl,Reservoir Elevation,2019-02-18 00:00:00,6300.87,Feet
+Island Park Dam and Reservoir; ID,isl,Reservoir Elevation,2019-02-17 00:00:00,6300.89,Feet
+Island Park Dam and Reservoir; ID,isl,Reservoir Elevation,2019-02-16 00:00:00,6300.92,Feet
+Island Park Dam and Reservoir; ID,isl,Reservoir Elevation,2019-02-15 00:00:00,6300.98,Feet
+Island Park Dam and Reservoir; ID,isl,Reservoir Elevation,2019-02-14 00:00:00,6300.98,Feet
+Island Park Dam and Reservoir; ID,isl,Reservoir Elevation,2019-02-13 00:00:00,6300.97,Feet
+Island Park Dam and Reservoir; ID,isl,Reservoir Elevation,2019-02-12 00:00:00,6300.94,Feet
+Island Park Dam and Reservoir; ID,isl,Reservoir Elevation,2019-02-11 00:00:00,6300.95,Feet
+Island Park Dam and Reservoir; ID,isl,Reservoir Elevation,2019-02-10 00:00:00,6300.97,Feet
+Island Park Dam and Reservoir; ID,isl,Reservoir Elevation,2019-02-09 00:00:00,6300.95,Feet
+Island Park Dam and Reservoir; ID,isl,Reservoir Elevation,2019-02-08 00:00:00,6300.95,Feet
+Island Park Dam and Reservoir; ID,isl,Reservoir Elevation,2019-02-07 00:00:00,6300.96,Feet
+Island Park Dam and Reservoir; ID,isl,Reservoir Elevation,2019-02-06 00:00:00,6300.98,Feet
+Island Park Dam and Reservoir; ID,isl,Reservoir Elevation,2019-02-05 00:00:00,6301.04,Feet
+Island Park Dam and Reservoir; ID,isl,Reservoir Elevation,2019-02-04 00:00:00,6301.05,Feet
+Island Park Dam and Reservoir; ID,isl,Reservoir Elevation,2019-02-03 00:00:00,6301.04,Feet
+Island Park Dam and Reservoir; ID,isl,Reservoir Elevation,2019-02-02 00:00:00,6300.99,Feet
+Island Park Dam and Reservoir; ID,isl,Reservoir Elevation,2019-02-01 00:00:00,6300.96,Feet
+Jackson Lake at Dam on Snake River near Moran; WY,jck,Reservoir Storage,2019-02-24 00:00:00,667535,Acre feet
+Jackson Lake at Dam on Snake River near Moran; WY,jck,Reservoir Storage,2019-02-23 00:00:00,666080,Acre feet
+Jackson Lake at Dam on Snake River near Moran; WY,jck,Reservoir Storage,2019-02-22 00:00:00,665832,Acre feet
+Jackson Lake at Dam on Snake River near Moran; WY,jck,Reservoir Storage,2019-02-21 00:00:00,665832,Acre feet
+Jackson Lake at Dam on Snake River near Moran; WY,jck,Reservoir Storage,2019-02-20 00:00:00,665832,Acre feet
+Jackson Lake at Dam on Snake River near Moran; WY,jck,Reservoir Storage,2019-02-19 00:00:00,665832,Acre feet
+Jackson Lake at Dam on Snake River near Moran; WY,jck,Reservoir Storage,2019-02-18 00:00:00,665595,Acre feet
+Jackson Lake at Dam on Snake River near Moran; WY,jck,Reservoir Storage,2019-02-17 00:00:00,665595,Acre feet
+Jackson Lake at Dam on Snake River near Moran; WY,jck,Reservoir Storage,2019-02-16 00:00:00,665595,Acre feet
+Jackson Lake at Dam on Snake River near Moran; WY,jck,Reservoir Storage,2019-02-15 00:00:00,665110,Acre feet
+Jackson Lake at Dam on Snake River near Moran; WY,jck,Reservoir Storage,2019-02-14 00:00:00,664377,Acre feet
+Jackson Lake at Dam on Snake River near Moran; WY,jck,Reservoir Storage,2019-02-13 00:00:00,663171,Acre feet
+Jackson Lake at Dam on Snake River near Moran; WY,jck,Reservoir Storage,2019-02-12 00:00:00,661231,Acre feet
+Jackson Lake at Dam on Snake River near Moran; WY,jck,Reservoir Storage,2019-02-11 00:00:00,660995,Acre feet
+Jackson Lake at Dam on Snake River near Moran; WY,jck,Reservoir Storage,2019-02-10 00:00:00,660747,Acre feet
+Jackson Lake at Dam on Snake River near Moran; WY,jck,Reservoir Storage,2019-02-09 00:00:00,660262,Acre feet
+Jackson Lake at Dam on Snake River near Moran; WY,jck,Reservoir Storage,2019-02-08 00:00:00,660025,Acre feet
+Jackson Lake at Dam on Snake River near Moran; WY,jck,Reservoir Storage,2019-02-07 00:00:00,660262,Acre feet
+Jackson Lake at Dam on Snake River near Moran; WY,jck,Reservoir Storage,2019-02-06 00:00:00,660262,Acre feet
+Jackson Lake at Dam on Snake River near Moran; WY,jck,Reservoir Storage,2019-02-05 00:00:00,660262,Acre feet
+Jackson Lake at Dam on Snake River near Moran; WY,jck,Reservoir Storage,2019-02-04 00:00:00,659540,Acre feet
+Jackson Lake at Dam on Snake River near Moran; WY,jck,Reservoir Storage,2019-02-03 00:00:00,658086,Acre feet
+Jackson Lake at Dam on Snake River near Moran; WY,jck,Reservoir Storage,2019-02-02 00:00:00,657352,Acre feet
+Jackson Lake at Dam on Snake River near Moran; WY,jck,Reservoir Storage,2019-02-01 00:00:00,657116,Acre feet
+Jackson Lake at Dam on Snake River near Moran; WY,jck,Reservoir Elevation,2019-02-24 00:00:00,6761.79,Feet
+Jackson Lake at Dam on Snake River near Moran; WY,jck,Reservoir Elevation,2019-02-23 00:00:00,6761.73,Feet
+Jackson Lake at Dam on Snake River near Moran; WY,jck,Reservoir Elevation,2019-02-22 00:00:00,6761.72,Feet
+Jackson Lake at Dam on Snake River near Moran; WY,jck,Reservoir Elevation,2019-02-21 00:00:00,6761.72,Feet
+Jackson Lake at Dam on Snake River near Moran; WY,jck,Reservoir Elevation,2019-02-20 00:00:00,6761.72,Feet
+Jackson Lake at Dam on Snake River near Moran; WY,jck,Reservoir Elevation,2019-02-19 00:00:00,6761.72,Feet
+Jackson Lake at Dam on Snake River near Moran; WY,jck,Reservoir Elevation,2019-02-18 00:00:00,6761.71,Feet
+Jackson Lake at Dam on Snake River near Moran; WY,jck,Reservoir Elevation,2019-02-17 00:00:00,6761.71,Feet
+Jackson Lake at Dam on Snake River near Moran; WY,jck,Reservoir Elevation,2019-02-16 00:00:00,6761.71,Feet
+Jackson Lake at Dam on Snake River near Moran; WY,jck,Reservoir Elevation,2019-02-15 00:00:00,6761.69,Feet
+Jackson Lake at Dam on Snake River near Moran; WY,jck,Reservoir Elevation,2019-02-14 00:00:00,6761.66,Feet
+Jackson Lake at Dam on Snake River near Moran; WY,jck,Reservoir Elevation,2019-02-13 00:00:00,6761.61,Feet
+Jackson Lake at Dam on Snake River near Moran; WY,jck,Reservoir Elevation,2019-02-12 00:00:00,6761.53,Feet
+Jackson Lake at Dam on Snake River near Moran; WY,jck,Reservoir Elevation,2019-02-11 00:00:00,6761.52,Feet
+Jackson Lake at Dam on Snake River near Moran; WY,jck,Reservoir Elevation,2019-02-10 00:00:00,6761.51,Feet
+Jackson Lake at Dam on Snake River near Moran; WY,jck,Reservoir Elevation,2019-02-09 00:00:00,6761.49,Feet
+Jackson Lake at Dam on Snake River near Moran; WY,jck,Reservoir Elevation,2019-02-08 00:00:00,6761.48,Feet
+Jackson Lake at Dam on Snake River near Moran; WY,jck,Reservoir Elevation,2019-02-07 00:00:00,6761.49,Feet
+Jackson Lake at Dam on Snake River near Moran; WY,jck,Reservoir Elevation,2019-02-06 00:00:00,6761.49,Feet
+Jackson Lake at Dam on Snake River near Moran; WY,jck,Reservoir Elevation,2019-02-05 00:00:00,6761.49,Feet
+Jackson Lake at Dam on Snake River near Moran; WY,jck,Reservoir Elevation,2019-02-04 00:00:00,6761.46,Feet
+Jackson Lake at Dam on Snake River near Moran; WY,jck,Reservoir Elevation,2019-02-03 00:00:00,6761.4,Feet
+Jackson Lake at Dam on Snake River near Moran; WY,jck,Reservoir Elevation,2019-02-02 00:00:00,6761.37,Feet
+Jackson Lake at Dam on Snake River near Moran; WY,jck,Reservoir Elevation,2019-02-01 00:00:00,6761.36,Feet
+Milner Dam and Reservoir; Idaho,mil,Reservoir Storage,2019-02-24 00:00:00,29665.2,Acre feet
+Milner Dam and Reservoir; Idaho,mil,Reservoir Storage,2019-02-23 00:00:00,28634.5,Acre feet
+Milner Dam and Reservoir; Idaho,mil,Reservoir Storage,2019-02-22 00:00:00,27460.7,Acre feet
+Milner Dam and Reservoir; Idaho,mil,Reservoir Storage,2019-02-21 00:00:00,26122.1,Acre feet
+Milner Dam and Reservoir; Idaho,mil,Reservoir Storage,2019-02-20 00:00:00,24507.2,Acre feet
+Milner Dam and Reservoir; Idaho,mil,Reservoir Storage,2019-02-19 00:00:00,23703.7,Acre feet
+Milner Dam and Reservoir; Idaho,mil,Reservoir Storage,2019-02-18 00:00:00,22503.5,Acre feet
+Milner Dam and Reservoir; Idaho,mil,Reservoir Storage,2019-02-17 00:00:00,22496,Acre feet
+Milner Dam and Reservoir; Idaho,mil,Reservoir Storage,2019-02-16 00:00:00,22347.4,Acre feet
+Milner Dam and Reservoir; Idaho,mil,Reservoir Storage,2019-02-15 00:00:00,22094.5,Acre feet
+Milner Dam and Reservoir; Idaho,mil,Reservoir Storage,2019-02-14 00:00:00,21449.5,Acre feet
+Milner Dam and Reservoir; Idaho,mil,Reservoir Storage,2019-02-13 00:00:00,21287.3,Acre feet
+Milner Dam and Reservoir; Idaho,mil,Reservoir Storage,2019-02-12 00:00:00,21085.4,Acre feet
+Milner Dam and Reservoir; Idaho,mil,Reservoir Storage,2019-02-11 00:00:00,20948.3,Acre feet
+Milner Dam and Reservoir; Idaho,mil,Reservoir Storage,2019-02-10 00:00:00,20869.1,Acre feet
+Milner Dam and Reservoir; Idaho,mil,Reservoir Storage,2019-02-09 00:00:00,20721.1,Acre feet
+Milner Dam and Reservoir; Idaho,mil,Reservoir Storage,2019-02-08 00:00:00,20584,Acre feet
+Milner Dam and Reservoir; Idaho,mil,Reservoir Storage,2019-02-07 00:00:00,20378.7,Acre feet
+Milner Dam and Reservoir; Idaho,mil,Reservoir Storage,2019-02-06 00:00:00,20154.7,Acre feet
+Milner Dam and Reservoir; Idaho,mil,Reservoir Storage,2019-02-05 00:00:00,20346.2,Acre feet
+Milner Dam and Reservoir; Idaho,mil,Reservoir Storage,2019-02-04 00:00:00,20400.2,Acre feet
+Milner Dam and Reservoir; Idaho,mil,Reservoir Storage,2019-02-03 00:00:00,20254.3,Acre feet
+Milner Dam and Reservoir; Idaho,mil,Reservoir Storage,2019-02-02 00:00:00,20168.4,Acre feet
+Milner Dam and Reservoir; Idaho,mil,Reservoir Storage,2019-02-01 00:00:00,20137.7,Acre feet
+Milner Dam and Reservoir; Idaho,mil,Reservoir Elevation,2019-02-24 00:00:00,9.33,Feet
+Milner Dam and Reservoir; Idaho,mil,Reservoir Elevation,2019-02-23 00:00:00,8.98,Feet
+Milner Dam and Reservoir; Idaho,mil,Reservoir Elevation,2019-02-22 00:00:00,8.57,Feet
+Milner Dam and Reservoir; Idaho,mil,Reservoir Elevation,2019-02-21 00:00:00,8.07,Feet
+Milner Dam and Reservoir; Idaho,mil,Reservoir Elevation,2019-02-20 00:00:00,7.46,Feet
+Milner Dam and Reservoir; Idaho,mil,Reservoir Elevation,2019-02-19 00:00:00,7.18,Feet
+Milner Dam and Reservoir; Idaho,mil,Reservoir Elevation,2019-02-18 00:00:00,7.18,Feet
+Milner Dam and Reservoir; Idaho,mil,Reservoir Elevation,2019-02-17 00:00:00,7.19,Feet
+Milner Dam and Reservoir; Idaho,mil,Reservoir Elevation,2019-02-16 00:00:00,7.13,Feet
+Milner Dam and Reservoir; Idaho,mil,Reservoir Elevation,2019-02-15 00:00:00,7.01,Feet
+Milner Dam and Reservoir; Idaho,mil,Reservoir Elevation,2019-02-14 00:00:00,6.86,Feet
+Milner Dam and Reservoir; Idaho,mil,Reservoir Elevation,2019-02-13 00:00:00,6.8,Feet
+Milner Dam and Reservoir; Idaho,mil,Reservoir Elevation,2019-02-12 00:00:00,6.72,Feet
+Milner Dam and Reservoir; Idaho,mil,Reservoir Elevation,2019-02-11 00:00:00,6.67,Feet
+Milner Dam and Reservoir; Idaho,mil,Reservoir Elevation,2019-02-10 00:00:00,6.63,Feet
+Milner Dam and Reservoir; Idaho,mil,Reservoir Elevation,2019-02-09 00:00:00,6.58,Feet
+Milner Dam and Reservoir; Idaho,mil,Reservoir Elevation,2019-02-08 00:00:00,6.53,Feet
+Milner Dam and Reservoir; Idaho,mil,Reservoir Elevation,2019-02-07 00:00:00,6.44,Feet
+Milner Dam and Reservoir; Idaho,mil,Reservoir Elevation,2019-02-06 00:00:00,6.31,Feet
+Milner Dam and Reservoir; Idaho,mil,Reservoir Elevation,2019-02-05 00:00:00,6.43,Feet
+Milner Dam and Reservoir; Idaho,mil,Reservoir Elevation,2019-02-04 00:00:00,6.46,Feet
+Milner Dam and Reservoir; Idaho,mil,Reservoir Elevation,2019-02-03 00:00:00,6.34,Feet
+Milner Dam and Reservoir; Idaho,mil,Reservoir Elevation,2019-02-02 00:00:00,6.3,Feet
+Milner Dam and Reservoir; Idaho,mil,Reservoir Elevation,2019-02-01 00:00:00,6.28,Feet
+Minidoka Dam and Lake Walcott; ID,min,Reservoir Storage,2019-02-24 00:00:00,87258,Acre feet
+Minidoka Dam and Lake Walcott; ID,min,Reservoir Storage,2019-02-23 00:00:00,86910,Acre feet
+Minidoka Dam and Lake Walcott; ID,min,Reservoir Storage,2019-02-22 00:00:00,86558,Acre feet
+Minidoka Dam and Lake Walcott; ID,min,Reservoir Storage,2019-02-21 00:00:00,86558,Acre feet
+Minidoka Dam and Lake Walcott; ID,min,Reservoir Storage,2019-02-20 00:00:00,87258,Acre feet
+Minidoka Dam and Lake Walcott; ID,min,Reservoir Storage,2019-02-19 00:00:00,86558,Acre feet
+Minidoka Dam and Lake Walcott; ID,min,Reservoir Storage,2019-02-18 00:00:00,87258,Acre feet
+Minidoka Dam and Lake Walcott; ID,min,Reservoir Storage,2019-02-17 00:00:00,87258,Acre feet
+Minidoka Dam and Lake Walcott; ID,min,Reservoir Storage,2019-02-16 00:00:00,87258,Acre feet
+Minidoka Dam and Lake Walcott; ID,min,Reservoir Storage,2019-02-15 00:00:00,87258,Acre feet
+Minidoka Dam and Lake Walcott; ID,min,Reservoir Storage,2019-02-14 00:00:00,87728,Acre feet
+Minidoka Dam and Lake Walcott; ID,min,Reservoir Storage,2019-02-13 00:00:00,86558,Acre feet
+Minidoka Dam and Lake Walcott; ID,min,Reservoir Storage,2019-02-12 00:00:00,86214,Acre feet
+Minidoka Dam and Lake Walcott; ID,min,Reservoir Storage,2019-02-11 00:00:00,86214,Acre feet
+Minidoka Dam and Lake Walcott; ID,min,Reservoir Storage,2019-02-10 00:00:00,86214,Acre feet
+Minidoka Dam and Lake Walcott; ID,min,Reservoir Storage,2019-02-09 00:00:00,85749,Acre feet
+Minidoka Dam and Lake Walcott; ID,min,Reservoir Storage,2019-02-08 00:00:00,85749,Acre feet
+Minidoka Dam and Lake Walcott; ID,min,Reservoir Storage,2019-02-07 00:00:00,86214,Acre feet
+Minidoka Dam and Lake Walcott; ID,min,Reservoir Storage,2019-02-06 00:00:00,86214,Acre feet
+Minidoka Dam and Lake Walcott; ID,min,Reservoir Storage,2019-02-05 00:00:00,85749,Acre feet
+Minidoka Dam and Lake Walcott; ID,min,Reservoir Storage,2019-02-04 00:00:00,85749,Acre feet
+Minidoka Dam and Lake Walcott; ID,min,Reservoir Storage,2019-02-03 00:00:00,85393,Acre feet
+Minidoka Dam and Lake Walcott; ID,min,Reservoir Storage,2019-02-02 00:00:00,84578,Acre feet
+Minidoka Dam and Lake Walcott; ID,min,Reservoir Storage,2019-02-01 00:00:00,84578,Acre feet
+Minidoka Dam and Lake Walcott; ID,min,Reservoir Elevation,2019-02-24 00:00:00,4244.32,Feet
+Minidoka Dam and Lake Walcott; ID,min,Reservoir Elevation,2019-02-23 00:00:00,4244.29,Feet
+Minidoka Dam and Lake Walcott; ID,min,Reservoir Elevation,2019-02-22 00:00:00,4244.26,Feet
+Minidoka Dam and Lake Walcott; ID,min,Reservoir Elevation,2019-02-21 00:00:00,4244.26,Feet
+Minidoka Dam and Lake Walcott; ID,min,Reservoir Elevation,2019-02-20 00:00:00,4244.32,Feet
+Minidoka Dam and Lake Walcott; ID,min,Reservoir Elevation,2019-02-19 00:00:00,4244.26,Feet
+Minidoka Dam and Lake Walcott; ID,min,Reservoir Elevation,2019-02-18 00:00:00,4244.32,Feet
+Minidoka Dam and Lake Walcott; ID,min,Reservoir Elevation,2019-02-17 00:00:00,4244.32,Feet
+Minidoka Dam and Lake Walcott; ID,min,Reservoir Elevation,2019-02-16 00:00:00,4244.32,Feet
+Minidoka Dam and Lake Walcott; ID,min,Reservoir Elevation,2019-02-15 00:00:00,4244.32,Feet
+Minidoka Dam and Lake Walcott; ID,min,Reservoir Elevation,2019-02-14 00:00:00,4244.36,Feet
+Minidoka Dam and Lake Walcott; ID,min,Reservoir Elevation,2019-02-13 00:00:00,4244.26,Feet
+Minidoka Dam and Lake Walcott; ID,min,Reservoir Elevation,2019-02-12 00:00:00,4244.23,Feet
+Minidoka Dam and Lake Walcott; ID,min,Reservoir Elevation,2019-02-11 00:00:00,4244.23,Feet
+Minidoka Dam and Lake Walcott; ID,min,Reservoir Elevation,2019-02-10 00:00:00,4244.23,Feet
+Minidoka Dam and Lake Walcott; ID,min,Reservoir Elevation,2019-02-09 00:00:00,4244.19,Feet
+Minidoka Dam and Lake Walcott; ID,min,Reservoir Elevation,2019-02-08 00:00:00,4244.19,Feet
+Minidoka Dam and Lake Walcott; ID,min,Reservoir Elevation,2019-02-07 00:00:00,4244.23,Feet
+Minidoka Dam and Lake Walcott; ID,min,Reservoir Elevation,2019-02-06 00:00:00,4244.23,Feet
+Minidoka Dam and Lake Walcott; ID,min,Reservoir Elevation,2019-02-05 00:00:00,4244.19,Feet
+Minidoka Dam and Lake Walcott; ID,min,Reservoir Elevation,2019-02-04 00:00:00,4244.19,Feet
+Minidoka Dam and Lake Walcott; ID,min,Reservoir Elevation,2019-02-03 00:00:00,4244.16,Feet
+Minidoka Dam and Lake Walcott; ID,min,Reservoir Elevation,2019-02-02 00:00:00,4244.09,Feet
+Minidoka Dam and Lake Walcott; ID,min,Reservoir Elevation,2019-02-01 00:00:00,4244.09,Feet
+Palisades Reservoir near Irwin; ID,pal,Reservoir Storage,2019-02-24 00:00:00,1000210,Acre feet
+Palisades Reservoir near Irwin; ID,pal,Reservoir Storage,2019-02-23 00:00:00,996983,Acre feet
+Palisades Reservoir near Irwin; ID,pal,Reservoir Storage,2019-02-22 00:00:00,994209,Acre feet
+Palisades Reservoir near Irwin; ID,pal,Reservoir Storage,2019-02-21 00:00:00,991591,Acre feet
+Palisades Reservoir near Irwin; ID,pal,Reservoir Storage,2019-02-20 00:00:00,988833,Acre feet
+Palisades Reservoir near Irwin; ID,pal,Reservoir Storage,2019-02-19 00:00:00,986223,Acre feet
+Palisades Reservoir near Irwin; ID,pal,Reservoir Storage,2019-02-18 00:00:00,983190,Acre feet
+Palisades Reservoir near Irwin; ID,pal,Reservoir Storage,2019-02-17 00:00:00,980454,Acre feet
+Palisades Reservoir near Irwin; ID,pal,Reservoir Storage,2019-02-16 00:00:00,977579,Acre feet
+Palisades Reservoir near Irwin; ID,pal,Reservoir Storage,2019-02-15 00:00:00,974434,Acre feet
+Palisades Reservoir near Irwin; ID,pal,Reservoir Storage,2019-02-14 00:00:00,970581,Acre feet
+Palisades Reservoir near Irwin; ID,pal,Reservoir Storage,2019-02-13 00:00:00,966660,Acre feet
+Palisades Reservoir near Irwin; ID,pal,Reservoir Storage,2019-02-12 00:00:00,963021,Acre feet
+Palisades Reservoir near Irwin; ID,pal,Reservoir Storage,2019-02-11 00:00:00,960117,Acre feet
+Palisades Reservoir near Irwin; ID,pal,Reservoir Storage,2019-02-10 00:00:00,957080,Acre feet
+Palisades Reservoir near Irwin; ID,pal,Reservoir Storage,2019-02-09 00:00:00,953766,Acre feet
+Palisades Reservoir near Irwin; ID,pal,Reservoir Storage,2019-02-08 00:00:00,951176,Acre feet
+Palisades Reservoir near Irwin; ID,pal,Reservoir Storage,2019-02-07 00:00:00,948888,Acre feet
+Palisades Reservoir near Irwin; ID,pal,Reservoir Storage,2019-02-06 00:00:00,946026,Acre feet
+Palisades Reservoir near Irwin; ID,pal,Reservoir Storage,2019-02-05 00:00:00,942611,Acre feet
+Palisades Reservoir near Irwin; ID,pal,Reservoir Storage,2019-02-04 00:00:00,938917,Acre feet
+Palisades Reservoir near Irwin; ID,pal,Reservoir Storage,2019-02-03 00:00:00,934397,Acre feet
+Palisades Reservoir near Irwin; ID,pal,Reservoir Storage,2019-02-02 00:00:00,930736,Acre feet
+Palisades Reservoir near Irwin; ID,pal,Reservoir Storage,2019-02-01 00:00:00,927656,Acre feet
+Palisades Reservoir near Irwin; ID,pal,Reservoir Elevation,2019-02-24 00:00:00,5607.11,Feet
+Palisades Reservoir near Irwin; ID,pal,Reservoir Elevation,2019-02-23 00:00:00,5606.89,Feet
+Palisades Reservoir near Irwin; ID,pal,Reservoir Elevation,2019-02-22 00:00:00,5606.7,Feet
+Palisades Reservoir near Irwin; ID,pal,Reservoir Elevation,2019-02-21 00:00:00,5606.52,Feet
+Palisades Reservoir near Irwin; ID,pal,Reservoir Elevation,2019-02-20 00:00:00,5606.33,Feet
+Palisades Reservoir near Irwin; ID,pal,Reservoir Elevation,2019-02-19 00:00:00,5606.15,Feet
+Palisades Reservoir near Irwin; ID,pal,Reservoir Elevation,2019-02-18 00:00:00,5605.94,Feet
+Palisades Reservoir near Irwin; ID,pal,Reservoir Elevation,2019-02-17 00:00:00,5605.75,Feet
+Palisades Reservoir near Irwin; ID,pal,Reservoir Elevation,2019-02-16 00:00:00,5605.55,Feet
+Palisades Reservoir near Irwin; ID,pal,Reservoir Elevation,2019-02-15 00:00:00,5605.33,Feet
+Palisades Reservoir near Irwin; ID,pal,Reservoir Elevation,2019-02-14 00:00:00,5605.06,Feet
+Palisades Reservoir near Irwin; ID,pal,Reservoir Elevation,2019-02-13 00:00:00,5604.79,Feet
+Palisades Reservoir near Irwin; ID,pal,Reservoir Elevation,2019-02-12 00:00:00,5604.54,Feet
+Palisades Reservoir near Irwin; ID,pal,Reservoir Elevation,2019-02-11 00:00:00,5604.34,Feet
+Palisades Reservoir near Irwin; ID,pal,Reservoir Elevation,2019-02-10 00:00:00,5604.13,Feet
+Palisades Reservoir near Irwin; ID,pal,Reservoir Elevation,2019-02-09 00:00:00,5603.9,Feet
+Palisades Reservoir near Irwin; ID,pal,Reservoir Elevation,2019-02-08 00:00:00,5603.72,Feet
+Palisades Reservoir near Irwin; ID,pal,Reservoir Elevation,2019-02-07 00:00:00,5603.56,Feet
+Palisades Reservoir near Irwin; ID,pal,Reservoir Elevation,2019-02-06 00:00:00,5603.36,Feet
+Palisades Reservoir near Irwin; ID,pal,Reservoir Elevation,2019-02-05 00:00:00,5603.12,Feet
+Palisades Reservoir near Irwin; ID,pal,Reservoir Elevation,2019-02-04 00:00:00,5602.86,Feet
+Palisades Reservoir near Irwin; ID,pal,Reservoir Elevation,2019-02-03 00:00:00,5602.54,Feet
+Palisades Reservoir near Irwin; ID,pal,Reservoir Elevation,2019-02-02 00:00:00,5602.28,Feet
+Palisades Reservoir near Irwin; ID,pal,Reservoir Elevation,2019-02-01 00:00:00,5602.06,Feet
+Ririe Dam and Lake near Ririe; ID,rir,Reservoir Storage,2019-02-24 00:00:00,49629,Acre feet
+Ririe Dam and Lake near Ririe; ID,rir,Reservoir Storage,2019-02-23 00:00:00,49570,Acre feet
+Ririe Dam and Lake near Ririe; ID,rir,Reservoir Storage,2019-02-22 00:00:00,49476,Acre feet
+Ririe Dam and Lake near Ririe; ID,rir,Reservoir Storage,2019-02-21 00:00:00,49417,Acre feet
+Ririe Dam and Lake near Ririe; ID,rir,Reservoir Storage,2019-02-20 00:00:00,49347,Acre feet
+Ririe Dam and Lake near Ririe; ID,rir,Reservoir Storage,2019-02-19 00:00:00,49218,Acre feet
+Ririe Dam and Lake near Ririe; ID,rir,Reservoir Storage,2019-02-18 00:00:00,49113,Acre feet
+Ririe Dam and Lake near Ririe; ID,rir,Reservoir Storage,2019-02-17 00:00:00,49055,Acre feet
+Ririe Dam and Lake near Ririe; ID,rir,Reservoir Storage,2019-02-16 00:00:00,48949,Acre feet
+Ririe Dam and Lake near Ririe; ID,rir,Reservoir Storage,2019-02-15 00:00:00,48856,Acre feet
+Ririe Dam and Lake near Ririe; ID,rir,Reservoir Storage,2019-02-14 00:00:00,48764,Acre feet
+Ririe Dam and Lake near Ririe; ID,rir,Reservoir Storage,2019-02-13 00:00:00,48625,Acre feet
+Ririe Dam and Lake near Ririe; ID,rir,Reservoir Storage,2019-02-12 00:00:00,48567,Acre feet
+Ririe Dam and Lake near Ririe; ID,rir,Reservoir Storage,2019-02-11 00:00:00,48486,Acre feet
+Ririe Dam and Lake near Ririe; ID,rir,Reservoir Storage,2019-02-10 00:00:00,48440,Acre feet
+Ririe Dam and Lake near Ririe; ID,rir,Reservoir Storage,2019-02-09 00:00:00,48336,Acre feet
+Ririe Dam and Lake near Ririe; ID,rir,Reservoir Storage,2019-02-08 00:00:00,48244,Acre feet
+Ririe Dam and Lake near Ririe; ID,rir,Reservoir Storage,2019-02-07 00:00:00,48210,Acre feet
+Ririe Dam and Lake near Ririe; ID,rir,Reservoir Storage,2019-02-06 00:00:00,48118,Acre feet
+Ririe Dam and Lake near Ririe; ID,rir,Reservoir Storage,2019-02-05 00:00:00,48050,Acre feet
+Ririe Dam and Lake near Ririe; ID,rir,Reservoir Storage,2019-02-04 00:00:00,47958,Acre feet
+Ririe Dam and Lake near Ririe; ID,rir,Reservoir Storage,2019-02-03 00:00:00,47799,Acre feet
+Ririe Dam and Lake near Ririe; ID,rir,Reservoir Storage,2019-02-02 00:00:00,47674,Acre feet
+Ririe Dam and Lake near Ririe; ID,rir,Reservoir Storage,2019-02-01 00:00:00,47595,Acre feet
+Ririe Dam and Lake near Ririe; ID,rir,Reservoir Elevation,2019-02-24 00:00:00,5090.11,Feet
+Ririe Dam and Lake near Ririe; ID,rir,Reservoir Elevation,2019-02-23 00:00:00,5090.06,Feet
+Ririe Dam and Lake near Ririe; ID,rir,Reservoir Elevation,2019-02-22 00:00:00,5089.98,Feet
+Ririe Dam and Lake near Ririe; ID,rir,Reservoir Elevation,2019-02-21 00:00:00,5089.93,Feet
+Ririe Dam and Lake near Ririe; ID,rir,Reservoir Elevation,2019-02-20 00:00:00,5089.87,Feet
+Ririe Dam and Lake near Ririe; ID,rir,Reservoir Elevation,2019-02-19 00:00:00,5089.76,Feet
+Ririe Dam and Lake near Ririe; ID,rir,Reservoir Elevation,2019-02-18 00:00:00,5089.67,Feet
+Ririe Dam and Lake near Ririe; ID,rir,Reservoir Elevation,2019-02-17 00:00:00,5089.62,Feet
+Ririe Dam and Lake near Ririe; ID,rir,Reservoir Elevation,2019-02-16 00:00:00,5089.53,Feet
+Ririe Dam and Lake near Ririe; ID,rir,Reservoir Elevation,2019-02-15 00:00:00,5089.45,Feet
+Ririe Dam and Lake near Ririe; ID,rir,Reservoir Elevation,2019-02-14 00:00:00,5089.37,Feet
+Ririe Dam and Lake near Ririe; ID,rir,Reservoir Elevation,2019-02-13 00:00:00,5089.25,Feet
+Ririe Dam and Lake near Ririe; ID,rir,Reservoir Elevation,2019-02-12 00:00:00,5089.2,Feet
+Ririe Dam and Lake near Ririe; ID,rir,Reservoir Elevation,2019-02-11 00:00:00,5089.13,Feet
+Ririe Dam and Lake near Ririe; ID,rir,Reservoir Elevation,2019-02-10 00:00:00,5089.09,Feet
+Ririe Dam and Lake near Ririe; ID,rir,Reservoir Elevation,2019-02-09 00:00:00,5089,Feet
+Ririe Dam and Lake near Ririe; ID,rir,Reservoir Elevation,2019-02-08 00:00:00,5088.92,Feet
+Ririe Dam and Lake near Ririe; ID,rir,Reservoir Elevation,2019-02-07 00:00:00,5088.89,Feet
+Ririe Dam and Lake near Ririe; ID,rir,Reservoir Elevation,2019-02-06 00:00:00,5088.81,Feet
+Ririe Dam and Lake near Ririe; ID,rir,Reservoir Elevation,2019-02-05 00:00:00,5088.75,Feet
+Ririe Dam and Lake near Ririe; ID,rir,Reservoir Elevation,2019-02-04 00:00:00,5088.67,Feet
+Ririe Dam and Lake near Ririe; ID,rir,Reservoir Elevation,2019-02-03 00:00:00,5088.53,Feet
+Ririe Dam and Lake near Ririe; ID,rir,Reservoir Elevation,2019-02-02 00:00:00,5088.42,Feet
+Ririe Dam and Lake near Ririe; ID,rir,Reservoir Elevation,2019-02-01 00:00:00,5088.35,Feet
+Little Wood Dam and Reservoir near Carey; ID,wod,Reservoir Storage,2019-02-24 00:00:00,18938,Acre feet
+Little Wood Dam and Reservoir near Carey; ID,wod,Reservoir Storage,2019-02-23 00:00:00,19180,Acre feet
+Little Wood Dam and Reservoir near Carey; ID,wod,Reservoir Storage,2019-02-22 00:00:00,19505,Acre feet
+Little Wood Dam and Reservoir near Carey; ID,wod,Reservoir Storage,2019-02-21 00:00:00,19795,Acre feet
+Little Wood Dam and Reservoir near Carey; ID,wod,Reservoir Storage,2019-02-20 00:00:00,20146,Acre feet
+Little Wood Dam and Reservoir near Carey; ID,wod,Reservoir Storage,2019-02-19 00:00:00,20473,Acre feet
+Little Wood Dam and Reservoir near Carey; ID,wod,Reservoir Storage,2019-02-18 00:00:00,20809,Acre feet
+Little Wood Dam and Reservoir near Carey; ID,wod,Reservoir Storage,2019-02-17 00:00:00,21039,Acre feet
+Little Wood Dam and Reservoir near Carey; ID,wod,Reservoir Storage,2019-02-16 00:00:00,21374,Acre feet
+Little Wood Dam and Reservoir near Carey; ID,wod,Reservoir Storage,2019-02-15 00:00:00,21703,Acre feet
+Little Wood Dam and Reservoir near Carey; ID,wod,Reservoir Storage,2019-02-14 00:00:00,22021,Acre feet
+Little Wood Dam and Reservoir near Carey; ID,wod,Reservoir Storage,2019-02-13 00:00:00,22309,Acre feet
+Little Wood Dam and Reservoir near Carey; ID,wod,Reservoir Storage,2019-02-12 00:00:00,22363,Acre feet
+Little Wood Dam and Reservoir near Carey; ID,wod,Reservoir Storage,2019-02-11 00:00:00,22249,Acre feet
+Little Wood Dam and Reservoir near Carey; ID,wod,Reservoir Storage,2019-02-10 00:00:00,22164,Acre feet
+Little Wood Dam and Reservoir near Carey; ID,wod,Reservoir Storage,2019-02-09 00:00:00,22051,Acre feet
+Little Wood Dam and Reservoir near Carey; ID,wod,Reservoir Storage,2019-02-08 00:00:00,21908,Acre feet
+Little Wood Dam and Reservoir near Carey; ID,wod,Reservoir Storage,2019-02-07 00:00:00,21849,Acre feet
+Little Wood Dam and Reservoir near Carey; ID,wod,Reservoir Storage,2019-02-06 00:00:00,21766,Acre feet
+Little Wood Dam and Reservoir near Carey; ID,wod,Reservoir Storage,2019-02-05 00:00:00,21698,Acre feet
+Little Wood Dam and Reservoir near Carey; ID,wod,Reservoir Storage,2019-02-04 00:00:00,21576,Acre feet
+Little Wood Dam and Reservoir near Carey; ID,wod,Reservoir Storage,2019-02-03 00:00:00,21451,Acre feet
+Little Wood Dam and Reservoir near Carey; ID,wod,Reservoir Storage,2019-02-02 00:00:00,21311,Acre feet
+Little Wood Dam and Reservoir near Carey; ID,wod,Reservoir Storage,2019-02-01 00:00:00,21184,Acre feet
+Little Wood Dam and Reservoir near Carey; ID,wod,Reservoir Elevation,2019-02-24 00:00:00,5215.85,Feet
+Little Wood Dam and Reservoir near Carey; ID,wod,Reservoir Elevation,2019-02-23 00:00:00,5216.38,Feet
+Little Wood Dam and Reservoir near Carey; ID,wod,Reservoir Elevation,2019-02-22 00:00:00,5217.08,Feet
+Little Wood Dam and Reservoir near Carey; ID,wod,Reservoir Elevation,2019-02-21 00:00:00,5217.71,Feet
+Little Wood Dam and Reservoir near Carey; ID,wod,Reservoir Elevation,2019-02-20 00:00:00,5218.46,Feet
+Little Wood Dam and Reservoir near Carey; ID,wod,Reservoir Elevation,2019-02-19 00:00:00,5219.15,Feet
+Little Wood Dam and Reservoir near Carey; ID,wod,Reservoir Elevation,2019-02-18 00:00:00,5219.86,Feet
+Little Wood Dam and Reservoir near Carey; ID,wod,Reservoir Elevation,2019-02-17 00:00:00,5220.34,Feet
+Little Wood Dam and Reservoir near Carey; ID,wod,Reservoir Elevation,2019-02-16 00:00:00,5221.03,Feet
+Little Wood Dam and Reservoir near Carey; ID,wod,Reservoir Elevation,2019-02-15 00:00:00,5221.71,Feet
+Little Wood Dam and Reservoir near Carey; ID,wod,Reservoir Elevation,2019-02-14 00:00:00,5222.36,Feet
+Little Wood Dam and Reservoir near Carey; ID,wod,Reservoir Elevation,2019-02-13 00:00:00,5222.94,Feet
+Little Wood Dam and Reservoir near Carey; ID,wod,Reservoir Elevation,2019-02-12 00:00:00,5223.05,Feet
+Little Wood Dam and Reservoir near Carey; ID,wod,Reservoir Elevation,2019-02-11 00:00:00,5222.82,Feet
+Little Wood Dam and Reservoir near Carey; ID,wod,Reservoir Elevation,2019-02-10 00:00:00,5222.65,Feet
+Little Wood Dam and Reservoir near Carey; ID,wod,Reservoir Elevation,2019-02-09 00:00:00,5222.42,Feet
+Little Wood Dam and Reservoir near Carey; ID,wod,Reservoir Elevation,2019-02-08 00:00:00,5222.13,Feet
+Little Wood Dam and Reservoir near Carey; ID,wod,Reservoir Elevation,2019-02-07 00:00:00,5222.01,Feet
+Little Wood Dam and Reservoir near Carey; ID,wod,Reservoir Elevation,2019-02-06 00:00:00,5221.84,Feet
+Little Wood Dam and Reservoir near Carey; ID,wod,Reservoir Elevation,2019-02-05 00:00:00,5221.7,Feet
+Little Wood Dam and Reservoir near Carey; ID,wod,Reservoir Elevation,2019-02-04 00:00:00,5221.45,Feet
+Little Wood Dam and Reservoir near Carey; ID,wod,Reservoir Elevation,2019-02-03 00:00:00,5221.19,Feet
+Little Wood Dam and Reservoir near Carey; ID,wod,Reservoir Elevation,2019-02-02 00:00:00,5220.9,Feet
+Little Wood Dam and Reservoir near Carey; ID,wod,Reservoir Elevation,2019-02-01 00:00:00,5220.64,Feet
+Anderson Ranch Dam and Reservoir; ID,and,Reservoir Elevation,2019-02-24 00:00:00,4151.54,Feet
+Anderson Ranch Dam and Reservoir; ID,and,Reservoir Elevation,2019-02-23 00:00:00,4151.5,Feet
+Anderson Ranch Dam and Reservoir; ID,and,Reservoir Elevation,2019-02-22 00:00:00,4151.49,Feet
+Anderson Ranch Dam and Reservoir; ID,and,Reservoir Elevation,2019-02-21 00:00:00,4151.52,Feet
+Anderson Ranch Dam and Reservoir; ID,and,Reservoir Elevation,2019-02-20 00:00:00,4151.51,Feet
+Anderson Ranch Dam and Reservoir; ID,and,Reservoir Elevation,2019-02-19 00:00:00,4151.53,Feet
+Anderson Ranch Dam and Reservoir; ID,and,Reservoir Elevation,2019-02-18 00:00:00,4151.56,Feet
+Anderson Ranch Dam and Reservoir; ID,and,Reservoir Elevation,2019-02-17 00:00:00,4151.57,Feet
+Anderson Ranch Dam and Reservoir; ID,and,Reservoir Elevation,2019-02-16 00:00:00,4151.56,Feet
+Anderson Ranch Dam and Reservoir; ID,and,Reservoir Elevation,2019-02-15 00:00:00,4151.58,Feet
+Anderson Ranch Dam and Reservoir; ID,and,Reservoir Elevation,2019-02-14 00:00:00,4151.51,Feet
+Anderson Ranch Dam and Reservoir; ID,and,Reservoir Elevation,2019-02-13 00:00:00,4151.46,Feet
+Anderson Ranch Dam and Reservoir; ID,and,Reservoir Elevation,2019-02-12 00:00:00,4151.39,Feet
+Anderson Ranch Dam and Reservoir; ID,and,Reservoir Elevation,2019-02-11 00:00:00,4151.34,Feet
+Anderson Ranch Dam and Reservoir; ID,and,Reservoir Elevation,2019-02-10 00:00:00,4151.36,Feet
+Anderson Ranch Dam and Reservoir; ID,and,Reservoir Elevation,2019-02-09 00:00:00,4151.32,Feet
+Anderson Ranch Dam and Reservoir; ID,and,Reservoir Elevation,2019-02-08 00:00:00,4151.29,Feet
+Anderson Ranch Dam and Reservoir; ID,and,Reservoir Elevation,2019-02-07 00:00:00,4151.34,Feet
+Anderson Ranch Dam and Reservoir; ID,and,Reservoir Elevation,2019-02-06 00:00:00,4151.35,Feet
+Anderson Ranch Dam and Reservoir; ID,and,Reservoir Elevation,2019-02-05 00:00:00,4151.38,Feet
+Anderson Ranch Dam and Reservoir; ID,and,Reservoir Elevation,2019-02-04 00:00:00,4151.32,Feet
+Anderson Ranch Dam and Reservoir; ID,and,Reservoir Elevation,2019-02-03 00:00:00,4151.31,Feet
+Anderson Ranch Dam and Reservoir; ID,and,Reservoir Elevation,2019-02-02 00:00:00,4151.29,Feet
+Anderson Ranch Dam and Reservoir; ID,and,Reservoir Elevation,2019-02-01 00:00:00,4151.23,Feet
+Arrowrock Dam and Reservoir; ID,ark,Reservoir Elevation,2019-02-24 00:00:00,3187.77,Feet
+Arrowrock Dam and Reservoir; ID,ark,Reservoir Elevation,2019-02-23 00:00:00,3188.38,Feet
+Arrowrock Dam and Reservoir; ID,ark,Reservoir Elevation,2019-02-22 00:00:00,3189.01,Feet
+Arrowrock Dam and Reservoir; ID,ark,Reservoir Elevation,2019-02-21 00:00:00,3189.32,Feet
+Arrowrock Dam and Reservoir; ID,ark,Reservoir Elevation,2019-02-20 00:00:00,3189.28,Feet
+Arrowrock Dam and Reservoir; ID,ark,Reservoir Elevation,2019-02-19 00:00:00,3189.16,Feet
+Arrowrock Dam and Reservoir; ID,ark,Reservoir Elevation,2019-02-18 00:00:00,3188.83,Feet
+Arrowrock Dam and Reservoir; ID,ark,Reservoir Elevation,2019-02-17 00:00:00,3188.48,Feet
+Arrowrock Dam and Reservoir; ID,ark,Reservoir Elevation,2019-02-16 00:00:00,3188.09,Feet
+Arrowrock Dam and Reservoir; ID,ark,Reservoir Elevation,2019-02-15 00:00:00,3187.62,Feet
+Arrowrock Dam and Reservoir; ID,ark,Reservoir Elevation,2019-02-14 00:00:00,3187.09,Feet
+Arrowrock Dam and Reservoir; ID,ark,Reservoir Elevation,2019-02-12 00:00:00,3186.02,Feet
+Arrowrock Dam and Reservoir; ID,ark,Reservoir Elevation,2019-02-11 00:00:00,3185.62,Feet
+Arrowrock Dam and Reservoir; ID,ark,Reservoir Elevation,2019-02-10 00:00:00,3185.21,Feet
+Arrowrock Dam and Reservoir; ID,ark,Reservoir Elevation,2019-02-09 00:00:00,3184.78,Feet
+Arrowrock Dam and Reservoir; ID,ark,Reservoir Elevation,2019-02-08 00:00:00,3184.29,Feet
+Arrowrock Dam and Reservoir; ID,ark,Reservoir Elevation,2019-02-07 00:00:00,3183.97,Feet
+Arrowrock Dam and Reservoir; ID,ark,Reservoir Elevation,2019-02-06 00:00:00,3183.61,Feet
+Arrowrock Dam and Reservoir; ID,ark,Reservoir Elevation,2019-02-05 00:00:00,3183.17,Feet
+Arrowrock Dam and Reservoir; ID,ark,Reservoir Elevation,2019-02-04 00:00:00,3182.63,Feet
+Arrowrock Dam and Reservoir; ID,ark,Reservoir Elevation,2019-02-03 00:00:00,3181.8,Feet
+Arrowrock Dam and Reservoir; ID,ark,Reservoir Elevation,2019-02-02 00:00:00,3180.96,Feet
+Arrowrock Dam and Reservoir; ID,ark,Reservoir Elevation,2019-02-01 00:00:00,3180.5,Feet
+Agency Valley (Beulah) Dam and Reservoir; OR,beu,Reservoir Elevation,2019-02-24 00:00:00,3310.84,Feet
+Agency Valley (Beulah) Dam and Reservoir; OR,beu,Reservoir Elevation,2019-02-23 00:00:00,3310.65,Feet
+Agency Valley (Beulah) Dam and Reservoir; OR,beu,Reservoir Elevation,2019-02-22 00:00:00,3310.55,Feet
+Agency Valley (Beulah) Dam and Reservoir; OR,beu,Reservoir Elevation,2019-02-21 00:00:00,3310.47,Feet
+Agency Valley (Beulah) Dam and Reservoir; OR,beu,Reservoir Elevation,2019-02-20 00:00:00,3310.37,Feet
+Agency Valley (Beulah) Dam and Reservoir; OR,beu,Reservoir Elevation,2019-02-19 00:00:00,3310.2,Feet
+Agency Valley (Beulah) Dam and Reservoir; OR,beu,Reservoir Elevation,2019-02-18 00:00:00,3310.08,Feet
+Agency Valley (Beulah) Dam and Reservoir; OR,beu,Reservoir Elevation,2019-02-17 00:00:00,3309.99,Feet
+Agency Valley (Beulah) Dam and Reservoir; OR,beu,Reservoir Elevation,2019-02-16 00:00:00,3309.86,Feet
+Agency Valley (Beulah) Dam and Reservoir; OR,beu,Reservoir Elevation,2019-02-15 00:00:00,3309.69,Feet
+Agency Valley (Beulah) Dam and Reservoir; OR,beu,Reservoir Elevation,2019-02-14 00:00:00,3309.49,Feet
+Agency Valley (Beulah) Dam and Reservoir; OR,beu,Reservoir Elevation,2019-02-13 00:00:00,3309.24,Feet
+Agency Valley (Beulah) Dam and Reservoir; OR,beu,Reservoir Elevation,2019-02-12 00:00:00,3309.07,Feet
+Agency Valley (Beulah) Dam and Reservoir; OR,beu,Reservoir Elevation,2019-02-11 00:00:00,3308.95,Feet
+Agency Valley (Beulah) Dam and Reservoir; OR,beu,Reservoir Elevation,2019-02-10 00:00:00,3308.82,Feet
+Agency Valley (Beulah) Dam and Reservoir; OR,beu,Reservoir Elevation,2019-02-09 00:00:00,3308.71,Feet
+Agency Valley (Beulah) Dam and Reservoir; OR,beu,Reservoir Elevation,2019-02-08 00:00:00,3308.56,Feet
+Agency Valley (Beulah) Dam and Reservoir; OR,beu,Reservoir Elevation,2019-02-07 00:00:00,3308.49,Feet
+Agency Valley (Beulah) Dam and Reservoir; OR,beu,Reservoir Elevation,2019-02-06 00:00:00,3308.43,Feet
+Agency Valley (Beulah) Dam and Reservoir; OR,beu,Reservoir Elevation,2019-02-05 00:00:00,3308.31,Feet
+Agency Valley (Beulah) Dam and Reservoir; OR,beu,Reservoir Elevation,2019-02-04 00:00:00,3308.17,Feet
+Agency Valley (Beulah) Dam and Reservoir; OR,beu,Reservoir Elevation,2019-02-03 00:00:00,3307.97,Feet
+Agency Valley (Beulah) Dam and Reservoir; OR,beu,Reservoir Elevation,2019-02-02 00:00:00,3307.7,Feet
+Agency Valley (Beulah) Dam and Reservoir; OR,beu,Reservoir Elevation,2019-02-01 00:00:00,3307.48,Feet
+Scoggins Dam & Henry Hagg Lake nr Forest Grove; OR,sco,Reservoir Elevation,2019-02-24 00:00:00,293.43,Feet
+Scoggins Dam & Henry Hagg Lake nr Forest Grove; OR,sco,Reservoir Elevation,2019-02-23 00:00:00,293.09,Feet
+Scoggins Dam & Henry Hagg Lake nr Forest Grove; OR,sco,Reservoir Elevation,2019-02-22 00:00:00,292.77,Feet
+Scoggins Dam & Henry Hagg Lake nr Forest Grove; OR,sco,Reservoir Elevation,2019-02-21 00:00:00,292.44,Feet
+Scoggins Dam & Henry Hagg Lake nr Forest Grove; OR,sco,Reservoir Elevation,2019-02-20 00:00:00,292.11,Feet
+Scoggins Dam & Henry Hagg Lake nr Forest Grove; OR,sco,Reservoir Elevation,2019-02-19 00:00:00,291.72,Feet
+Scoggins Dam & Henry Hagg Lake nr Forest Grove; OR,sco,Reservoir Elevation,2019-02-18 00:00:00,291.32,Feet
+Scoggins Dam & Henry Hagg Lake nr Forest Grove; OR,sco,Reservoir Elevation,2019-02-17 00:00:00,290.89,Feet
+Scoggins Dam & Henry Hagg Lake nr Forest Grove; OR,sco,Reservoir Elevation,2019-02-16 00:00:00,290.38,Feet
+Scoggins Dam & Henry Hagg Lake nr Forest Grove; OR,sco,Reservoir Elevation,2019-02-15 00:00:00,289.74,Feet
+Scoggins Dam & Henry Hagg Lake nr Forest Grove; OR,sco,Reservoir Elevation,2019-02-14 00:00:00,289.04,Feet
+Scoggins Dam & Henry Hagg Lake nr Forest Grove; OR,sco,Reservoir Elevation,2019-02-13 00:00:00,288.27,Feet
+Scoggins Dam & Henry Hagg Lake nr Forest Grove; OR,sco,Reservoir Elevation,2019-02-12 00:00:00,287.31,Feet
+Scoggins Dam & Henry Hagg Lake nr Forest Grove; OR,sco,Reservoir Elevation,2019-02-11 00:00:00,285.13,Feet
+Scoggins Dam & Henry Hagg Lake nr Forest Grove; OR,sco,Reservoir Elevation,2019-02-10 00:00:00,284.65,Feet
+Scoggins Dam & Henry Hagg Lake nr Forest Grove; OR,sco,Reservoir Elevation,2019-02-09 00:00:00,284.53,Feet
+Scoggins Dam & Henry Hagg Lake nr Forest Grove; OR,sco,Reservoir Elevation,2019-02-08 00:00:00,284.36,Feet
+Scoggins Dam & Henry Hagg Lake nr Forest Grove; OR,sco,Reservoir Elevation,2019-02-07 00:00:00,284.24,Feet
+Scoggins Dam & Henry Hagg Lake nr Forest Grove; OR,sco,Reservoir Elevation,2019-02-06 00:00:00,284.14,Feet
+Scoggins Dam & Henry Hagg Lake nr Forest Grove; OR,sco,Reservoir Elevation,2019-02-05 00:00:00,284.03,Feet
+Scoggins Dam & Henry Hagg Lake nr Forest Grove; OR,sco,Reservoir Elevation,2019-02-04 00:00:00,283.9,Feet
+Scoggins Dam & Henry Hagg Lake nr Forest Grove; OR,sco,Reservoir Elevation,2019-02-03 00:00:00,283.76,Feet
+Scoggins Dam & Henry Hagg Lake nr Forest Grove; OR,sco,Reservoir Elevation,2019-02-02 00:00:00,283.61,Feet
+Scoggins Dam & Henry Hagg Lake nr Forest Grove; OR,sco,Reservoir Elevation,2019-02-01 00:00:00,283.43,Feet
+Bully Creek Dam and Reservoir near Vale; OR,bul,Reservoir Elevation,2019-02-24 00:00:00,2494.73,Feet
+Bully Creek Dam and Reservoir near Vale; OR,bul,Reservoir Elevation,2019-02-23 00:00:00,2494.36,Feet
+Bully Creek Dam and Reservoir near Vale; OR,bul,Reservoir Elevation,2019-02-22 00:00:00,2493.95,Feet
+Bully Creek Dam and Reservoir near Vale; OR,bul,Reservoir Elevation,2019-02-21 00:00:00,2493.52,Feet
+Bully Creek Dam and Reservoir near Vale; OR,bul,Reservoir Elevation,2019-02-20 00:00:00,2493.01,Feet
+Bully Creek Dam and Reservoir near Vale; OR,bul,Reservoir Elevation,2019-02-19 00:00:00,2492.37,Feet
+Bully Creek Dam and Reservoir near Vale; OR,bul,Reservoir Elevation,2019-02-18 00:00:00,2491.62,Feet
+Bully Creek Dam and Reservoir near Vale; OR,bul,Reservoir Elevation,2019-02-17 00:00:00,2490.87,Feet
+Bully Creek Dam and Reservoir near Vale; OR,bul,Reservoir Elevation,2019-02-16 00:00:00,2490.11,Feet
+Bully Creek Dam and Reservoir near Vale; OR,bul,Reservoir Elevation,2019-02-15 00:00:00,2489.38,Feet
+Bully Creek Dam and Reservoir near Vale; OR,bul,Reservoir Elevation,2019-02-14 00:00:00,2488.8,Feet
+Bully Creek Dam and Reservoir near Vale; OR,bul,Reservoir Elevation,2019-02-13 00:00:00,2488.22,Feet
+Bully Creek Dam and Reservoir near Vale; OR,bul,Reservoir Elevation,2019-02-12 00:00:00,2487.89,Feet
+Bully Creek Dam and Reservoir near Vale; OR,bul,Reservoir Elevation,2019-02-11 00:00:00,2487.59,Feet
+Bully Creek Dam and Reservoir near Vale; OR,bul,Reservoir Elevation,2019-02-10 00:00:00,2487.23,Feet
+Bully Creek Dam and Reservoir near Vale; OR,bul,Reservoir Elevation,2019-02-09 00:00:00,2486.85,Feet
+Bully Creek Dam and Reservoir near Vale; OR,bul,Reservoir Elevation,2019-02-08 00:00:00,2486.49,Feet
+Bully Creek Dam and Reservoir near Vale; OR,bul,Reservoir Elevation,2019-02-07 00:00:00,2486.03,Feet
+Bully Creek Dam and Reservoir near Vale; OR,bul,Reservoir Elevation,2019-02-06 00:00:00,2485.44,Feet
+Bully Creek Dam and Reservoir near Vale; OR,bul,Reservoir Elevation,2019-02-05 00:00:00,2484.81,Feet
+Bully Creek Dam and Reservoir near Vale; OR,bul,Reservoir Elevation,2019-02-04 00:00:00,2484.21,Feet
+Bully Creek Dam and Reservoir near Vale; OR,bul,Reservoir Elevation,2019-02-03 00:00:00,2483.77,Feet
+Bully Creek Dam and Reservoir near Vale; OR,bul,Reservoir Elevation,2019-02-02 00:00:00,2483.47,Feet
+Bully Creek Dam and Reservoir near Vale; OR,bul,Reservoir Elevation,2019-02-01 00:00:00,2483.17,Feet
+
