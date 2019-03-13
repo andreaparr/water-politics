@@ -1,0 +1,2609 @@
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -114.6328,35.0917 ]
+    },
+    "properties": {
+    "description":"Colorado River Below Big Bend",
+    "state":"AZ",
+    "type":"stream"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -114.5497,33.6006 ]
+    },
+    "properties": {
+    "description":"Colorado River Below Interstate Bridge",
+    "state":"AZ",
+    "type":"stream"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -114.5692,33.5164 ]
+    },
+    "properties": {
+    "description":"Colorado River Below McIntyre Park",
+    "state":"AZ",
+    "type":"stream"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -114.5908,34.8181 ]
+    },
+    "properties": {
+    "description":"Colorado River Below Needles Bridge",
+    "state":"CA",
+    "type":"stream"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -114.7264,33.3683 ]
+    },
+    "properties": {
+    "description":"Colorado River Below Oxbow Bridge",
+    "state":"AZ",
+    "type":"stream"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -114.1031,34.2889 ]
+    },
+    "properties": {
+    "description":"CAP Canal Export",
+    "state":"AZ",
+    "type":"diversion"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -114.6817,33.2322 ]
+    },
+    "properties": {
+    "description":"Colorado River at Cibola Gage",
+    "state":"AZ",
+    "type":"stream"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -114.5858,35.2042 ]
+    },
+    "properties": {
+    "description":"Lake Mohave",
+    "state":"AZ",
+    "type":"reservoir"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -114.7378,36.0153 ]
+    },
+    "properties": {
+    "description":"Lake Mead",
+    "state":"NV",
+    "type":"reservoir"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -114.458889,36.569722 ]
+    },
+    "properties": {
+    "description":"DRI - Moapa Valley; Nevada Weather Station",
+    "state":"NV",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -114.1564,34.3164 ]
+    },
+    "properties": {
+    "description":"MWD Canal Export",
+    "state":"CA",
+    "type":"diversion"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -114.1364,34.3067 ]
+    },
+    "properties": {
+    "description":"Lake Havasu",
+    "state":"AZ",
+    "type":"reservoir"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -114.3189,34.1428 ]
+    },
+    "properties": {
+    "description":"Colorado River at Parker Gage",
+    "state":"CA",
+    "type":"stream"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -115.106389,37.245556 ]
+    },
+    "properties": {
+    "description":"DRI - Pahranagat NWR; Nevada Weather Station",
+    "state":"NV",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -114.4664,34.6986 ]
+    },
+    "properties": {
+    "description":"Colorado River at River Section 41",
+    "state":"AZ",
+    "type":"stream"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -114.6353,33.4508 ]
+    },
+    "properties": {
+    "description":"Colorado River at Taylor Ferry",
+    "state":"AZ",
+    "type":"stream"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -114.5356,33.9206 ]
+    },
+    "properties": {
+    "description":"Colorado River at Water Wheel",
+    "state":"AZ",
+    "type":"stream"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -112.82667,42.953333 ]
+    },
+    "properties": {
+    "description":"Aberdeen; Idaho Weather Station",
+    "state":"ID",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -112.3332,43.18985 ]
+    },
+    "properties": {
+    "description":"INL - Blackfoot;  Idaho  Weather Station",
+    "state":"ID",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -110.93583,42.73333 ]
+    },
+    "properties": {
+    "description":"Afton; Wyoming AgriMet Weather Station",
+    "state":"WY",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -111.46666,44.025 ]
+    },
+    "properties": {
+    "description":"Ashton; Idaho AgriMet Weather Station",
+    "state":"ID",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -110.8895682,43.19627073 ]
+    },
+    "properties": {
+    "description":"Snake River above Reservoir near Alpine; WY",
+    "state":"WY",
+    "type":"stream"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -112.87917,42.77916 ]
+    },
+    "properties": {
+    "description":"American Falls Reservoir at American Falls; ID",
+    "state":"ID",
+    "type":"reservoir"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -112.879474,42.767518 ]
+    },
+    "properties": {
+    "description":"Snake River at Neeley; ID",
+    "state":"ID",
+    "type":"stream"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -115.4467319,43.35836306 ]
+    },
+    "properties": {
+    "description":"Anderson Ranch Dam and Reservoir; ID",
+    "state":"ID",
+    "type":"reservoir"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.75027,45.28194 ]
+    },
+    "properties": {
+    "description":"Aurora; Oregon AgriMet Weather Station",
+    "state":"OR",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -115.9225,43.5954 ]
+    },
+    "properties": {
+    "description":"Arrowrock Dam and Reservoir; ID",
+    "state":"ID",
+    "type":"reservoir"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -124.41722,43.09111 ]
+    },
+    "properties": {
+    "description":"Bandon; Oregon AgriMet Weather Station",
+    "state":"OR",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -118.1571811,43.9113547 ]
+    },
+    "properties": {
+    "description":"Agency Valley (Beulah) Dam and Reservoir; OR",
+    "state":"OR",
+    "type":"reservoir"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -121.32027,44.0475 ]
+    },
+    "properties": {
+    "description":"Bend; Oregon AgriMet Weather Station",
+    "state":"OR",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -116.27417,43.65303 ]
+    },
+    "properties": {
+    "description":"Boise Fairgrounds Weather Station",
+    "state":"ID",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -112.518792,43.12513846 ]
+    },
+    "properties": {
+    "description":"Snake River near Blackfoot; ID",
+    "state":"ID",
+    "type":"stream"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -117.96277,44.88277 ]
+    },
+    "properties": {
+    "description":"Baker Valley; Oregon Agrimet Weather Station",
+    "state":"OR",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -121.93111,45.64777 ]
+    },
+    "properties": {
+    "description":"Bonneville Dam AgriMet; Washington AgriMet Weather Station",
+    "state":"WA",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -116.17694,43.60027 ]
+    },
+    "properties": {
+    "description":"Boise; Idaho AgriMet Weather Station",
+    "state":"ID",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -124.24083,42.03 ]
+    },
+    "properties": {
+    "description":"Brookings; Oregon AgriMet Weather Station",
+    "state":"OR",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -117.3970885,44.01480264 ]
+    },
+    "properties": {
+    "description":"Bully Creek Dam and Reservoir near Vale; OR",
+    "state":"OR",
+    "type":"reservoir"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -116.78418,47.71797 ]
+    },
+    "properties": {
+    "description":"Coeur d'Alene Fairgrounds; Idaho Weather Station",
+    "state":"ID",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -117.73916,48.03138 ]
+    },
+    "properties": {
+    "description":"Chamokane; Washington AgriMet Weather Station",
+    "state":"WA",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -120.72805,43.24138 ]
+    },
+    "properties": {
+    "description":"Christmas Valley; Oregon AgriMet Weather Station",
+    "state":"OR",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -119.63555,47.99083 ]
+    },
+    "properties": {
+    "description":"Chief Joseph Dam; Washington AgriMet Weather Station",
+    "state":"WA",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -114.23333,46.06111 ]
+    },
+    "properties": {
+    "description":"LAKE COMO RESERVOIR",
+    "state":"MT",
+    "type":"reservoir"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -114.08333,46.33333 ]
+    },
+    "properties": {
+    "description":"Corvallis; Montana AgriMet Weather Station",
+    "state":"MT",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -114.12777,48.1875 ]
+    },
+    "properties": {
+    "description":"Creston; Montana AgriMet Weather Station",
+    "state":"MT",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -123.19,44.63416 ]
+    },
+    "properties": {
+    "description":"Corvallis; Oregon AgriMet Weather Station",
+    "state":"OR",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -121.64055,45.58638 ]
+    },
+    "properties": {
+    "description":"Dee Flat; Oregon AgriMet Weather Station",
+    "state":"OR",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -116.22055,46.62333 ]
+    },
+    "properties": {
+    "description":"Dworshak - Dent Acres; Idaho AgriMet Weather Station",
+    "state":"ID",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -112.76666,46.33555 ]
+    },
+    "properties": {
+    "description":"Deer Lodge; Montana AgriMet Weather Station",
+    "state":"MT",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -117.433522,47.954642 ]
+    },
+    "properties": {
+    "description":"Deer Park; Washington Weather Station",
+    "state":"WA",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.17916,44.73 ]
+    },
+    "properties": {
+    "description":"Detroit Lake; Oregon AgriMet Weather Station",
+    "state":"OR",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -112.12929,42.43355 ]
+    },
+    "properties": {
+    "description":"Downey; Idaho Weather Station",
+    "state":"ID",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -112.651733,43.594133 ]
+    },
+    "properties": {
+    "description":"INL - Material Fuels Complex; Idaho",
+    "state":"ID",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -119.31111,45.71861 ]
+    },
+    "properties": {
+    "description":"Echo; Oregon AgriMet Weather Station",
+    "state":"OR",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -120.32373,47.69796 ]
+    },
+    "properties": {
+    "description":"Entiat Fish Hatchery; Washington Weather Station",
+    "state":"WA",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -114.82222,43.31305 ]
+    },
+    "properties": {
+    "description":"Fairfield; Idaho AgriMet Weather Station",
+    "state":"ID",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -110.667458,44.09914518 ]
+    },
+    "properties": {
+    "description":"Snake River near Flagg Ranch; WY",
+    "state":"WY",
+    "type":"stream"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -123.08361,45.55305 ]
+    },
+    "properties": {
+    "description":"Forest Grove; Oregon AgriMet Weather Station",
+    "state":"OR",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -112.43111,43.07138 ]
+    },
+    "properties": {
+    "description":"Fort Hall; Idaho AgriMet Weather Station",
+    "state":"ID",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -118.95361,47.94527 ]
+    },
+    "properties": {
+    "description":"Grand Coulee Dam; Washington AgriMet Weather Station",
+    "state":"WA",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -116.05611,42.9125 ]
+    },
+    "properties": {
+    "description":"Grand View; Idaho AgriMet Weather Station",
+    "state":"ID",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -119.64222,47.04388 ]
+    },
+    "properties": {
+    "description":"George; Washington AgriMet Weather Station",
+    "state":"WA",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -115.35694,42.86666 ]
+    },
+    "properties": {
+    "description":"Glenns Ferry; Idaho AgriMet Weather Station",
+    "state":"ID",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -120.82444,45.81194 ]
+    },
+    "properties": {
+    "description":"Goldendale; Washington AgriMet Weather Station",
+    "state":"WA",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -110.9767506,43.14296552 ]
+    },
+    "properties": {
+    "description":"Greys River above Reservoir near Alpine; WY",
+    "state":"WY",
+    "type":"stream"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -110.8193888,44.12965909 ]
+    },
+    "properties": {
+    "description":"Grassy Lake near Moran; WY",
+    "state":"WY",
+    "type":"reservoir"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -112.238833,44.007417 ]
+    },
+    "properties": {
+    "description":"INL - Hamer;  Idaho Weather Station",
+    "state":"ID",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -111.6598844,43.61239853 ]
+    },
+    "properties": {
+    "description":"Snake River near Heise; ID",
+    "state":"ID",
+    "type":"stream"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -111.353611,44.597222 ]
+    },
+    "properties": {
+    "description":"Henrys Lake Dam on Henrys Fork nr. Lake; ID",
+    "state":"ID",
+    "type":"reservoir"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -111.3495995,44.59521279 ]
+    },
+    "properties": {
+    "description":"Henrys Fork near Lake; ID",
+    "state":"ID",
+    "type":"stream"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -119.52138,45.82111 ]
+    },
+    "properties": {
+    "description":"Hermiston; Oregon AgriMet Weather Station",
+    "state":"OR",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -114.01334,48.34111 ]
+    },
+    "properties": {
+    "description":"HUNGRY HORSE RES NR HUNGRY HORSE; MT",
+    "state":"MT",
+    "type":"reservoir"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -121.51805,45.68444 ]
+    },
+    "properties": {
+    "description":"Hood River; Oregon AgriMet Weather Station",
+    "state":"OR",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -118.02,44.48805 ]
+    },
+    "properties": {
+    "description":"Hereford; Oregon AgriMet Weather Station",
+    "state":"OR",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -120.57444,46.38472 ]
+    },
+    "properties": {
+    "description":"Harrah; Washington AgriMet Weather Station",
+    "state":"WA",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -119.28333,45.81944 ]
+    },
+    "properties": {
+    "description":"Hermiston R & E Center; Oregon AgriMet Weather Station",
+    "state":"OR",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -114.134583,43.0606 ]
+    },
+    "properties": {
+    "description":"INL - Richfield;  Idaho Weather Station",
+    "state":"ID",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -112.050133,43.504133 ]
+    },
+    "properties": {
+    "description":"INL - Idaho Falls;  Idaho Weather Station",
+    "state":"ID",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -112.730267,43.5897 ]
+    },
+    "properties": {
+    "description":"INL - INTEC/Grid 3; Idaho",
+    "state":"ID",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -117.96666,45.43333 ]
+    },
+    "properties": {
+    "description":"Imbler; Oregon AgriMet Weather Station",
+    "state":"OR",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -111.3984276,44.41893154 ]
+    },
+    "properties": {
+    "description":"Island Park Dam and Reservoir; ID",
+    "state":"ID",
+    "type":"reservoir"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -111.39472,44.41639 ]
+    },
+    "properties": {
+    "description":"Henrys Fork near Island Park; ID",
+    "state":"ID",
+    "type":"stream"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -110.5897446,43.8575325 ]
+    },
+    "properties": {
+    "description":"Jackson Lake at Dam on Snake River near Moran; WY",
+    "state":"WY",
+    "type":"reservoir"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -110.7386719,43.37207473 ]
+    },
+    "properties": {
+    "description":"Snake River below Flat Creek near Jackson; WY",
+    "state":"WY",
+    "type":"stream"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -118.12416,48.595 ]
+    },
+    "properties": {
+    "description":"Kettle Falls; Washington AgriMet Weather Station",
+    "state":"WA",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -112.3258333,43.54861111 ]
+    },
+    "properties": {
+    "description":"Kettle Butte; Idaho Weather Station",
+    "state":"ID",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -117.65416,46.6975 ]
+    },
+    "properties": {
+    "description":"Lake Bryan - Rice Bar; Washington AgriMet Weather Station",
+    "state":"WA",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -118.93611,46.20527 ]
+    },
+    "properties": {
+    "description":"Legrow; Washington AgriMet Weather Station",
+    "state":"WA",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -117.087208,47.66533 ]
+    },
+    "properties": {
+    "description":"Liberty Lake; Washington Weather Station",
+    "state":"WA",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -118.73944,46.86722 ]
+    },
+    "properties": {
+    "description":"Lind; Washington AgriMet Weather Station",
+    "state":"WA",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -112.730267,43.859767 ]
+    },
+    "properties": {
+    "description":"INL - Specific Manufacturing Capability; Idaho",
+    "state":"ID",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -111.8781013,43.73536074 ]
+    },
+    "properties": {
+    "description":"Snake River at Lorenzo; ID",
+    "state":"ID",
+    "type":"stream"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -114.05723,43.49306 ]
+    },
+    "properties": {
+    "description":"Little Wood River above High Five Creek; ID",
+    "state":"ID",
+    "type":"stream"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -113.41388,42.4375 ]
+    },
+    "properties": {
+    "description":"Malta; Idaho AgriMet Weather Station",
+    "state":"ID",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -120.12444,47.91694 ]
+    },
+    "properties": {
+    "description":"Manson; Washington AgriMet Weather Station",
+    "state":"WA",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -121.07621,44.87789 ]
+    },
+    "properties": {
+    "description":"Moody Farms East Satellite; Oregon Weather Station",
+    "state":"OR",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.93777,42.33111 ]
+    },
+    "properties": {
+    "description":"Medford; Oregon AgriMet Weather Station",
+    "state":"OR",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -113.58965,42.804417 ]
+    },
+    "properties": {
+    "description":"INL - Minidoka;  Idaho Weather Station",
+    "state":"ID",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -121.06748,44.87365 ]
+    },
+    "properties": {
+    "description":"Moody Farms North Satellite; Oregon Weather Station",
+    "state":"OR",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -121.06508,44.86472 ]
+    },
+    "properties": {
+    "description":"Moody Farms South Satellite; Oregon Weather Station",
+    "state":"OR",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -121.07948,44.86941 ]
+    },
+    "properties": {
+    "description":"Moody Farms West Satellite; Oregon Weather Station",
+    "state":"OR",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -121.0683,44.86912 ]
+    },
+    "properties": {
+    "description":"Moody Farms Control Station; Oregon Weather Station",
+    "state":"OR",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -114.0376039,42.52389407 ]
+    },
+    "properties": {
+    "description":"Milner Dam and Reservoir; Idaho",
+    "state":"ID",
+    "type":"reservoir"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -113.48333,42.67083 ]
+    },
+    "properties": {
+    "description":"Minidoka Dam and Lake Walcott; ID",
+    "state":"ID",
+    "type":"reservoir"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -113.5003366,42.67289753 ]
+    },
+    "properties": {
+    "description":"Snake River near Minidoka; ID",
+    "state":"ID",
+    "type":"stream"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -112.5358333,44.015 ]
+    },
+    "properties": {
+    "description":"Monteview; Idaho Weather Station",
+    "state":"ID",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -121.14861,44.68 ]
+    },
+    "properties": {
+    "description":"Madras; Oregon AgriMet Weather Station",
+    "state":"OR",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -121.1479,44.85424 ]
+    },
+    "properties": {
+    "description":"Middle Warm Springs; Oregon Weather Station",
+    "state":"OR",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -116.64527,43.43722 ]
+    },
+    "properties": {
+    "description":"Nampa; Idaho AgriMet Weather Station",
+    "state":"ID",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -118.87861,47.30888 ]
+    },
+    "properties": {
+    "description":"Odessa; Washington AgriMet Weather Station",
+    "state":"WA",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -119.57611,48.4025 ]
+    },
+    "properties": {
+    "description":"Omak; Washington AgriMet Weather Station",
+    "state":"WA",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -117.01527,43.97777 ]
+    },
+    "properties": {
+    "description":"Ontario; Oregon AgriMet Weather Station",
+    "state":"OR",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -112.07568,43.58884 ]
+    },
+    "properties": {
+    "description":"Osgood; Idaho AgriMet Weather Station",
+    "state":"ID",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -112.977317,43.784117 ]
+    },
+    "properties": {
+    "description":"INL - Howe; Idaho Weather Station",
+    "state":"ID",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -111.2063599,43.3381653 ]
+    },
+    "properties": {
+    "description":"Palisades Reservoir near Irwin; ID",
+    "state":"ID",
+    "type":"reservoir"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -111.2188817,43.35089974 ]
+    },
+    "properties": {
+    "description":"Snake River near Irwin; ID",
+    "state":"ID",
+    "type":"stream"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -121.61666,45.54444 ]
+    },
+    "properties": {
+    "description":"Parkdale; Oregon AgriMet Weather Station",
+    "state":"OR",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -118.62777,44.44083 ]
+    },
+    "properties": {
+    "description":"Prairie City; Oregon AgriMet Weather Station",
+    "state":"OR",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -114.16583,43.31166 ]
+    },
+    "properties": {
+    "description":"Picabo; Idaho AgriMet Weather Station",
+    "state":"ID",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -116.93333,43.8 ]
+    },
+    "properties": {
+    "description":"Parma; Idaho AgriMet Weather Station",
+    "state":"ID",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -121.50916,45.65222 ]
+    },
+    "properties": {
+    "description":"Pine Grove; Oregon AgriMet Weather Station",
+    "state":"OR",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -120.94972,44.24833 ]
+    },
+    "properties": {
+    "description":"Powell Butte; Oregon AgriMet Weather Station",
+    "state":"OR",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -116.970096,47.713664 ]
+    },
+    "properties": {
+    "description":"Post Falls; Idaho Weather Station",
+    "state":"ID",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -114.28055,47.53944 ]
+    },
+    "properties": {
+    "description":"Round Butte; Montana AgriMet Weather Station",
+    "state":"MT",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -111.9050308,43.82587015 ]
+    },
+    "properties": {
+    "description":"Henrys Fork near Rexburg; ID",
+    "state":"ID",
+    "type":"stream"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -111.87922,43.6772 ]
+    },
+    "properties": {
+    "description":"Rigby; Idaho AgriMet Weather Station",
+    "state":"ID",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -111.7428411,43.5821394 ]
+    },
+    "properties": {
+    "description":"Ririe Dam and Lake near Ririe; ID",
+    "state":"ID",
+    "type":"reservoir"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -111.7428411,43.5821394 ]
+    },
+    "properties": {
+    "description":"Willow Creek below Ririe Dam (comp from RIR)",
+    "state":"ID",
+    "type":"stream"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -112.121117,43.743517 ]
+    },
+    "properties": {
+    "description":"INL - Roberts;  Idaho Weather Station",
+    "state":"ID",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -113.87388,42.59555 ]
+    },
+    "properties": {
+    "description":"Rupert; Idaho AgriMet Weather Station",
+    "state":"ID",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -113.2971,43.62455 ]
+    },
+    "properties": {
+    "description":"INL - Arco;  Idaho Weather Station",
+    "state":"ID",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -111.700605,43.610345 ]
+    },
+    "properties": {
+    "description":"Ririe; Idaho AgriMet Weather Station",
+    "state":"ID",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -116.83333,47.8 ]
+    },
+    "properties": {
+    "description":"Rathdrum Prairie; Idaho AgriMet Weather Station",
+    "state":"ID",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -111.76666,43.85 ]
+    },
+    "properties": {
+    "description":"Rexburg; Idaho AgriMet Weather Station",
+    "state":"ID",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -111.0373464,43.07963521 ]
+    },
+    "properties": {
+    "description":"Salt River above Reservoir near Etna; WY",
+    "state":"WY",
+    "type":"stream"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -118.34111,47.85527 ]
+    },
+    "properties": {
+    "description":"Seven Bays Marina; Washington AgriMet Weather Station",
+    "state":"WA",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -123.2002,45.4716 ]
+    },
+    "properties": {
+    "description":"Scoggins Dam & Henry Hagg Lake nr Forest Grove; OR",
+    "state":"OR",
+    "type":"reservoir"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -112.14273,43.43452 ]
+    },
+    "properties": {
+    "description":"Shelley; Idaho Weather Station",
+    "state":"ID",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -112.135,43.41305556 ]
+    },
+    "properties": {
+    "description":"Snake River near Shelley; ID",
+    "state":"ID",
+    "type":"stream"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -112.058611,43.604722 ]
+    },
+    "properties": {
+    "description":"Snake River near Idaho Falls; ID",
+    "state":"ID",
+    "type":"stream"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -114.08416,47.32527 ]
+    },
+    "properties": {
+    "description":"Saint Ignatius; Montana AgriMet Weather Station",
+    "state":"MT",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -117.18472,46.41861 ]
+    },
+    "properties": {
+    "description":"Silcott Island; Washington AgriMet Weather Station",
+    "state":"WA",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -116.71243,47.901142 ]
+    },
+    "properties": {
+    "description":"Silverwood WWTP Athol; Idaho Weather Station",
+    "state":"ID",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -112.3693021,43.19730611 ]
+    },
+    "properties": {
+    "description":"Snake River at Blackfoot; ID",
+    "state":"ID",
+    "type":"stream"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -116.884978,47.987552 ]
+    },
+    "properties": {
+    "description":"Spirit Lake; Washington Weather Station",
+    "state":"ID",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -111.737617,43.896583 ]
+    },
+    "properties": {
+    "description":"INL - Sugar City;  Idaho Weather Station",
+    "state":"ID",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -112.6918,43.318683 ]
+    },
+    "properties": {
+    "description":"INL - Taber;  Idaho Weather Station",
+    "state":"ID",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -111.613803,43.92704859 ]
+    },
+    "properties": {
+    "description":"Teton River near St. Anthony; ID",
+    "state":"ID",
+    "type":"stream"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -112.41825,43.841683 ]
+    },
+    "properties": {
+    "description":"INL - Terreton;  Idaho Weather Station",
+    "state":"ID",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -114.601548,42.568782 ]
+    },
+    "properties": {
+    "description":"Twin Falls Fairgrounds; Filer Idaho",
+    "state":"ID",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -112.26394,43.8704 ]
+    },
+    "properties": {
+    "description":"Terraton; Idaho AgriMet Weather Station",
+    "state":"ID",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -114.34527,42.54611 ]
+    },
+    "properties": {
+    "description":"Twin Falls (Kimberly) Idaho AgriMet Weather Station  7E",
+    "state":"ID",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -114.02723,43.42528 ]
+    },
+    "properties": {
+    "description":"Little Wood Dam and Reservoir near Carey; ID",
+    "state":"ID",
+    "type":"reservoir"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -113.9996779,43.38995741 ]
+    },
+    "properties": {
+    "description":"Little Wood River near Carey; ID",
+    "state":"ID",
+    "type":"stream"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -121.9825,42.56527 ]
+    },
+    "properties": {
+    "description":"Agency Lake Ranch; Oregon AgriMet Weather Station",
+    "state":"OR",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -121.27388,42.47805 ]
+    },
+    "properties": {
+    "description":"Beatty; Oregon AgriMet Weather Station",
+    "state":"OR",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.104,38.513 ]
+    },
+    "properties": {
+    "description":"Lake Berryessa And Monticello Dam",
+    "state":"CA",
+    "type":"reservoir"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -120.075,38.203 ]
+    },
+    "properties": {
+    "description":"Beardsley Dam And Reservoir",
+    "state":"CA",
+    "type":"reservoir"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -119.98,34.583 ]
+    },
+    "properties": {
+    "description":"Cachuma Lake And Bradbury Dam; Cachuma Project",
+    "state":"CA",
+    "type":"reservoir"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -120.17138,41.58527 ]
+    },
+    "properties": {
+    "description":"Cedarville; California AgriMet Weather Station",
+    "state":"CA",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -119.96,38.329 ]
+    },
+    "properties": {
+    "description":"Donnells Reservoir",
+    "state":"CA",
+    "type":"reservoir"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -121.183,38.683 ]
+    },
+    "properties": {
+    "description":"Folsom Lake; Dam; And Powerplant",
+    "state":"CA",
+    "type":"reservoir"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.443,40.601 ]
+    },
+    "properties": {
+    "description":"Keswick Dam; Reservoir; And Powerplant",
+    "state":"CA",
+    "type":"reservoir"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -121.755,42.16472 ]
+    },
+    "properties": {
+    "description":"Klamath Falls; Oregon AgriMet Weather Station",
+    "state":"OR",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -120.52305,42.12222 ]
+    },
+    "properties": {
+    "description":"Lakeview; Oregon AgriMet Weather Station",
+    "state":"OR",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.793,40.727 ]
+    },
+    "properties": {
+    "description":"Lewiston Dam; Lake; And Judge Francis Carr Powerplant",
+    "state":"CA",
+    "type":"reservoir"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -121.22416,42.07777 ]
+    },
+    "properties": {
+    "description":"Lorella; Oregon AgriMet Weather Station",
+    "state":"OR",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -119.705,37.001 ]
+    },
+    "properties": {
+    "description":"Millerton Lake; Friant Dam; Madera And Friant Kern Canals",
+    "state":"CA",
+    "type":"reservoir"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -121.183,38.65 ]
+    },
+    "properties": {
+    "description":"Lake Natoma; Nimbus Dam And Powerplant",
+    "state":"CA",
+    "type":"reservoir"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -116.330833,36.478333 ]
+    },
+    "properties": {
+    "description":"DRI - Rogers Spring; Nevada Weather Station",
+    "state":"NV",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.42,40.718 ]
+    },
+    "properties": {
+    "description":"Shasta Lake; Dam And Powerplant",
+    "state":"CA",
+    "type":"reservoir"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -120.603,37.875 ]
+    },
+    "properties": {
+    "description":"Tulloch Lake; Dam; And Powerplant",
+    "state":"CA",
+    "type":"reservoir"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.537,40.598 ]
+    },
+    "properties": {
+    "description":"Whiskeytown Dam; Lake; And Spring Creek Powerplant",
+    "state":"CA",
+    "type":"reservoir"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -121.7875,42.0125 ]
+    },
+    "properties": {
+    "description":"Worden; Oregon AgriMet Weather Station",
+    "state":"OR",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -117.168889,40.093889 ]
+    },
+    "properties": {
+    "description":"DRI - Antelope Valley; Nevada Weather Station",
+    "state":"NV",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -112.491167,41.962167 ]
+    },
+    "properties": {
+    "description":"UCC - Blue Creek; Utah Weather Station",
+    "state":"UT",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -111.420137,41.933628 ]
+    },
+    "properties": {
+    "description":"UCC - BearLake; Utah Weather Station",
+    "state":"UT",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -113.7020167,37.7196 ]
+    },
+    "properties": {
+    "description":"UCC - Beryl Junction; Utah Weather Station",
+    "state":"UT",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -112.711483,38.0399 ]
+    },
+    "properties": {
+    "description":"UCC - Buckhorn; Utah Weather Station",
+    "state":"UT",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -119.252222,38.223056 ]
+    },
+    "properties": {
+    "description":"DRI - Bridgeport Valley; Nevada Weather Station",
+    "state":"NV",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -111.5873889,41.29839722 ]
+    },
+    "properties": {
+    "description":"CAUSEY RESERVOIR",
+    "state":"UT",
+    "type":"reservoir"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -113.1371667,37.67296667 ]
+    },
+    "properties": {
+    "description":"UCC - Cedar City; Utah Weather Station",
+    "state":"UT",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -110.95611,42.077831 ]
+    },
+    "properties": {
+    "description":"Cokeville; Wyoming AgriMet Weather Station",
+    "state":"ID",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -112.17395,41.51915 ]
+    },
+    "properties": {
+    "description":"UCC - Corinne; Utah Weather Station",
+    "state":"UT",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -119.803889,38.992778 ]
+    },
+    "properties": {
+    "description":"DRI - Carson Valley; Nevada Weather Station",
+    "state":"NV",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -111.5276389,40.40741667 ]
+    },
+    "properties": {
+    "description":"DEER CREEK RESERVOIR; UTAH",
+    "state":"UT",
+    "type":"reservoir"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -111.87895,41.76295 ]
+    },
+    "properties": {
+    "description":"UCC - Drainage Farm; Utah Weather Station",
+    "state":"UT",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -111.59293,40.91017 ]
+    },
+    "properties": {
+    "description":"EAST CANYON RESERVOIR",
+    "state":"UT",
+    "type":"reservoir"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -111.4313611,40.96538889 ]
+    },
+    "properties": {
+    "description":"ECHO RESERVOIR",
+    "state":"UT",
+    "type":"reservoir"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -115.97861,39.68527 ]
+    },
+    "properties": {
+    "description":"Eureka; Nevada AgriMet Weather Station",
+    "state":"NV",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -111.8331667,41.6945 ]
+    },
+    "properties": {
+    "description":"UCC - Evan's Farm; Utah Weather Station",
+    "state":"UT",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -111.02937,41.19713 ]
+    },
+    "properties": {
+    "description":"Evanston; Wyoming AgriMet Weather Station",
+    "state":"WY",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -118.77388,39.4575 ]
+    },
+    "properties": {
+    "description":"Fallon; Nevada AgriMet Weather Station",
+    "state":"NV",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -112.0004,38.9571 ]
+    },
+    "properties": {
+    "description":"UCC - Flowell; Utah Weather Station",
+    "state":"UT",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -111.73606,42.51496 ]
+    },
+    "properties": {
+    "description":"Grace; Idaho AgriMet Weather Station",
+    "state":"ID",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -112.756527,40.530544 ]
+    },
+    "properties": {
+    "description":"Grantsville; Utah AgriMet Weather Station",
+    "state":"UT",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -119.333056,40.901111 ]
+    },
+    "properties": {
+    "description":"DRI - Hualapai Flat; Nevada Weather Station",
+    "state":"NV",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -111.8715556,41.62663889 ]
+    },
+    "properties": {
+    "description":"HYRUM RESERVOIR",
+    "state":"UT",
+    "type":"reservoir"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -111.422,40.59666667 ]
+    },
+    "properties": {
+    "description":"JORDANELLE RESERVOIR",
+    "state":"UT",
+    "type":"reservoir"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -111.3343833,41.8379 ]
+    },
+    "properties": {
+    "description":"UCC - Laketown ; Utah Weather Station",
+    "state":"UT",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -111.8690333,41.95213333 ]
+    },
+    "properties": {
+    "description":"UCC - Lewiston; Utah Weather Station",
+    "state":"UT",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -111.8035333,41.73868333 ]
+    },
+    "properties": {
+    "description":"UCC - Logan Golf; Utah Weather Station",
+    "state":"UT",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -111.3995278,41.18377778 ]
+    },
+    "properties": {
+    "description":"LOST CREEK RESERVOIR",
+    "state":"UT",
+    "type":"reservoir"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -111.33773,42.25452 ]
+    },
+    "properties": {
+    "description":"Montpelier; Idaho Weather Station",
+    "state":"ID",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -112.157598,38.634188 ]
+    },
+    "properties": {
+    "description":"Monroe; Utah AgriMet Weather Station",
+    "state":"UT",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -119.147222,39.106667 ]
+    },
+    "properties": {
+    "description":"DRI - Mason Valley WMA; Nevada Weather Station",
+    "state":"NV",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -111.9198,40.63133333 ]
+    },
+    "properties": {
+    "description":"UCC - Murray; Utah Weather Station",
+    "state":"UT",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -111.8767833,39.68941667 ]
+    },
+    "properties": {
+    "description":"UCC - Nephi; Utah Weather Station",
+    "state":"UT",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -111.9736111,41.89555556 ]
+    },
+    "properties": {
+    "description":"NEWTON RESERVOIR",
+    "state":"UT",
+    "type":"reservoir"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -114.506667,39.458056 ]
+    },
+    "properties": {
+    "description":"DRI - North Spring Valley; Nevada Weather Station",
+    "state":"NV",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -112.4217667,37.86858333 ]
+    },
+    "properties": {
+    "description":"UCC - Panguitch; Utah Weather Station",
+    "state":"UT",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -112.8810667,37.86226667 ]
+    },
+    "properties": {
+    "description":"UCC - Parowan; Utah Weather Station",
+    "state":"UT",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -111.8416111,41.25480556 ]
+    },
+    "properties": {
+    "description":"PINEVIEW RESERVOIR",
+    "state":"UT",
+    "type":"reservoir"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -111.89363,42.10715 ]
+    },
+    "properties": {
+    "description":"Preston; Idaho Weather Station",
+    "state":"ID",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -117.660278,41.185556 ]
+    },
+    "properties": {
+    "description":"DRI - Paradise Valley; Nevada Weather Station",
+    "state":"NV",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -111.0877167,41.83266667 ]
+    },
+    "properties": {
+    "description":"UCC - Randolph; Utah Weather Station",
+    "state":"UT",
+    "type":"agrimet"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -111.4025556,40.78869444 ]
+    },
+    "properties": {
+    "description":"ROCKPORT RESERVOIR",
+    "state":"UT",
+    "type":"reservoir"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -112.098476,39.22009 ]
+    },
+    "properties": {
+    "description":"Scipio; Utah AgriMet Weather Station",
+    "state":"UT",
+    "type":"agrimet"
+    }
+  }
+]
+}

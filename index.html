@@ -15,7 +15,7 @@
         bottom: 0;
         margin: 0;
         padding: 0;
-        backgroung: rgba(0,0,0,.75)
+        background: rgba(0,0,0,.75)
     }
   </style> 
 </head>
@@ -34,22 +34,43 @@
     zoom: 5.25
 	};
 	var map = L.map('map', options);
-  
-  $.when(
-    $.getJSON('data/CA-watersheds.json'),
-    $.getJSON('data/NV-watersheds.json'),
-    $.getJSON('data/NW-watersheds.json'),
-    $.getJSON('data/SW-watersheds.json')
-).done(function(CAwatersheds, NVwatersheds, NWwatersheds, SWwatersheds) {
-    drawMap(CAwatersheds,NVwatersheds,NWwatersheds,SWwatersheds);
-});
 
-function drawMap(CAwatershedsData, NVwatershedsData, NWwatershedsData, SWwatershedsData) {
-    L.geoJson(CAwatershedsData).addTo(map);
-    L.geoJson(NVwatershedsData).addTo(map);
-    L.geoJson(NWwatershedsData).addTo(map);
-    L.geoJson(SWwatershedsData).addTo(map);
-}
+  L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_nolabels/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="http://cartodb.com/attributions">CartoDB</a>',
+    subdomains: 'abcd',
+    maxZoom: 19
+  }).addTo(map);
+  
+  var watershedOptions = {
+    fillOpacity: .1,
+    fillColor: '#e0ecf9',
+    color: '#151f2b',
+    weight: .75,
+    opacity: .8
+  };
+
+  var pointsOptions = {
+    radius: 8,
+    fillcolor: '#f0f062',
+    weight: .75,
+    opacity: .8
+  };
+
+  $.when(
+    $.getJSON('data/watersheds.json'),
+    $.getJSON('data/usbrpoints.json')
+  ).done(function(watersheds, usbrpoints) {
+      drawMap(watersheds, usbrpoints);
+  });
+
+  function drawMap(watershedsData, usbrpointsData) {
+      L.geoJson(watershedsData, {
+          style: watershedOptions
+      }).addTo(map);
+      L.geoJson(usbrpointsData, {
+        style: pointsOptions
+      }).addTo(map);
+  }
 
   </script>
 </body>
