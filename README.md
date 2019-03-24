@@ -6,9 +6,6 @@ This map will explore possible relationships between water reclamation projects 
 
 I do not have much (any) background knowledge in ecology or hydrology, so I am approaching this project as an investigative journalist. I expect that the map user is equally uninformed, so the story map should in many ways echo my research and development process. I am starting with a prototype map organized by watershed and categorized by the number of at-risk species. In the next section, a layer of points of Bureau of Water Reclaimation projects (reservoirs, dams, etc.). will appear. Finally, the story map will narrow down to one or more watersheds/sub-watersheds and include information that is specific to that region (i.e. Willow Flycatchers disapearing at Lake Havasu).
 
-Ideally this type of map could help users develop a vocabulary to better understand environmental data and perhaps advocate for their interests.
-
-
 ### II. Methodology
 
 My plan is to map western water resource regions at the local sub-watershed level (hydrologic unit code 12, HUC12). Hydrologic unit code 12 (HUC12) captures tributary systems, of which there are about 90,000 nationwide. At this point, the smaller geographic area seems more precise, but I am not sure this is true/appropriate (MAUP, etc). I am open to finding out I'm wrong - watersheds are complex and this is something for which I will seek guidance.
@@ -58,35 +55,41 @@ I am currently working on a prototype Leaflet map to replace this Carto map.
 
 #### B. Medium for delivery
 
-This map will be a story map that will use a variety of technologies. I am not sure exactly what yet...but certainly HTML/SVG/CSS/JS and Leaflet.
+This map will be a story map that will use a variety of technologies including HTML/SVG/CSS/JS and Leaflet.
 
 #### C. Application layout
 
-I have not thought through how this map will work on different devices. I would love to have a storymap that works just as well on a mobile, but I haven't experienced a good example of that and I suspect there's a reason why...
+Desktop story map flow:
+* Opens on map of watersheds - copy will either appear in a layer over the map or in a side bar
+* Scroll down and map of watersheds is now classified by aggregate data of at-risk species from WISO. Users can click on individual watersheds and find out more info (see Carto map above for a basic example). Copy for this layer will explan the EPA data. Depending on whether the copy is in a sidebar or an overlay, the tooltip may either appear in a fixed location or popup near the cursor.
+* User scrolls down and a points layer with water reclamation projects populates on top of the choropleth watershed map. Copy will discuss reclamation projects and lead into the final section...
+* User scrolls down more and local stories are shared. Not sure exactly what this section looks like yet, but I think it's more influnced by the selected area (i.e. southwest would look a little different than PNW). This section probably doesn't have an interactive section, but it's the piece that makes the project relevant to the user, so it has to be visually compelling. 
 
-Story map flow:
-* Opens on map of watersheds with narrative
-* Scroll down and map of watersheds is now classified by aggregate data of at-risk species from WISO. User can click on watershed map which opens into a new window. User can click on individual watersheds and find out more info (see Carto map above for a basic example)
-* User scrolls down and water reclamation projects are shown (maybe this is the point at which the user should be able to click out onto the interactive map???)
-* User scrolls down more and local stories are shared. Not sure exactly what this section looks like yet, but I think it's more influnced by the local area. This section probably doesn't have an interactive section, but it's the piece that makes the project relevant to the user, so it has to be visually compelling. 
+While I would love to have a storymap that works just as well on a mobile as it does on a desktop, I am planning for the mobile version to be stripped down (no launching an interactive map in a new tab, etc).
 
+Mobile story map flow:
+* Opens on map of watersheds with narrative. Maybe for mobile the narrative is a semi-transparent layer over the map that disappears once you've scrolled to the bottom of the copy and reveals the map underneath?
+* The next section of copy should explain the WSIO data. As the user scrolls down (or perform another action like clicking a button) and the map of watersheds is now classified by aggregate data of at-risk species from WISO.
+* Copy explains reclamation projects. The user scrolls down (or other action) and the water reclamation projects point layer populates
+* User scrolls down more and sees a local map showing a few sub-watersheds that have (POSSIBLY!) been impacted by a reclamation project.
 
 #### D. Thematic representation
 
-Choropleth & points, probably. ¯\_(ツ)_/¯
+Aggregate data from the WISO will be represented in a choropleth map organized by sub-watersheds. Locations of reclamation projects will be represented as points. There may be a reason to include a statistical map if it becomes important to highlight other EPA/USBR data points. This is something that I will discover when interviewing experts in watersheds.
 
 #### E. User interaction
 
-I am starting with a prototype map organized by watershed and categorized by the number of at-risk species. Because this is a fairly simple layer, I plan to allow the user to click onto a specific page that gives them the ability to expand the in-story map and click on watersheds to explore details. In the next section, a layer of points of Bureau of Water Reclaimation projects (reservoirs, dams, etc.). 
-
+In an ideal world, much of the map progression is going to be driven by scrolling - this is a trigger for many things to populate - copy blocks, maps, map layers. Additionally, I plan to encourage users to click on the watersheds/WISO layer to learn more about the sub-watersheds. 
 
 #### F. Aesthetics and design considerations
 
-I would like for the map to be clean and modern. The data here is complicated and unfamiliar, so the design should try to streamline information. I am interested in bringing in design elements (palettes, typefaces, etc) that are evocative of featured localities.
+I would like for the map to be clean and modern. The data here is complicated and unfamiliar, so the design should try to streamline information (hahaha, given all of this transparent layer, scrolling, etc. things I've written above). I am interested in bringing in design elements (palettes, typefaces, etc) that are represent featured locations.
 
 ### III. Conclusion
 
-Still working on this bit...
+By the end of exploring this map, my goal is for the users to have a better understanding of what a watershed is and why it's a useful administrative unit. Additionally, I hope to highlight the breadth of water reclamtion projects that exisit and highlight their impact on sub-watersheds and the species that live in those areas. I do not expect to draw definitive conclusions, this project is about learning more about the connection between water management and biodiversity.
+
+Ideally this type of map could help users develop a vocabulary to better understand environmental data and perhaps advocate for their interests.
 
 #### <a name="resources"></a> Additional Resources
 
