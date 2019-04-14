@@ -1,0 +1,25 @@
+{
+  "name": "water-politics",
+  "version": "1.0.0",
+  "description": "### I. Introduction",
+  "main": "index.js",
+  "scripts": {
+    "test": "hello"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreaparr/water-politics.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andreaparr/water-politics/issues"
+  },
+  "homepage": "https://github.com/andreaparr/water-politics#readme",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.0",
+    "popper": "^1.0.1",
+    "popper.js": "^1.15.0"
+  }
+}
