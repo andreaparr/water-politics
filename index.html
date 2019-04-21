@@ -2,92 +2,156 @@
 
 <html lang="en">
 <head>
+  <title>Western Watersheds</title>
+
   <!--Requried meta tags-->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <title>Western Watersheds</title>
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <!-- Leaflet CSS -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" />
+  <!-- Animate CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Roboto" rel="stylesheet">>
+  <!-- Storymap CSS -->
+  <link rel="stylesheet" type="text/css" href="css/storymap.2.5.css">
 
-  <style>
-        body, #map {
-        position: absolute;
-        width: 100%;
-        top: 0;
-        bottom: 0;
-        margin: 0;
-        padding: 0;
-        background: rgba(0,0,0,.75)
-    }
-  </style> 
+  <!-- Add favicon for the web page -->
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+
+  <!-- Add libraries -->
+  <!-- Leaflet -->
+  <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.4.0.min.js"   integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="   crossorigin="anonymous"></script>
+  <!-- Popper.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <!-- Boostrap -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!-- Leaflet.ajax for asynchronously adding geojson data -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-ajax/2.1.0/leaflet.ajax.min.js"></script>
+  <!-- Storymap Plugin-->
+  <script src="js/storymap.2.5.js"></script>
+
 </head>
 
 <body>
 
-  <div id="map"></div>
-  
-  <!-- Load Leaflet and Booststrap scripts -->
-  <!-- Note that standard Boostrap jquery is slim, which doesn't support getJSON, so I've updated to the minified jquery -->
-  <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
-  <script src="https://code.jquery.com/jquery-3.4.0.min.js"   integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="   crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  
-  <script>
+  <div class="container">
+    <h1>Water Reclamation Projects & Biodiversity</h1>
+    <h2>in Western Watersheds</h2>
+  </div>
 
 
+      <div id="storymap" class="container-fluid" >
+          <div class="row">
+              <div class="col-sm-6 col-md-8 storymap-map"></div>
+              <div class="col-sm-6 col-md-4 storymap-story">
+                  <section data-scene="scene1">
+                      <h2>introduction to watersheds HUC2</h2>
+                  </section>
+                  <section data-scene="scene2">
+                      <h2>administrative areas HUC4</h2>
+                  </section>
+                  <section data-scene="scene3">
+                      <h2>sub-administrative areas - HUC10</h2>
+                  </section>
+                  <section data-scene="scene4">
+                      <h2>At Risk Species by HUC10</h2>
+                  </section>
+                  <section data-scene="scene5">
+                      <h2>USBR Water Reclamation Projects</h2>
+                  </section>
+                  <section data-scene="scene6">
+                      <h2>Local Impact</h2>
+                  </section>
+              </div>
+          </div>
+      </div>
+      <script type="text/javascript">
+
+        var layers = {
+          layer1: {
+              layer: L.geoJson.ajax('/data/watersheds.geojson'),
+              legend: '<i style="background: black; opacity: 0.5"></i><p><b>legend 1</b></p>'
+            },
+          layer2: {
+              layer: L.geoJson.ajax('/data/usbrpoints.geojson', {
+                  color: 'orange',
+                  weight: 5
+              }),
+              legend: '<i style="background: orange; opacity: 0.5"></i><p><b>legend 2</b></p>'
+          },
+          layer3: {
+              layer: L.tileLayer('http://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png')
+          }
+        };
+        var scenes = {
+            scene1: {lat: 44, lng: -119, zoom: 5.35, layers: [layers.layer2], name: "scene 1"},
+            scene2: {lat: 44.5701158, lng: -119, zoom: 10, layers: [layers.layer2], name: "scene 2"},
+            scene3: {lat: 44.5701158, lng: -119, zoom: 12, layers: [layers.layer1, layers.layer2], name: "scene 3"},
+            scene4: {lat: 44, lng: -119, zoom: 5.35, layers: [layers.layer2], name: "scene 4"},
+            scene5: {lat: 44.5701158, lng: -119, zoom: 10, layers: [layers.layer2], name: "scene 4"},
+            scene6: {lat: 44.5701158, lng: -119, zoom: 12, layers: [layers.layer1, layers.layer2], name: "scene 6"}
+        };
+        $('#storymap').storymap({
+            scenes: scenes,
+            baselayer: layers.layer3,
+            legend: true,
+            loader: true,
+            flyto: true,
+            credits:  "Build with <i class='material-icons' style='color: red; font-size: 10px;'>favorite</i> from Bo Zhao",
+            scalebar: true,
+            scrolldown: true,
+            progressline: true,
+            navwidget: true,
+            createMap: function () {
+                var map = L.map($(".storymap-map")[0], {zoomControl: false}).setView([44, -119], 5.25);
+                basemap = this.baselayer.layer.addTo(map);
+                return map;
+            }
+        });
+</script>
+</body>
+</html>
+ 
+      
+<script>
   // center map on US West Coast
-	var options = {
-    center: [40,-119],
-    zoom: 5.25
-	};
-	var map = L.map('map', options);
+	// var options = {
+  //   center: [40,-119],
+  //   zoom: 5.25
+	// };
+	// var map = L.map('map', options);
 
-  // add basemap from Carto
-  L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_nolabels/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="http://cartodb.com/attributions">CartoDB</a>',
-    subdomains: 'abcd',
-    maxZoom: 19
-  }).addTo(map);
-  
-  // try and fail to set styles!
-  var watershedOptions = {
-    fillOpacity: .1,
-    fillColor: '#e0ecf9',
-    color: '#151f2b',
-    weight: .75,
-    opacity: .8
-  };
+  // // add basemap from Carto
+  // L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_nolabels/{z}/{x}/{y}.png', {
+  //   attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="http://cartodb.com/attributions">CartoDB</a>',
+  //   subdomains: 'abcd',
+  //   maxZoom: 19
+  // }).addTo(map);
 
-  // more styling fails
-  var pointsOptions = {
-    radius: 8,
-    fillcolor: '#f0f062',
-    weight: .75,
-    opacity: .8
-  };
 
-  // pull in watershed boundaries and USBR points
-  $.when(
-    $.getJSON('data/watersheds.json'),
-    $.getJSON('data/usbrpoints.json')
-  ).done(function(watersheds, usbrpoints) {
-      drawMap(watersheds, usbrpoints);
-  });
+  // // pull in watershed boundaries and USBR points
+  // $.when(
+  //   $.getJSON('data/watersheds.json'),
+  //   $.getJSON('data/usbrpoints.json')
+  // ).done(function(watersheds, usbrpoints) {
+  //     drawMap(watersheds, usbrpoints);
+  // });
 
   // draw map
-  function drawMap(watershedsData, usbrpointsData) {
-      L.geoJson(watershedsData, {
-          style: watershedOptions
-      }).addTo(map);
-      L.geoJson(usbrpointsData, {
-        style: pointsOptions
-      }).addTo(map);
-  }
+  // function drawMap(watershedsData, usbrpointsData) {
+  //     L.geoJson(watershedsData, {
+  //         style: watershedOptions
+  //     }).addTo(map);
+  //     L.geoJson(usbrpointsData, {
+  //       style: pointsOptions
+  //     }).addTo(map);
+  // }
 
   </script>
 </body>
