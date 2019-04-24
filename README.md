@@ -32,46 +32,41 @@ EPA Data:
 * Watershed Index Online [(WSIO) Indicator Library](https://www.epa.gov/wsio/wsio-indicator-data-library) (Regions 8-10)
 
 USBR - Reclamation Wter Information Systems (RWIS):
-* This interactive [ma](https://water.usbr.gov/RWISmap.php) has downloadable info about projects by HUC.
+* This interactive [map](https://water.usbr.gov/RWISmap.php) has downloadable info about projects by HUC.
 
 For the exploratory stage, I have simplified and downloaded sample files from the three primary sources (USGS, EPA, USBR).
 
 USGS Data:
-I combined and simplified four shapefiles using mapshaper in node.
- * [watersheds.json](data/watersheds.json)
+I combined and simplified four shapefiles using mapshaper in node. Note that this is for HUC-12. I am working on doing the same for HUC-2, HUC-4, and HUC-10.
+ * [watersheds.json](data/watersheds-huc12.geojson)
 
  USBR data:
- To create this file, I combined four CSV files (downloaded by water resource region) and used a CSV to JSON tool
- * [usbrpoints.json](data/usbrpoints.json)
+ To create this file, I combined four CSV files (downloaded by water resource region) and used a CSV to JSON tool.
+ * [usbrpoints.json](data/usbrpoints.geojson)
 
  EPA data:
  I took table data from two of the three needed EPA region (9 and 10 of 8-10) xls files, clipped it down to just "at risk" species data, and joined the files. This will absolutely need to be expanded to include other columns in the future.
  * [epa_wsio_atrisk.csv](data/epa_wsio_atrisk.csv)
 
+Here's a prototype of the EPA and USGS data joined using CartoDB:<iframe width="100%" height="520" frameborder="0" src="https://nmp.carto.com/u/andrearparr/builder/bc8fb5c2-6647-42d8-8c1d-4921a4ca09e5/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 
-Here's the info in CartoDB:<iframe width="100%" height="520" frameborder="0" src="https://nmp.carto.com/u/andrearparr/builder/bc8fb5c2-6647-42d8-8c1d-4921a4ca09e5/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
-
-I am currently working on a prototype Leaflet map to replace this Carto map.
 
 #### B. Medium for delivery
 
-This map will be a story map that will use a variety of technologies including HTML/SVG/CSS/JS and Leaflet.
+This map will be a story map that will use a variety of technologies including HTML/SVG/CSS/JS and Leaflet. I am primarily using the [storymap.js library by Bo Zhao](https://github.com/jakobzhao/storymap).
 
 #### C. Application layout
 
-Desktop story map flow:
-* Opens on map of watersheds - copy will either appear in a layer over the map or in a side bar
-* Scroll down and map of watersheds is now classified by aggregate data of at-risk species from WISO. Users can click on individual watersheds and find out more info (see Carto map above for a basic example). Copy for this layer will explan the EPA data. Depending on whether the copy is in a sidebar or an overlay, the tooltip may either appear in a fixed location or popup near the cursor.
-* User scrolls down and a points layer with water reclamation projects populates on top of the choropleth watershed map. Copy will discuss reclamation projects and lead into the final section...
-* User scrolls down more and local stories are shared. Not sure exactly what this section looks like yet, but I think it's more influnced by the selected area (i.e. southwest would look a little different than PNW). This section probably doesn't have an interactive section, but it's the piece that makes the project relevant to the user, so it has to be visually compelling. 
+Story map flow:
+See [wireframe sketch](wireframes/wireframe-watersheds) for the overall flow. 
+* Opens on map of HUC2 watersheds. Copy in transparent box to the left provides an introduction to watersheds.
+* Panel 2 shows HUC4 areas and goes into more detail about watershed administration. There is a slight zoom.
+* Panel 3 shows HUC10 areas - this is the actual watershed level
+* Panel 4 zooms back out a bit and adds EPA data. This is sympbolized as a choropleth map.
+* Panel 5 adds point level data for water reclamation project locations
+* Panel 6 zooms into a local region (currently Lake Havasu, but subject to change in the next two weeks)
 
-While I would love to have a storymap that works just as well on a mobile as it does on a desktop, I am planning for the mobile version to be stripped down (no launching an interactive map in a new tab, etc).
-
-Mobile story map flow:
-* Opens on map of watersheds with narrative. Maybe for mobile the narrative is a semi-transparent layer over the map that disappears once you've scrolled to the bottom of the copy and reveals the map underneath?
-* The next section of copy should explain the WSIO data. As the user scrolls down (or perform another action like clicking a button) and the map of watersheds is now classified by aggregate data of at-risk species from WISO.
-* Copy explains reclamation projects. The user scrolls down (or other action) and the water reclamation projects point layer populates
-* User scrolls down more and sees a local map showing a few sub-watersheds that have (POSSIBLY!) been impacted by a reclamation project.
+The flow on mobile devices will be the same, but some features may be modified.
 
 #### D. Thematic representation
 

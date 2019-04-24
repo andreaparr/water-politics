@@ -22,6 +22,37 @@
   <!-- Add favicon for the web page -->
   <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
 
+  <style>
+    .feature-label {
+      font-family: 'Roboto', sans-serif;
+      color: black;
+      font-size: 12px;
+      font-weight: bold;
+      text-shadow: 0 0 3pm #ffffff;
+      background-color: rgba(0, 0, 0, 0);
+      border: none;
+      box-shadow: none;
+    }  
+
+    .feature-tooltip {
+      font-family: 'Roboto', sans-serif;
+      color: black;
+      font-size: 14px;
+      font-weight: lighter;
+    }
+
+    .glyphicon-one-fine-smaller-dot:before {
+      content: "\25cf";
+      font-size: 1em;
+    }
+
+    .glow-effect {
+      color: rgba(0, 255, 0, .6);
+      text-shadow: 0 0 10pm rgb(0, 255, 0);
+    }
+    )
+  </style>
+
   <!-- Add libraries -->
   <!-- Leaflet -->
   <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
@@ -40,6 +71,19 @@
 
 <body>
 
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark storymap-navbar">
+        <a class="navbar-brand" href="#">
+            <!--convert the style value to a class and then add the class to the css file.-->
+            <!--<img src="img/logo.png" class="d-inline-block align-top">-->
+            Water Reclamation Projects & Biodiversity
+        </a>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse">
+            <!--Create class ml-auto for the navbar items you want on the right.-->
+            <ul class="navbar-nav ml-auto"></ul>
+        </div>
+    </nav>
+
   <div class="container">
     <h1>Water Reclamation Projects & Biodiversity</h1>
     <h2>in Western Watersheds</h2>
@@ -52,6 +96,7 @@
               <div class="col-sm-6 col-md-4 storymap-story">
                   <section data-scene="scene1">
                       <h2>introduction to watersheds HUC2</h2>
+                      <body>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Suspendisse in est ante in nibh mauris cursus mattis molestie. Eget velit aliquet sagittis id consectetur purus ut faucibus. Pharetra magna ac placerat vestibulum lectus mauris ultrices eros. Interdum varius sit amet mattis vulputate. Tempus urna et pharetra pharetra massa massa ultricies. Eu scelerisque felis imperdiet proin fermentum leo vel orci. Sed adipiscing diam donec adipiscing tristique risus nec feugiat in. Volutpat sed cras ornare arcu dui. Odio ut enim blandit volutpat maecenas volutpat blandit aliquam. Felis imperdiet proin fermentum leo vel orci porta non. Arcu bibendum at varius vel. Eget nunc scelerisque viverra mauris in aliquam sem fringilla.</body>
                   </section>
                   <section data-scene="scene2">
                       <h2>administrative areas HUC4</h2>
@@ -115,44 +160,5 @@
             }
         });
 </script>
-</body>
-</html>
- 
-      
-<script>
-  // center map on US West Coast
-	// var options = {
-  //   center: [40,-119],
-  //   zoom: 5.25
-	// };
-	// var map = L.map('map', options);
-
-  // // add basemap from Carto
-  // L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_nolabels/{z}/{x}/{y}.png', {
-  //   attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="http://cartodb.com/attributions">CartoDB</a>',
-  //   subdomains: 'abcd',
-  //   maxZoom: 19
-  // }).addTo(map);
-
-
-  // // pull in watershed boundaries and USBR points
-  // $.when(
-  //   $.getJSON('data/watersheds.json'),
-  //   $.getJSON('data/usbrpoints.json')
-  // ).done(function(watersheds, usbrpoints) {
-  //     drawMap(watersheds, usbrpoints);
-  // });
-
-  // draw map
-  // function drawMap(watershedsData, usbrpointsData) {
-  //     L.geoJson(watershedsData, {
-  //         style: watershedOptions
-  //     }).addTo(map);
-  //     L.geoJson(usbrpointsData, {
-  //       style: pointsOptions
-  //     }).addTo(map);
-  // }
-
-  </script>
 </body>
 </html>
