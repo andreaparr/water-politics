@@ -122,19 +122,55 @@
 
         var layers = {
           layer1: {
-              layer: L.geoJson.ajax('/data/watersheds-huc2.geojson'),
+              layer: L.geoJson.ajax('/data/watersheds-huc2.geojson', {
+                style: function (feature) {
+                  return {
+                        color: '#dddddd',
+                        weight: 1,
+                        fillOpacity: .1,
+                        fillColor: '#1f78b4'
+                    };
+                }
+              }),
               legend: '<i style="background: black; opacity: 0.5"></i><p><b>HUC2</b></p>'
             },
           layer2: {
-              layer: L.geoJson.ajax('/data/watersheds-huc4.geojson'),
+              layer: L.geoJson.ajax('/data/watersheds-huc4.geojson', {
+                style: function (feature) {
+                  return {
+                        color: '#dddddd',
+                        weight: 1,
+                        fillOpacity: .1,
+                        fillColor: '#1f78b4'
+                    };
+                }
+              }),
               legend: '<i style="background: black; opacity: 0.5"></i><p><b>HUC4</b></p>'
             },
           layer3: {
-              layer: L.geoJson.ajax('/data/watersheds-huc8.geojson'),
+              layer: L.geoJson.ajax('/data/watersheds-huc8.geojson', {
+                style: function (feature) {
+                  return {
+                        color: '#dddddd',
+                        weight: .5,
+                        fillOpacity: .1,
+                        fillColor: '#1f78b4'
+                    };
+                }
+              }),
               legend: '<i style="background: black; opacity: 0.5"></i><p><b>HUC8</b></p>'
             },
           layer4: {
-              layer: L.geoJson.ajax('/data/epa-watersheds-huc12.geojson'),
+              layer: L.geoJson.ajax('/data/epa-watersheds-huc12.geojson', {
+                style: function (feature) {
+                  return {
+                        color: '#dddddd',
+                        weight: .05,
+                        fillOpacity: .1,
+                        fillColor: '#1f78b4'
+                    };
+                }
+              }),
               legend: '<i style="background: black; opacity: 0.5"></i><p><b>EPA at Risk Species</b></p>'
             },
           layer5: {
@@ -162,11 +198,12 @@
               layer: L.tileLayer('http://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png')
           },
         };
+        
         var scenes = {
             scene1: {lat: 44, lng: -119, zoom: 5, layers: [layers.layer1], name: "scene 1"},
             scene2: {lat: 44.5701158, lng: -119, zoom: 5, layers: [layers.layer2], name: "scene 2"},
             scene3: {lat: 44.5701158, lng: -119, zoom: 5, layers: [layers.layer3], name: "scene 3"},
-            scene4: {lat: 44, lng: -119, zoom: 5, layers: [layers.layer4], name: "scene 4"},
+            scene4: {lat: 40, lng: -119, zoom: 6, layers: [layers.layer4], name: "scene 4"},
             scene5: {lat: 44.5701158, lng: -119, zoom: 5, layers: [layers.layer5, layers.layer2], name: "scene 5"},
             scene6: {lat: 44.5701158, lng: -119, zoom: 7, layers: [layers.layer5], name: "scene 6"}
         };
