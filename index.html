@@ -20,7 +20,7 @@
   <link rel="stylesheet" type="text/css" href="css/storymap.2.5.css">
 
   <!-- Add favicon for the web page -->
-  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+  <!--<link rel="icon" href="/images/favicon.ico" type="image/x-icon">-->
 
   <style>
     .feature-label {
@@ -97,28 +97,66 @@
               <div class="col-sm-6 col-md-8 storymap-map"></div>
               <div class="col-sm-6 col-md-4 storymap-story">
                   <section data-scene="scene1">
-                      <h2>introduction to watersheds HUC2</h2>
-                      <body>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Suspendisse in est ante in nibh mauris cursus mattis molestie. Eget velit aliquet sagittis id consectetur purus ut faucibus. Pharetra magna ac placerat vestibulum lectus mauris ultrices eros. Interdum varius sit amet mattis vulputate. Tempus urna et pharetra pharetra massa massa ultricies. Eu scelerisque felis imperdiet proin fermentum leo vel orci. Sed adipiscing diam donec adipiscing tristique risus nec feugiat in. Volutpat sed cras ornare arcu dui. Odio ut enim blandit volutpat maecenas volutpat blandit aliquam. Felis imperdiet proin fermentum leo vel orci porta non. Arcu bibendum at varius vel. Eget nunc scelerisque viverra mauris in aliquam sem fringilla.</body>
+                      <h2>Watersheds in the Western United States</h2>
+                      <p>definition & importance of watersheds - USGS, USBR info.</p>
                   </section>
                   <section data-scene="scene2">
-                      <h2>administrative areas HUC4</h2>
+                      <h2>Watershed Administration</h2>
+                      <p>breakdown of administrative areas.</p>
                   </section>
                   <section data-scene="scene3">
-                      <h2>sub-administrative areas - HUC8</h2>
+                      <h2>Watershed Health</h2>
+                      <p>introduce health of watersheds - stormwater runoff, polution, impact on environment.</p>
                   </section>
                   <section data-scene="scene4">
-                      <h2>At Risk Species by HUC12</h2>
+                      <h2>Species at Risk</h2>
+                      <p>EPA data points discussion </p>
                   </section>
                   <section data-scene="scene5">
-                      <h2>USBR Water Reclamation Projects</h2>
+                      <h2>Water Reclamation Projects</h2>
+                      <bp>USBR projects/population growth/water management, etc.</p>
                   </section>
                   <section data-scene="scene6">
-                      <h2>Local Impact</h2>
+                      <h2>Case Study</h2>
                     </section>
                   </div>
               </div>
       </div>
       <script type="text/javascript">
+
+            // // style choropleth map - this isn't working. ugh.
+            // function setColor(epa_wsio_atrisk_total_risk){
+            //     // Tenary operation: condition ? valueIfTrue : valueIfFalse
+            //     // condition ? value1 : value2
+            //     return  epa_wsio_atrisk_total_risk > 40 ? '#b30000' :
+            //             epa_wsio_atrisk_total_risk > 30 ? '#e34a33' :
+            //             epa_wsio_atrisk_total_risk > 20 ? '#fc8d59' :
+            //             epa_wsio_atrisk_total_risk > 10 ? '#fdcc8a' :
+            //             '#fef0d9';
+            // }
+            // // Set style function that sets fill color property equal to cell tower density
+            // function style(feature) {
+            //     return {
+            //         fillColor: setColor(feature.properties.epa_wsio_atrisk_total_risk),
+            //         fillOpacity: 0.2,
+            //         weight: .02,
+            //         opacity: 0.8,
+            //         color: '#ffffff',
+            //     };
+            // }
+            // var epa_choropleth = L.geoJson.ajax('/data/epa-watersheds-huc12.geojson',
+            //     {
+            //         style: style,
+            //         onEachFeature: function (feature, layer) {
+            //             layer.bindTooltip(feature.properties.NAME, {className: 'feature-label', permanent: false, direction: 'center'});
+            //         }
+            //     });
+            // var epa_choropleth_legend = '<p><b># of At Risk Species</b></p>' +
+            //     '<i style="background: #fef0d9; opacity: 0.5"></i><p><b>0 - 10</b></p>' +
+            //     '<i style="background: #fdcc8a; opacity: 0.5"></i><p><b>11 - 20</b></p>' +
+            //     '<i style="background: #fc8d59; opacity: 0.5"></i><p><b>21 - 30</b></p>' +
+            //     '<i style="background: #e34a33; opacity: 0.5"></i><p><b>31 - 40</b></p>' +
+            //     '<i style="background: #b30000; opacity: 0.5"></i><p><b>40+</b></p>';
 
         var layers = {
           layer1: {
@@ -126,7 +164,7 @@
                 style: function (feature) {
                   return {
                         color: '#dddddd',
-                        weight: 1,
+                        weight: .75,
                         fillOpacity: .1,
                         fillColor: '#1f78b4'
                     };
@@ -203,7 +241,7 @@
             scene1: {lat: 44, lng: -119, zoom: 5, layers: [layers.layer1], name: "scene 1"},
             scene2: {lat: 44.5701158, lng: -119, zoom: 5, layers: [layers.layer2], name: "scene 2"},
             scene3: {lat: 44.5701158, lng: -119, zoom: 5, layers: [layers.layer3], name: "scene 3"},
-            scene4: {lat: 40, lng: -119, zoom: 6, layers: [layers.layer4], name: "scene 4"},
+            scene4: {lat: 44, lng: -119, zoom: 6, layers: [layers.layer4], name: "scene 4"},
             scene5: {lat: 44.5701158, lng: -119, zoom: 5, layers: [layers.layer5, layers.layer2], name: "scene 5"},
             scene6: {lat: 44.5701158, lng: -119, zoom: 7, layers: [layers.layer5], name: "scene 6"}
         };
