@@ -1,7 +1,7 @@
 // Modified by Bo Zhao, zhao2@oregonstate.edu
 // Originally obtained from http://atlefren.github.io/storymap/
 // Updated on 05/04/2018 | version 2.5.0 | MIT License
-
+// Modified by Andrea Parr
 
 (function ($) {
 
@@ -44,7 +44,7 @@
             mapinteraction: false,
             createMap: function () {
                 var map = L.map($('.storymap-map')[0], {zoomControl: false}).setView([44, -120], 7);
-                // L.tileLayer('http://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}@2x.png').addTo(map);
+                //L.tileLayer('http://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}@2x.png').addTo(map);
                 return map;
             }
         };
@@ -389,12 +389,12 @@
 
                 if ($(this).data('scene') === sections.last().data('scene')) {
                     scrollDown
-                        .html("home")
+                        .html("")
                         .addClass('justify-content-center')
                         .removeClass('justify-content-left');
                 } else {
                     scrollDown
-                        .html("keyboard_arrow_down")
+                        .html("")
                         .removeClass('justify-content-center')
                         .addClass('justify-content-left');
                 }
