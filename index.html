@@ -137,7 +137,7 @@
   <script type="text/javascript">
     /// Scene One ///
     var huc2_legend = '<i style="background: black; opacity: 0.5"></i><p><b>Region: HUC2</b></p>';
-    var huc2 = L.geoJson.ajax('/data/watersheds-huc2.geojson', {
+    var huc2 = L.geoJson.ajax('./data/watersheds-huc2.geojson', {
       style: function (feature) {
         return {
           color: '#dddddd',
@@ -150,7 +150,7 @@
 
     /// Scene Two ///
     var huc4_legend = '<i style="background: black; opacity: 0.5"></i><p><b>Sub-Region: HUC4</b></p>';
-    var huc4 = L.geoJson.ajax('/data/watersheds-huc4.geojson', {
+    var huc4 = L.geoJson.ajax('./data/watersheds-huc4.geojson', {
       style: function (feature) {
         return {
           color: '#dddddd',
@@ -163,7 +163,7 @@
 
     /// Scene Three ///
     var huc8_legend = '<i style="background: black; opacity: 0.5"></i><p><b>Cataloguing Unit: HUC8</b></p>';
-    var huc8 = L.geoJson.ajax('/data/epa-huc8.geojson', {
+    var huc8 = L.geoJson.ajax('./data/epa-huc8.geojson', {
       style: function (feature) {
         return {
           color: '#dddddd',
@@ -194,7 +194,7 @@
         color: '#ffffff',
       };
     }
-    var epa_choropleth = L.geoJson.ajax('/data/epa-huc8.geojson', {
+    var epa_choropleth = L.geoJson.ajax('./data/epa-huc8.geojson', {
       style: style,
       onEachFeature: function (feature, layer) {
         layer.bindTooltip(feature.properties.Name, {
@@ -213,7 +213,7 @@
 
     /// Scene Five ///
     var usbr_legend = '<i style="background: black; opacity: 0.5"></i><p><b>USBR Water Reclamation Projects</b></p>';
-    var usbr = L.geoJson.ajax('/data/usbrpoints.geojson', {
+    var usbr = L.geoJson.ajax('./data/usbrpoints.geojson', {
       style: function (feature) {
         return {
           radius: 8, //this isn't working...yet!
@@ -239,7 +239,7 @@
 
     /// Scene Six ///
     var case_study_plain_legend = '<i style="background: black; opacity: 0.5"></i><p><b>Central California</b></p>';
-    var case_study_plain = L.geoJson.ajax('/data/case_study.geojson', {
+    var case_study_plain = L.geoJson.ajax('./data/case_study.geojson', {
       style: function (feature) {
         return {
           color: '#dddddd',
@@ -252,7 +252,7 @@
 
    /// Fake Scene Seven ///
    var case_study_plain_legend = '<i style="background: black; opacity: 0.5"></i><p><b>Central California</b></p>';
-    var case_study_plain = L.geoJson.ajax('/data/case_study.geojson', {
+    var case_study_plain = L.geoJson.ajax('./data/case_study.geojson', {
       style: function (feature) {
         return {
           color: '#dddddd',
@@ -283,7 +283,7 @@
     //     color: '#ffffff',
     //   };
     // }
-    // var case_study = L.geoJson.ajax('/data/case_study.geojson', {
+    // var case_study = L.geoJson.ajax('./data/case_study.geojson', {
     //   style: style,
     //   onEachFeature: function (feature, layer) {
     //     layer.bindTooltip(feature.properties.Name, {
