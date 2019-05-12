@@ -214,19 +214,16 @@
     /// Scene Five ///
     var usbr_legend = '<i style="background: black; opacity: 0.5"></i><p><b>USBR Water Reclamation Projects</b></p>';
     var usbr = L.geoJson.ajax('./data/usbrpoints.geojson', {
-      style: function (feature) {
-        return {
-          radius: 8, //this isn't working...yet!
+      pointToLayer: function (feature, latlng) {
+        return L.circle(latlng, {
+          radius: 40000,
           fillColor: chroma.random(),
           fillOpacity: 0.5,
           stroke: true,
           weight: 1,
           opacity: 0.8,
           color: '#ffffff',
-        };
-      },
-      pointToLayer: function (feature, latlng) {
-        return L.circle(latlng);
+        });
       },
       onEachFeature: function (feature, layer) {
         layer.bindTooltip(feature.properties.description + "<br>" + "Type: " +
