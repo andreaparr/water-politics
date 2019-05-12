@@ -119,11 +119,16 @@
         </section>
         <section data-scene="scene5">
           <h2>Water Reclamation Projects</h2>
-          <bp>USBR projects/population growth/water management, etc.</p>
+          <p>USBR projects/population growth/water management, etc.</p>
         </section>
         <section data-scene="scene6">
           <h2>Case Study: Lake Berryessa & Monticello Dam</h2>
+          <p>blahblahblah</p>
         </section>
+        <section data-scene="scene7">
+            <h2>Case Study: Lake Berryessa & Monticello Dam</h2>
+            <p>this will change once I get a working choropleth map. Maybe users should be able to select which layer they want to symbolize?</p>
+          </section>
       </div>
       <div class="col-sm-6 col-md-8 storymap-map"></div>
     </div>
@@ -131,7 +136,7 @@
 
   <script type="text/javascript">
     /// Scene One ///
-    var huc2_legend = '<i style="background: black; opacity: 0.5"></i><p><b>HUC2</b></p>';
+    var huc2_legend = '<i style="background: black; opacity: 0.5"></i><p><b>Region: HUC2</b></p>';
     var huc2 = L.geoJson.ajax('/data/watersheds-huc2.geojson', {
       style: function (feature) {
         return {
@@ -144,20 +149,20 @@
     });
 
     /// Scene Two ///
-    var huc4_legend = '<i style="background: black; opacity: 0.5"></i><p><b>HUC4</b></p>';
+    var huc4_legend = '<i style="background: black; opacity: 0.5"></i><p><b>Sub-Region: HUC4</b></p>';
     var huc4 = L.geoJson.ajax('/data/watersheds-huc4.geojson', {
       style: function (feature) {
         return {
           color: '#dddddd',
-          weight: 1,
-          fillOpacity: .1,
+          weight: .5,
+          fillOpacity: .2,
           fillColor: '#1f78b4'
         };
       }
     });
 
     /// Scene Three ///
-    var huc8_legend = '<i style="background: black; opacity: 0.5"></i><p><b>HUC8</b></p>';
+    var huc8_legend = '<i style="background: black; opacity: 0.5"></i><p><b>Cataloguing Unit: HUC8</b></p>';
     var huc8 = L.geoJson.ajax('/data/epa-huc8.geojson', {
       style: function (feature) {
         return {
@@ -169,8 +174,8 @@
       }
     });
 
-    /// Scene 4 ///
-    // style choropleth map
+    /// Scene Four ///
+    // Style Choropleth Map
     function setColor(total) {
       // Tenary operation: condition ? valueIfTrue : valueIfFalse
       return total > 29 ? '#b30000' :
@@ -192,8 +197,8 @@
     var epa_choropleth = L.geoJson.ajax('/data/epa-huc8.geojson', {
       style: style,
       onEachFeature: function (feature, layer) {
-        layer.bindTooltip(feature.properties.NAME, {
-          className: 'feature-label',
+        layer.bindTooltip(feature.properties.Name, {
+          className: 'feature-tooltip',
           permanent: false,
           direction: 'center'
         });
@@ -206,44 +211,95 @@
       '<i style="background: #e34a33; opacity: 0.5"></i><p><b>18 - 29</b></p>' +
       '<i style="background: #b30000; opacity: 0.5"></i><p><b>30 - 49</b></p>';
 
-    /// Scene 5 ///
-    var usbr_legend = '<i style="background: orange; opacity: 0.5"></i><p><b>USBR Water Reclamation Projects</b></p>';
+    /// Scene Five ///
+    var usbr_legend = '<i style="background: black; opacity: 0.5"></i><p><b>USBR Water Reclamation Projects</b></p>';
     var usbr = L.geoJson.ajax('/data/usbrpoints.geojson', {
       style: function (feature) {
         return {
+          radius: 8, //this isn't working...yet!
           fillColor: chroma.random(),
-          fillOpacity: 0.4,
+          fillOpacity: 0.5,
           stroke: true,
           weight: 1,
           opacity: 0.8,
-          color: '#ffffff'
+          color: '#ffffff',
         };
       },
       pointToLayer: function (feature, latlng) {
-        return L.circle(latlng, 1000 * Math.pow(Math.floor((Math.random() * 3) + 1), 2));
+        return L.circle(latlng);
       },
       onEachFeature: function (feature, layer) {
-        layer.bindTooltip(feature.properties.description, {
+        layer.bindTooltip(feature.properties.description + "<br>" + "Type: " +
+        feature.properties.type, {
           sticky: true,
           className: "feature-tooltip"
         });
       }
     });
 
-    /// Scene 6 ///
-    
-    var case_study_legend =
-      '<i style="background: orange; opacity: 0.5"></i><p><b>USBR Water Reclamation Projects</b></p>';
-    var case_study = L.geoJson.ajax('/data/case_study.geojson', {
+    /// Scene Six ///
+    var case_study_plain_legend = '<i style="background: black; opacity: 0.5"></i><p><b>Central California</b></p>';
+    var case_study_plain = L.geoJson.ajax('/data/case_study.geojson', {
       style: function (feature) {
         return {
           color: '#dddddd',
           weight: .75,
-          fillOpacity: .1,
+          fillOpacity: .3,
           fillColor: '#1f78b4'
         };
       }
     });
+
+   /// Fake Scene Seven ///
+   var case_study_plain_legend = '<i style="background: black; opacity: 0.5"></i><p><b>Central California</b></p>';
+    var case_study_plain = L.geoJson.ajax('/data/case_study.geojson', {
+      style: function (feature) {
+        return {
+          color: '#dddddd',
+          weight: .75,
+          fillOpacity: .3,
+          fillColor: '#1f78b4'
+        };
+      }
+    });
+
+    // /// Scene Seven That Doesn't Work and Breaks Scene Four UGH///
+    //  // style choropleth case study map
+    //  function setColor(rare_ecosystem) {
+    //   // Tenary operation: condition ? valueIfTrue : valueIfFalse
+    //   return total > 6.1771 ? '#006837' :
+    //     total > 2.4212 ? '#31a354' :
+    //     total > 0.8123 ? '#78c679' :
+    //     total > 0.2414 ? '#c2e699' :
+    //     '#ffffee';
+    // }
+    // // Set style function that sets fill color property
+    // function style(feature) {
+    //   return {
+    //     fillColor: setColor(feature.properties.rare_ecosystem),
+    //     fillOpacity: 0.2,
+    //     weight: .02,
+    //     opacity: 0.8,
+    //     color: '#ffffff',
+    //   };
+    // }
+    // var case_study = L.geoJson.ajax('/data/case_study.geojson', {
+    //   style: style,
+    //   onEachFeature: function (feature, layer) {
+    //     layer.bindTooltip(feature.properties.Name, {
+    //       className: 'feature-tooltip',
+    //       permanent: false,
+    //       direction: 'center'
+    //     });
+    //   }
+    // });
+    // var case_study_legend = '<p><b>Percentage Rare Ecosystems in Watershed</b></p>' +
+    //   '<i style="background: #ffffee; opacity: 0.5"></i><p><b>0 - .24 </b></p>' +
+    //   '<i style="background: #c2e699; opacity: 0.5"></i><p><b>.25 - .81</b></p>' +
+    //   '<i style="background: #78c679; opacity: 0.5"></i><p><b>0.82 - 2.42</b></p>' +
+    //   '<i style="background: #31a354; opacity: 0.5"></i><p><b>2.43 - 6.17</b></p>' +
+    //   '<i style="background: #006837; opacity: 0.5"></i><p><b>6.18 - 9.21</b></p>';
+
 
     /// End of Scenes ///
 
@@ -270,9 +326,13 @@
         layer: usbr,
         legend: usbr_legend
       },
+      case_study_plain: {
+        layer: case_study_plain,
+        legend: case_study_plain_legend
+      },
       case_study: {
-        layer: case_study,
-        legend: case_study_legend
+        layer: case_study_plain,
+        case_study_plain_legend
       }
     }
 
@@ -309,7 +369,7 @@
         lat: 44.5701158,
         lng: -119,
         zoom: 5,
-        layers: [layers.epa_choropleth, layers.usbr],
+        layers: [layers.huc4, layers.usbr],
         name: "scene 5"
       },
       scene6: {
@@ -318,6 +378,13 @@
         zoom: 10,
         layers: [layers.case_study],
         name: "scene 6"
+      },
+      scene7: {
+        lat: 38.6097,
+        lng: -122.254,
+        zoom: 10,
+        layers: [layers.case_study],
+        name: "scene 7"
       }
     };
     $('#storymap').storymap({
