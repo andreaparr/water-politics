@@ -1,6 +1,7 @@
 <!doctype html>
 
 <html lang="en">
+
 <head>
   <title>Western Watersheds</title>
 
@@ -9,7 +10,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <!-- Leaflet CSS -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" />
   <!-- Animate CSS -->
@@ -32,7 +34,7 @@
       background-color: rgba(0, 0, 0, 0);
       border: none;
       box-shadow: none;
-    }  
+    }
 
     .feature-tooltip {
       font-family: 'Roboto', sans-serif;
@@ -50,41 +52,45 @@
       color: rgba(0, 255, 0, .6);
       text-shadow: 0 0 10pm rgb(0, 255, 0);
     }
-    
   </style>
 
   <!-- Add libraries -->
   <!-- Leaflet -->
   <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
   <!-- jQuery -->
-  <script src="https://code.jquery.com/jquery-3.4.0.min.js"   integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="   crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.0.min.js"
+    integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
   <!-- Popper.js -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
   <!-- Boostrap -->
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
   <!-- Leaflet.ajax for asynchronously adding geojson data -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-ajax/2.1.0/leaflet.ajax.min.js"></script>
   <!-- Chroma Lib -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.0.3/chroma.min.js"></script>
   <!-- Storymap Plugin-->
-  <script src="js/storymap.2.5.js"></script>
+  <script src="js/storymap.2.4.js"></script>
 
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark storymap-navbar">
-        <a class="navbar-brand" href="#">
-            <!--convert the style value to a class and then add the class to the css file.-->
-            <!--<img src="img/logo.png" class="d-inline-block align-top">-->
-            Water Reclamation Projects & Biodiversity
-        </a>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse">
-            <!--Create class ml-auto for the navbar items you want on the right.-->
-            <ul class="navbar-nav ml-auto"></ul>
-        </div>
-    </nav>
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark storymap-navbar">
+    <a class="navbar-brand" href="#">
+      <!--convert the style value to a class and then add the class to the css file.-->
+      <!--<img src="img/logo.png" class="d-inline-block align-top">-->
+      Water Reclamation Projects & Biodiversity
+    </a>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse">
+      <!--Create class ml-auto for the navbar items you want on the right.-->
+      <ul class="navbar-nav ml-auto"></ul>
+    </div>
+  </nav>
 
   <div class="container">
     <h1>Water Reclamation Projects & Biodiversity</h1>
@@ -92,176 +98,249 @@
   </div>
 
 
-      <div id="storymap" class="container-fluid" >
-          <div class="row">
-              <div class="col-sm-6 col-md-8 storymap-map"></div>
-              <div class="col-sm-6 col-md-4 storymap-story">
-                  <section data-scene="scene1">
-                      <h2>Watersheds in the Western United States</h2>
-                      <p>definition & importance of watersheds - USGS, USBR info.</p>
-                  </section>
-                  <section data-scene="scene2">
-                      <h2>Watershed Administration</h2>
-                      <p>breakdown of administrative areas.</p>
-                  </section>
-                  <section data-scene="scene3">
-                      <h2>Watershed Health</h2>
-                      <p>introduce health of watersheds - stormwater runoff, polution, impact on environment.</p>
-                  </section>
-                  <section data-scene="scene4">
-                      <h2>Species at Risk</h2>
-                      <p>EPA data points discussion </p>
-                  </section>
-                  <section data-scene="scene5">
-                      <h2>Water Reclamation Projects</h2>
-                      <bp>USBR projects/population growth/water management, etc.</p>
-                  </section>
-                  <section data-scene="scene6">
-                      <h2>Case Study</h2>
-                    </section>
-                  </div>
-              </div>
+  <div id="storymap" class="container-fluid">
+    <div class="row">
+      <div class="col-sm-6 col-md-4 storymap-story">
+        <section data-scene="scene1">
+          <h2>Watersheds in the Western United States</h2>
+          <p>definition & importance of watersheds - USGS, USBR info.</p>
+        </section>
+        <section data-scene="scene2">
+          <h2>Watershed Administration</h2>
+          <p>breakdown of administrative areas.</p>
+        </section>
+        <section data-scene="scene3">
+          <h2>Watershed Health</h2>
+          <p>introduce health of watersheds - stormwater runoff, polution, impact on environment.</p>
+        </section>
+        <section data-scene="scene4">
+          <h2>Species at Risk</h2>
+          <p>EPA data points discussion </p>
+        </section>
+        <section data-scene="scene5">
+          <h2>Water Reclamation Projects</h2>
+          <bp>USBR projects/population growth/water management, etc.</p>
+        </section>
+        <section data-scene="scene6">
+          <h2>Case Study: Lake Berryessa & Monticello Dam</h2>
+        </section>
       </div>
-      <script type="text/javascript">
+      <div class="col-sm-6 col-md-8 storymap-map"></div>
+    </div>
+  </div>
 
-            // // style choropleth map - this isn't working. ugh.
-            // function setColor(epa_wsio_atrisk_total_risk){
-            //     // Tenary operation: condition ? valueIfTrue : valueIfFalse
-            //     // condition ? value1 : value2
-            //     return  epa_wsio_atrisk_total_risk > 40 ? '#b30000' :
-            //             epa_wsio_atrisk_total_risk > 30 ? '#e34a33' :
-            //             epa_wsio_atrisk_total_risk > 20 ? '#fc8d59' :
-            //             epa_wsio_atrisk_total_risk > 10 ? '#fdcc8a' :
-            //             '#fef0d9';
-            // }
-            // // Set style function that sets fill color property equal to cell tower density
-            // function style(feature) {
-            //     return {
-            //         fillColor: setColor(feature.properties.epa_wsio_atrisk_total_risk),
-            //         fillOpacity: 0.2,
-            //         weight: .02,
-            //         opacity: 0.8,
-            //         color: '#ffffff',
-            //     };
-            // }
-            // var epa_choropleth = L.geoJson.ajax('/data/epa-watersheds-huc12.geojson',
-            //     {
-            //         style: style,
-            //         onEachFeature: function (feature, layer) {
-            //             layer.bindTooltip(feature.properties.NAME, {className: 'feature-label', permanent: false, direction: 'center'});
-            //         }
-            //     });
-            // var epa_choropleth_legend = '<p><b># of At Risk Species</b></p>' +
-            //     '<i style="background: #fef0d9; opacity: 0.5"></i><p><b>0 - 10</b></p>' +
-            //     '<i style="background: #fdcc8a; opacity: 0.5"></i><p><b>11 - 20</b></p>' +
-            //     '<i style="background: #fc8d59; opacity: 0.5"></i><p><b>21 - 30</b></p>' +
-            //     '<i style="background: #e34a33; opacity: 0.5"></i><p><b>31 - 40</b></p>' +
-            //     '<i style="background: #b30000; opacity: 0.5"></i><p><b>40+</b></p>';
+  <script type="text/javascript">
+    /// Scene One ///
+    var huc2_legend = '<i style="background: black; opacity: 0.5"></i><p><b>HUC2</b></p>';
+    var huc2 = L.geoJson.ajax('/data/watersheds-huc2.geojson', {
+      style: function (feature) {
+        return {
+          color: '#dddddd',
+          weight: .75,
+          fillOpacity: .1,
+          fillColor: '#1f78b4'
+        };
+      }
+    });
 
-        var layers = {
-          layer1: {
-              layer: L.geoJson.ajax('/data/watersheds-huc2.geojson', {
-                style: function (feature) {
-                  return {
-                        color: '#dddddd',
-                        weight: .75,
-                        fillOpacity: .1,
-                        fillColor: '#1f78b4'
-                    };
-                }
-              }),
-              legend: '<i style="background: black; opacity: 0.5"></i><p><b>HUC2</b></p>'
-            },
-          layer2: {
-              layer: L.geoJson.ajax('/data/watersheds-huc4.geojson', {
-                style: function (feature) {
-                  return {
-                        color: '#dddddd',
-                        weight: 1,
-                        fillOpacity: .1,
-                        fillColor: '#1f78b4'
-                    };
-                }
-              }),
-              legend: '<i style="background: black; opacity: 0.5"></i><p><b>HUC4</b></p>'
-            },
-          layer3: {
-              layer: L.geoJson.ajax('/data/watersheds-huc8.geojson', {
-                style: function (feature) {
-                  return {
-                        color: '#dddddd',
-                        weight: .5,
-                        fillOpacity: .1,
-                        fillColor: '#1f78b4'
-                    };
-                }
-              }),
-              legend: '<i style="background: black; opacity: 0.5"></i><p><b>HUC8</b></p>'
-            },
-          layer4: {
-              layer: L.geoJson.ajax('/data/epa-watersheds-huc12.geojson', {
-                style: function (feature) {
-                  return {
-                        color: '#dddddd',
-                        weight: .05,
-                        fillOpacity: .1,
-                        fillColor: '#1f78b4'
-                    };
-                }
-              }),
-              legend: '<i style="background: black; opacity: 0.5"></i><p><b>EPA at Risk Species</b></p>'
-            },
-          layer5: {
-              layer: L.geoJson.ajax('/data/usbrpoints.geojson', {
-                  style: function (feature) {
-                    return {
-                      fillColor: chroma.random(),
-                      fillOpacity: 0.4,
-                      stroke: true,
-                      weight: 1,
-                      opacity: 0.8,
-                      color: '#ffffff'
-                    };
-                  },
-                  pointToLayer: function (feature, latlng) {
-                    return L.circle(latlng, 1000 * Math.pow(Math.floor((Math.random() *3) +1), 2));
-                  },
-                  onEachFeature: function (feature, layer) {
-                    layer.bindTooltip(feature.properties.description, {sticky: true, className: "feature-tooltip"});
-                  }
-              }),
-              legend: '<i style="background: orange; opacity: 0.5"></i><p><b>USBR Water Reclamation Projects</b></p>'
-          },
-          layer6: {
-              layer: L.tileLayer('http://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png')
-          },
+    /// Scene Two ///
+    var huc4_legend = '<i style="background: black; opacity: 0.5"></i><p><b>HUC4</b></p>';
+    var huc4 = L.geoJson.ajax('/data/watersheds-huc4.geojson', {
+      style: function (feature) {
+        return {
+          color: '#dddddd',
+          weight: 1,
+          fillOpacity: .1,
+          fillColor: '#1f78b4'
         };
-        
-        var scenes = {
-            scene1: {lat: 44, lng: -119, zoom: 5, layers: [layers.layer1], name: "scene 1"},
-            scene2: {lat: 44.5701158, lng: -119, zoom: 5, layers: [layers.layer2], name: "scene 2"},
-            scene3: {lat: 44.5701158, lng: -119, zoom: 5, layers: [layers.layer3], name: "scene 3"},
-            scene4: {lat: 44, lng: -119, zoom: 6, layers: [layers.layer4], name: "scene 4"},
-            scene5: {lat: 44.5701158, lng: -119, zoom: 5, layers: [layers.layer5, layers.layer2], name: "scene 5"},
-            scene6: {lat: 44.5701158, lng: -119, zoom: 7, layers: [layers.layer5], name: "scene 6"}
+      }
+    });
+
+    /// Scene Three ///
+    var huc8_legend = '<i style="background: black; opacity: 0.5"></i><p><b>HUC8</b></p>';
+    var huc8 = L.geoJson.ajax('/data/epa-huc8.geojson', {
+      style: function (feature) {
+        return {
+          color: '#dddddd',
+          weight: .25,
+          fillOpacity: .1,
+          fillColor: '#1f78b4'
         };
-        $('#storymap').storymap({
-            scenes: scenes,
-            baselayer: layers.layer6,
-            legend: true,
-            loader: true,
-            flyto: true,
-            credits:  "Build with <i class='material-icons' style='color: red; font-size: 10px;'>favorite</i> from Bo Zhao",
-            scalebar: true,
-            scrolldown: true,
-            progressline: true,
-            navwidget: true,
-            createMap: function () {
-                var map = L.map($(".storymap-map")[0], {zoomControl: false}).setView([44, -119], 5.25);
-                basemap = this.baselayer.layer.addTo(map);
-                return map;
-            }
+      }
+    });
+
+    /// Scene 4 ///
+    // style choropleth map
+    function setColor(total) {
+      // Tenary operation: condition ? valueIfTrue : valueIfFalse
+      return total > 29 ? '#b30000' :
+        total > 17 ? '#e34a33' :
+        total > 9 ? '#fc8d59' :
+        total > 4 ? '#fdcc8a' :
+        '#fef0d9';
+    }
+    // Set style function that sets fill color property
+    function style(feature) {
+      return {
+        fillColor: setColor(feature.properties.total),
+        fillOpacity: 0.5,
+        weight: .5,
+        opacity: 0.8,
+        color: '#ffffff',
+      };
+    }
+    var epa_choropleth = L.geoJson.ajax('/data/epa-huc8.geojson', {
+      style: style,
+      onEachFeature: function (feature, layer) {
+        layer.bindTooltip(feature.properties.NAME, {
+          className: 'feature-label',
+          permanent: false,
+          direction: 'center'
         });
-</script>
+      }
+    });
+    var epa_choropleth_legend = '<p><b># of At Risk Species</b></p>' +
+      '<i style="background: #fef0d9; opacity: 0.5"></i><p><b>0 - 4</b></p>' +
+      '<i style="background: #fdcc8a; opacity: 0.5"></i><p><b>5 - 9</b></p>' +
+      '<i style="background: #fc8d59; opacity: 0.5"></i><p><b>10 - 17</b></p>' +
+      '<i style="background: #e34a33; opacity: 0.5"></i><p><b>18 - 29</b></p>' +
+      '<i style="background: #b30000; opacity: 0.5"></i><p><b>30 - 49</b></p>';
+
+    /// Scene 5 ///
+    var usbr_legend = '<i style="background: orange; opacity: 0.5"></i><p><b>USBR Water Reclamation Projects</b></p>';
+    var usbr = L.geoJson.ajax('/data/usbrpoints.geojson', {
+      style: function (feature) {
+        return {
+          fillColor: chroma.random(),
+          fillOpacity: 0.4,
+          stroke: true,
+          weight: 1,
+          opacity: 0.8,
+          color: '#ffffff'
+        };
+      },
+      pointToLayer: function (feature, latlng) {
+        return L.circle(latlng, 1000 * Math.pow(Math.floor((Math.random() * 3) + 1), 2));
+      },
+      onEachFeature: function (feature, layer) {
+        layer.bindTooltip(feature.properties.description, {
+          sticky: true,
+          className: "feature-tooltip"
+        });
+      }
+    });
+
+    /// Scene 6 ///
+    
+    var case_study_legend =
+      '<i style="background: orange; opacity: 0.5"></i><p><b>USBR Water Reclamation Projects</b></p>';
+    var case_study = L.geoJson.ajax('/data/case_study.geojson', {
+      style: function (feature) {
+        return {
+          color: '#dddddd',
+          weight: .75,
+          fillOpacity: .1,
+          fillColor: '#1f78b4'
+        };
+      }
+    });
+
+    /// End of Scenes ///
+
+    var darkLayer = L.tileLayer('http://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png');
+
+    var layers = {
+      huc2: {
+        layer: huc2,
+        legend: huc2_legend
+      },
+      huc4: {
+        layer: huc4,
+        legend: huc4_legend
+      },
+      huc8: {
+        layer: huc8,
+        legend: huc8_legend
+      },
+      epa_choropleth: {
+        layer: epa_choropleth,
+        legend: epa_choropleth_legend
+      },
+      usbr: {
+        layer: usbr,
+        legend: usbr_legend
+      },
+      case_study: {
+        layer: case_study,
+        legend: case_study_legend
+      }
+    }
+
+    var scenes = {
+      scene1: {
+        lat: 44,
+        lng: -119,
+        zoom: 5,
+        layers: [layers.huc2],
+        name: "scene 1"
+      },
+      scene2: {
+        lat: 44.5701158,
+        lng: -119,
+        zoom: 5,
+        layers: [layers.huc4],
+        name: "scene 2"
+      },
+      scene3: {
+        lat: 44.5701158,
+        lng: -119,
+        zoom: 5,
+        layers: [layers.huc8],
+        name: "scene 3"
+      },
+      scene4: {
+        lat: 44,
+        lng: -119,
+        zoom: 5,
+        layers: [layers.epa_choropleth],
+        name: "scene 4"
+      },
+      scene5: {
+        lat: 44.5701158,
+        lng: -119,
+        zoom: 5,
+        layers: [layers.epa_choropleth, layers.usbr],
+        name: "scene 5"
+      },
+      scene6: {
+        lat: 38.6097,
+        lng: -122.254,
+        zoom: 10,
+        layers: [layers.case_study],
+        name: "scene 6"
+      }
+    };
+    $('#storymap').storymap({
+          scenes: scenes,
+          legend: true,
+          loader: true,
+          scalebar: true,
+          scrolldown: false,
+          progressline: true,
+          navwidget: true,
+          createMap: function () {
+            var map = L.map($(".storymap-map")[0], {
+              zoomControl: false,
+              scrollWheelZoom: false
+            });
+            // add an base map
+            L.tileLayer('http://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png')
+              .addTo(map);
+
+            return map;
+          }
+          });
+  </script>
 </body>
+
 </html>
