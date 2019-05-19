@@ -216,7 +216,7 @@
     var usbr = L.geoJson.ajax('./data/usbrpoints.geojson', {
       pointToLayer: function (feature, latlng) {
         return L.circle(latlng, {
-          radius: 40000,
+          radius: 20000,
           fillColor: chroma.random(),
           fillOpacity: 0.5,
           stroke: true,
@@ -247,55 +247,42 @@
       }
     });
 
-   /// Fake Scene Seven ///
-   var case_study_plain_legend = '<i style="background: black; opacity: 0.5"></i><p><b>Central California</b></p>';
-    var case_study_plain = L.geoJson.ajax('./data/case_study.geojson', {
-      style: function (feature) {
-        return {
-          color: '#dddddd',
-          weight: .75,
-          fillOpacity: .3,
-          fillColor: '#1f78b4'
-        };
+    /// Scene Seven///
+     // style choropleth case study map
+     function setColor2(rare_ecosystem) {
+      // Tenary operation: condition ? valueIfTrue : valueIfFalse
+      return rare_ecosystem > 6.1771 ? '#006837' :
+        rare_ecosystem > 2.4212 ? '#31a354' :
+        rare_ecosystem > 0.8123 ? '#78c679' :
+        rare_ecosystem > 0.2414 ? '#c2e699' :
+        '#ffffee';
+    }
+    // Set style function that sets fill color property
+    function style2(feature) {
+      return {
+        fillColor: setColor2(feature.properties.rare_ecosystem),
+        fillOpacity: 0.5,
+        weight: .5,
+        opacity: 0.8,
+        color: '#ffffff',
+      };
+    }
+    var case_study = L.geoJson.ajax('./data/case_study.geojson', {
+      style: style2,
+      onEachFeature: function (feature, layer) {
+        layer.bindTooltip(feature.properties.Name, {
+          className: 'feature-tooltip',
+          permanent: false,
+          direction: 'center'
+        });
       }
     });
-
-    // /// Scene Seven That Doesn't Work and Breaks Scene Four UGH///
-    //  // style choropleth case study map
-    //  function setColor(rare_ecosystem) {
-    //   // Tenary operation: condition ? valueIfTrue : valueIfFalse
-    //   return total > 6.1771 ? '#006837' :
-    //     total > 2.4212 ? '#31a354' :
-    //     total > 0.8123 ? '#78c679' :
-    //     total > 0.2414 ? '#c2e699' :
-    //     '#ffffee';
-    // }
-    // // Set style function that sets fill color property
-    // function style(feature) {
-    //   return {
-    //     fillColor: setColor(feature.properties.rare_ecosystem),
-    //     fillOpacity: 0.2,
-    //     weight: .02,
-    //     opacity: 0.8,
-    //     color: '#ffffff',
-    //   };
-    // }
-    // var case_study = L.geoJson.ajax('./data/case_study.geojson', {
-    //   style: style,
-    //   onEachFeature: function (feature, layer) {
-    //     layer.bindTooltip(feature.properties.Name, {
-    //       className: 'feature-tooltip',
-    //       permanent: false,
-    //       direction: 'center'
-    //     });
-    //   }
-    // });
-    // var case_study_legend = '<p><b>Percentage Rare Ecosystems in Watershed</b></p>' +
-    //   '<i style="background: #ffffee; opacity: 0.5"></i><p><b>0 - .24 </b></p>' +
-    //   '<i style="background: #c2e699; opacity: 0.5"></i><p><b>.25 - .81</b></p>' +
-    //   '<i style="background: #78c679; opacity: 0.5"></i><p><b>0.82 - 2.42</b></p>' +
-    //   '<i style="background: #31a354; opacity: 0.5"></i><p><b>2.43 - 6.17</b></p>' +
-    //   '<i style="background: #006837; opacity: 0.5"></i><p><b>6.18 - 9.21</b></p>';
+    var case_study_legend = '<p><b>Percentage Rare Ecosystems in Watershed</b></p>' +
+      '<i style="background: #ffffee; opacity: 0.5"></i><p><b>0 - .24 </b></p>' +
+      '<i style="background: #c2e699; opacity: 0.5"></i><p><b>.25 - .81</b></p>' +
+      '<i style="background: #78c679; opacity: 0.5"></i><p><b>0.82 - 2.42</b></p>' +
+      '<i style="background: #31a354; opacity: 0.5"></i><p><b>2.43 - 6.17</b></p>' +
+      '<i style="background: #006837; opacity: 0.5"></i><p><b>6.18 - 9.21</b></p>';
 
 
     /// End of Scenes ///
@@ -328,8 +315,8 @@
         legend: case_study_plain_legend
       },
       case_study: {
-        layer: case_study_plain,
-        case_study_plain_legend
+        layer: case_study,
+        legend: case_study_legend
       }
     }
 
@@ -372,14 +359,14 @@
       scene6: {
         lat: 38.6097,
         lng: -122.254,
-        zoom: 10,
-        layers: [layers.case_study],
+        zoom: 9,
+        layers: [layers.case_study_plain],
         name: "scene 6"
       },
       scene7: {
         lat: 38.6097,
         lng: -122.254,
-        zoom: 10,
+        zoom: 9,
         layers: [layers.case_study],
         name: "scene 7"
       }
