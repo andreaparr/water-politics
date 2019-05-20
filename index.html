@@ -82,27 +82,35 @@
       <div class="col-sm-6 col-md-4 storymap-story">
         <section data-scene="scene1">
           <h2>Watersheds in the Western United States</h2>
-          <p>definition & importance of watersheds - USGS, USBR info.</p>
+          <p>A watershed is an area of land that drains all the streams and rainfall to a common outlet. It consists of surface water and all the underlying ground water. All land drains into a lake, river, stream or other water body and directly affects its quality. </p>
         </section>
         <section data-scene="scene2">
           <h2>Watershed Administration</h2>
-          <p>breakdown of administrative areas.</p>
+          <p>The EPA breaks down </p>
         </section>
         <section data-scene="scene3">
           <h2>Watershed Health</h2>
-          <p>introduce health of watersheds - stormwater runoff, polution, impact on environment.</p>
+          <p>Key components of a healthy watersehd include:
+            <li>intact and functioning headwater streams, floodbplains, riparian corridors, biotic refugia, instream habitat, and biotic communities;</li>
+            <li>natural vegetation in the landscape; and</li>
+            <li>hydrology, sediment transport, fluvial geomorphology, and distrubance regimes expected for its location</li>
+            Unfortunately, healthy watersheds are uncommon in parts of the nation that are urbanized, farmed, or mined.
+          </p>
         </section>
         <section data-scene="scene4">
           <h2>Species at Risk</h2>
-          <p>EPA data points discussion </p>
+          <p>When watersheds are not healthy, wildlife suffers. Pollutants introduced to the ecosystem alter habitats. This reduced biodiversity by eliminating some species and introducing new, invasive ones that destroy native species. This, in turn, can affect the food chain. 
+            <br>Freshwater ecosystems are tighly linked to watersheds and they are greatly influenced by human uses or mofications of land as well as water. <i>Source: EPA</i></p>
         </section>
         <section data-scene="scene5">
           <h2>Water Reclamation Projects</h2>
-          <p>USBR projects/population growth/water management, etc.</p>
+          <p>The Bureau of Reclamation, best known for dams, powerplants, and canals that facilitated the economic developement of the West. Today, the USBR is the largest wholesaler of water in the US. 10 million acres of farmland are irrigated by reclamation water. One out of ever five farmers in the American West are served by reclamation water. 25% of the nation's fruti and nut crop and 60% of the nation's vegetables are produced using reclamation water. The USBR is responsible for 338 reservoirs, 492 dams, and 8,116 miles of irrigation canals.</p>
         </section>
         <section data-scene="scene6">
           <h2>Case Study: Lake Berryessa & Monticello Dam</h2>
-          <p>blahblahblah</p>
+          <p>In the winter of 1957, the 300-foot-high Monticello Dam was complete at Devil's Gate, where Putah Creek broke east through the Blue Ridge, carving a canyon on its way to the Central Valley. With the dam's completion, Napa County lost one-eighty of its farmland. The decision to flood Berryessa Valley reflected California's insatiable need for water, its most precious resource. Monticello Dam was designed to hold back 1.6 million acre-feet of water. <br><i>source: Peter Jensen, Napa Register, August 19, 2012</i>
+            <br>"We were in the dam-building businesss. Whenever Reclamation has to manage recreation, our first option is to have someone else do it."
+          </p>
         </section>
         <section data-scene="scene7">
             <h2>Case Study: Lake Berryessa & Monticello Dam</h2>
@@ -249,7 +257,7 @@
 
     /// Scene Seven///
      // style choropleth case study map
-     function setColor2(rare_ecosystem) {
+     function setColor7(rare_ecosystem) {
       // Tenary operation: condition ? valueIfTrue : valueIfFalse
       return rare_ecosystem > 6.1771 ? '#006837' :
         rare_ecosystem > 2.4212 ? '#31a354' :
@@ -258,9 +266,9 @@
         '#ffffee';
     }
     // Set style function that sets fill color property
-    function style2(feature) {
+    function style7(feature) {
       return {
-        fillColor: setColor2(feature.properties.rare_ecosystem),
+        fillColor: setColor7(feature.properties.rare_ecosystem),
         fillOpacity: 0.5,
         weight: .5,
         opacity: 0.8,
@@ -268,7 +276,7 @@
       };
     }
     var case_study = L.geoJson.ajax('./data/case_study.geojson', {
-      style: style2,
+      style: style7,
       onEachFeature: function (feature, layer) {
         layer.bindTooltip(feature.properties.Name, {
           className: 'feature-tooltip',
