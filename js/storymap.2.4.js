@@ -289,7 +289,7 @@
 
             }
 
-            $.each(layers, function (key, layer) {
+            $.each(settings.layers, function (key, layer) {
 
                 // layer = layer.layer;
                 layer.layer.on('s');
