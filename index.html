@@ -81,13 +81,22 @@
     <div class="row">
       <div class="col-sm-6 col-md-4 storymap-story">
         <section data-scene="scene1">
-          <h2>Watersheds in the Western United States</h2>
-          <p>A watershed is an area of land that drains all the streams and rainfall to a common outlet. It consists of
-            surface water and all the underlying ground water. All land drains into a lake, river, stream or other water
-            body and directly affects its quality. </p>
+          <h2>Watersheds in the United States</h2>
+          <p>A watershed is an area of land in which all streams and precipitation drain into a common outlet. It
+            includes all surface and underlying groundwater. Boundaries follow the highest ridgeline around the stream
+            drainage area and converge at the lowest point where water flows out of the watershed.
+            <br>Watersheds are organized into nested hydrologic units (HUC). The United States has 22 regional
+            watersheds (HUC2). Those 22 regions are divided into 223 sub-regions (HUC4), 387 basins (HUC6), and 2,318
+            sub-basins (HUC8). By the late eighties, the emergence of GIS permitted federal agencies to further divide
+            the sub-basins into 18,586 watersheds (HUC10),
+            and 101,534 sub-watersheds (HUC12).
+            <br><i>Source:<a
+                href="https://www.nrcs.usda.gov/wps/portal/nrcs/detail/national/water/watersheds/dataset/?cid=nrcs143_021617"
+                target="_blank"> USDA Natural Resources Conservation Services</a></i>
+          </p>
         </section>
         <section data-scene="scene2">
-          <h2>Watershed Administration</h2>
+          <h2>Watersheds in the Western United States</h2>
           <p>The EPA breaks down </p>
         </section>
         <section data-scene="scene3">
@@ -165,37 +174,89 @@
   <script type="text/javascript">
     // Load data using d3, promise //
 
+    var nationalwatersheds = d3.json('./data/us-huc2.geojson');
     var watershedshuc2 = d3.json('./data/watersheds-huc2.geojson');
     var watershedshuc4 = d3.json('./data/watersheds-huc4.geojson');
     var epahuc8 = d3.json('./data/epa-huc8.geojson');
     var usbr = d3.json('./data/usbrpoints.geojson')
     var casestudy = d3.json('./data/case_study.geojson');
 
-    Promise.all([watershedshuc2, watershedshuc4, epahuc8, usbr, casestudy]).then(ready);
+    Promise.all([nationalwatersheds, watershedshuc2, watershedshuc4, epahuc8, usbr, casestudy]).then(ready);
 
     function ready(data) {
 
-      var watershedshuc2data = data[0];
-      var watershedshuc4data = data[1];
-      var epahuc8data = data[2];
-      var usbrdata = data[3];
-      var casestudydata = data[4];
-
+      var nationalwatershedsdata = data[0];
+      var watershedshuc2data = data[1];
+      var watershedshuc4data = data[2];
+      var epahuc8data = data[3];
+      var usbrdata = data[4];
+      var casestudydata = data[5];
 
       /// Scene One ///
+      var national_legend = '<i style="background: black; opacity: 0.5"></i><p><b>HUC2</b></p>';
+      var national = L.geoJson(nationalwatershedsdata, {
+        style: function (feature) {
+          return {
+            color: '#dddddd',
+            weight: .75,
+            fillOpacity: .25,
+            fillColor: '#2888ce'
+          };
+        },
+        onEachFeature: function (feature, layer) {
+          layer.bindTooltip(feature.properties.NAME + "<br>" + "HUC2: " +
+            feature.properties.HUC2, {
+              sticky: true,
+              className: "feature-tooltip"
+            });
+          layer.on('mouseover', function () {
+            layer.setStyle({
+              weight: 2,
+              fillOpacity: .7
+            })
+            layer.on('mouseout', function () {
+              layer.setStyle({
+                weight: 1,
+                fillOpacity: .25
+              })
+            })
+          })
+        }
+      });
+
+      /// Scene Two ///
       var huc2_legend = '<i style="background: black; opacity: 0.5"></i><p><b>Region: HUC2</b></p>';
       var huc2 = L.geoJson(watershedshuc2data, {
         style: function (feature) {
           return {
             color: '#dddddd',
             weight: .75,
-            fillOpacity: .1,
-            fillColor: '#1f78b4'
+            fillOpacity: .25,
+            fillColor: '#2888ce'
           };
+        },
+        onEachFeature: function (feature, layer) {
+          layer.bindTooltip(feature.properties.Name + "<br>" + "HUC2: " +
+            feature.properties.HUC2, {
+              sticky: true,
+              className: "feature-tooltip"
+            });
+          layer.on('mouseover', function () {
+            layer.setStyle({
+              weight: 2,
+              fillOpacity: .6
+            })
+            layer.on('mouseout', function () {
+              layer.setStyle({
+                weight: 1,
+                fillOpacity: .25
+              })
+            })
+          })
         }
       });
 
-      /// Scene Two ///
+      /// Scene Three ///
       var huc4_legend = '<i style="background: black; opacity: 0.5"></i><p><b>Sub-Region: HUC4</b></p>';
       var huc4 = L.geoJson(watershedshuc4data, {
         style: function (feature) {
@@ -337,6 +398,10 @@
       var darkLayer = L.tileLayer('http://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png');
 
       var layers = {
+        national: {
+          layer: national,
+          legend: national_legend
+        },
         huc2: {
           layer: huc2,
           legend: huc2_legend
@@ -369,17 +434,17 @@
 
       var scenes = {
         scene1: {
+          lat: 39.5,
+          lng: -98.35,
+          zoom: 4,
+          layers: [layers.national],
+          name: "scene 1"
+        },
+        scene2: {
           lat: 44,
           lng: -119,
           zoom: 5,
           layers: [layers.huc2],
-          name: "scene 1"
-        },
-        scene2: {
-          lat: 44.5701158,
-          lng: -119,
-          zoom: 5,
-          layers: [layers.huc4],
           name: "scene 2"
         },
         scene3: {
