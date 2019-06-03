@@ -111,7 +111,7 @@
             in the United States, one watershed can be controlled by multiple state, county, and city agencies with
             conflicting interests and needs. One connected stream can be subject to multiple water quality regulations,
             stormwater ordinances, fishing licenses regulations based on government offices.
-            <br> The subcommittee on Spatial Water Data alone includes members from the Natural Resources Conservation
+            <br>The subcommittee on Spatial Water Data alone includes members from the Natural Resources Conservation
             Service, USGS, Forest Service, BLM, Corps of Engineers, EPA, FEMA, NOAA, NWS.
             <br><i>Source:<a href="https://aquadoc.typepad.com/files/watershed-usa.pdf" target="_blank"> What if... the
                 United States of American were based on Watersheds?</a></i>
@@ -119,19 +119,20 @@
         </section>
         <section data-scene="scene4">
           <h2>Watershed Health & Species at Risk</h2>
-          <p>Key components of a healthy watershed include:
-            <li>intact and functioning headwater streams, floodbplains, riparian corridors, biotic refugia, instream
-              habitat, and biotic communities;</li>
-            <li>natural vegetation in the landscape; and</li>
-            <li>hydrology, sediment transport, fluvial geomorphology, and distrubance regimes expected for its location
-            </li>
-            Unfortunately, healthy watersheds are uncommon in parts of the nation that are urbanized, farmed, or mined.
-          </p>
-          <p>When watersheds are not healthy, wildlife suffers. Pollutants introduced to the ecosystem alter habitats.
+          <p>All land drains into a lake, river, stream or other water body and directly affects its quality. The EPA
+            tracks watershed health based on six ecological attributes:
+            <li>Landscape Condition</li>
+            <li>Habitat</li>
+            <li>Hydrology</li>
+            <li>Water Quality</li>
+            <li>Biological Condition</li>
+            <br>Unfortunately, healthy watersheds are uncommon in parts of the nation that are urbanized, farmed, or mined.
+          <br>When watersheds are not healthy, wildlife suffers. Pollutants introduced to the ecosystem alter habitats.
             This reduced biodiversity by eliminating some species and introducing new, invasive ones that destroy native
-            species. This, in turn, can affect the food chain.
-            <br>Freshwater ecosystems are tighly linked to watersheds and they are greatly influenced by human uses or
-            mofications of land as well as water. <i>Source: EPA</i></p>
+            species. This, in turn, can affect the food chain. Freshwater ecosystems are tighly linked to watersheds and
+            they are greatly influenced by human uses or
+            mofications of land as well as water. <br><i>Source: <a href="https://www.epa.gov/hwp"
+                target="_blank">EPA</a></i></p>
         </section>
         <section data-scene="scene5">
           <h2>Water Reclamation Projects</h2>
@@ -295,7 +296,8 @@
         },
         onEachFeature: function (feature, layer) {
           layer.bindTooltip(feature.properties.Name + "<br>" + "HUC8: " +
-            feature.properties.HUC8 + "<br>" + " Habitat Condition Index: " + feature.properties.wsioHabitatConditionIndex, {
+            feature.properties.HUC8 + "<br>" + " Habitat Condition Index: " + feature.properties
+            .wsioHabitatConditionIndex, {
               sticky: true,
               className: "feature-tooltip"
             });
