@@ -103,7 +103,7 @@
             management found a home at the US Geological Survey, but was moved to an independent bureau within the
             Department of the Interior by 1907. By 1923, the agency was known as the Bureau of Reclamation and by 1928,
             federal funds began flowing through the USBR for major projects like the Hoover Dam.
-            <br><i>Source:<a href="https://www.usbr.gov/history/borhist.html" target="_blank"> USBR</a></i></p>
+            <br><i>Source:<a href="https://www.usbr.gov/history/borhist.html" target="_blank"> USBR History</a></i></p>
         </section>
         <section data-scene="scene3">
           <h2>Watershed Administration</h2>
@@ -111,7 +111,8 @@
             in the United States, one watershed can be controlled by multiple state, county, and city agencies with
             conflicting interests and needs. One connected stream can be subject to multiple water quality regulations,
             stormwater ordinances, fishing licenses regulations based on government offices.
-            <br>The subcommittee on Spatial Water Data alone includes members from the Natural Resources Conservation
+            <br>Successful watershed management requires a substantial amount of interagency coordination. The
+            subcommittee on Spatial Water Data alone includes members from the Natural Resources Conservation
             Service, USGS, Forest Service, BLM, Corps of Engineers, EPA, FEMA, NOAA, NWS.
             <br><i>Source:<a href="https://aquadoc.typepad.com/files/watershed-usa.pdf" target="_blank"> What if... the
                 United States of American were based on Watersheds?</a></i>
@@ -126,13 +127,13 @@
             <li>Hydrology</li>
             <li>Water Quality</li>
             <li>Biological Condition</li>
-            <br>Unfortunately, healthy watersheds are uncommon in parts of the nation that are urbanized, farmed, or mined.
-          <br>When watersheds are not healthy, wildlife suffers. Pollutants introduced to the ecosystem alter habitats.
-            This reduced biodiversity by eliminating some species and introducing new, invasive ones that destroy native
-            species. This, in turn, can affect the food chain. Freshwater ecosystems are tighly linked to watersheds and
-            they are greatly influenced by human uses or
-            mofications of land as well as water. <br><i>Source: <a href="https://www.epa.gov/hwp"
-                target="_blank">EPA</a></i></p>
+            <br>When watersheds are not healthy, wildlife suffers. Pollutants introduced to the ecosystem alter
+            habitats. This reduced biodiversity by eliminating some species and introducing new, invasive ones that
+            destroy native species. This, in turn, can affect the food chain. Freshwater ecosystems are tighly linked to
+            watersheds and they are greatly influenced by human uses or mofications of land as well as water.
+            Unfortunately, healthy watersheds are uncommon in parts of the nation hat are urbanized, farmed, or mined.
+            <br><i>Source: <a href="https://www.epa.gov/hwp" target="_blank">EPA Healthy Watersheds Program</a></i>
+          </p>
         </section>
         <section data-scene="scene5">
           <h2>Water Reclamation Projects</h2>
@@ -141,7 +142,8 @@
             farmland are irrigated by reclamation water. One out of ever five farmers in the American West are served by
             reclamation water. 25% of the nation's fruti and nut crop and 60% of the nation's vegetables are produced
             using reclamation water. The USBR is responsible for 338 reservoirs, 492 dams, and 8,116 miles of irrigation
-            canals.</p>
+            canals.
+          <br><i>Source:<a href="https://www.usbr.gov/main/about/fact.html" target="_blank"> USBR Fact Sheet</a></i></p>
         </section>
         <section data-scene="scene6">
           <h2>Case Study: Lake Berryessa & Monticello Dam</h2>
@@ -290,7 +292,7 @@
           return {
             color: '#dddddd',
             weight: .25,
-            fillOpacity: .1,
+            fillOpacity: .3,
             fillColor: '#1f78b4'
           };
         },
@@ -309,7 +311,7 @@
             layer.on('mouseout', function () {
               layer.setStyle({
                 weight: .25,
-                fillOpacity: .1
+                fillOpacity: .3
               })
             })
           })
@@ -332,7 +334,7 @@
           fillColor: setColor(feature.properties.total),
           fillOpacity: 0.5,
           weight: .5,
-          opacity: 0.8,
+          opacity: .8,
           color: '#ffffff',
         };
       }
@@ -342,9 +344,21 @@
           layer.bindTooltip(feature.properties.Name, {
             className: 'feature-tooltip',
             permanent: false,
-            direction: 'center'
+            direction: 'right'
           });
-        }
+          layer.on('mouseover', function () {
+            layer.setStyle({
+              weight: 1,
+              fillOpacity: .8
+            })
+            layer.on('mouseout', function () {
+              layer.setStyle({
+                weight: .5,
+                fillOpacity: .5
+              })
+            })
+          }) 
+        },
       });
       var epa_choropleth_legend = '<p><b># of At Risk Species</b></p>' +
         '<i style="background: #fef0d9; opacity: 0.5"></i><p><b>0 - 4</b></p>' +
