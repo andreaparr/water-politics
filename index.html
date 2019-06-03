@@ -97,10 +97,28 @@
         </section>
         <section data-scene="scene2">
           <h2>Watersheds in the Western United States</h2>
-          <p>The EPA breaks down </p>
+          <p>The American West presented unique water management challenges due to inadequate precipitation for
+            agriculture. Initially, settlers diverted water from streams, but as demand outweighed supply, settlers
+            pressured the federal government to undertake water storage and irrigation projects. Initially western water
+            management found a home at the US Geological Survey, but was moved to an independent bureau within the
+            Department of the Interior by 1907. By 1923, the agency was known as the Bureau of Reclamation and by 1928,
+            federal funds began flowing through the USBR for major projects like the Hoover Dam.
+            <br><i>Source:<a href="https://www.usbr.gov/history/borhist.html" target="_blank"> USBR</a></i></p>
         </section>
         <section data-scene="scene3">
-          <h2>Watershed Health</h2>
+          <h2>Watershed Administration</h2>
+          <p>Watersheds form the best hydrological planning units for land, water, and ecosystem management....and yet,
+            in the United States, one watershed can be controlled by multiple state, county, and city agencies with
+            conflicting interests and needs. One connected stream can be subject to multiple water quality regulations,
+            stormwater ordinances, fishing licenses regulations based on government offices.
+            <br> The subcommittee on Spatial Water Data alone includes members from the Natural Resources Conservation
+            Service, USGS, Forest Service, BLM, Corps of Engineers, EPA, FEMA, NOAA, NWS.
+            <br><i>Source:<a href="https://aquadoc.typepad.com/files/watershed-usa.pdf" target="_blank"> What if... the
+                United States of American were based on Watersheds?</a></i>
+          </p>
+        </section>
+        <section data-scene="scene4">
+          <h2>Watershed Health & Species at Risk</h2>
           <p>Key components of a healthy watershed include:
             <li>intact and functioning headwater streams, floodbplains, riparian corridors, biotic refugia, instream
               habitat, and biotic communities;</li>
@@ -109,9 +127,6 @@
             </li>
             Unfortunately, healthy watersheds are uncommon in parts of the nation that are urbanized, farmed, or mined.
           </p>
-        </section>
-        <section data-scene="scene4">
-          <h2>Species at Risk</h2>
           <p>When watersheds are not healthy, wildlife suffers. Pollutants introduced to the ecosystem alter habitats.
             This reduced biodiversity by eliminating some species and introducing new, invasive ones that destroy native
             species. This, in turn, can affect the food chain.
@@ -225,7 +240,7 @@
       });
 
       /// Scene Two ///
-      var huc2_legend = '<i style="background: black; opacity: 0.5"></i><p><b>Region: HUC2</b></p>';
+      var huc2_legend = '<i style="background: black; opacity: 0.5"></i><p><b>HUC2</b></p>';
       var huc2 = L.geoJson(watershedshuc2data, {
         style: function (feature) {
           return {
@@ -234,10 +249,21 @@
             fillOpacity: .25,
             fillColor: '#2888ce'
           };
+        }
+      });
+      var huc4_legend = '<i style="background: black; opacity: 0.5"></i><p><b>Sub-Region: HUC4</b></p>';
+      var huc4 = L.geoJson(watershedshuc4data, {
+        style: function (feature) {
+          return {
+            color: '#dddddd',
+            weight: .5,
+            fillOpacity: .2,
+            fillColor: '#1f78b4'
+          };
         },
         onEachFeature: function (feature, layer) {
-          layer.bindTooltip(feature.properties.Name + "<br>" + "HUC2: " +
-            feature.properties.HUC2, {
+          layer.bindTooltip(feature.properties.Name + "<br>" + "HUC4: " +
+            feature.properties.HUC4, {
               sticky: true,
               className: "feature-tooltip"
             });
@@ -257,20 +283,7 @@
       });
 
       /// Scene Three ///
-      var huc4_legend = '<i style="background: black; opacity: 0.5"></i><p><b>Sub-Region: HUC4</b></p>';
-      var huc4 = L.geoJson(watershedshuc4data, {
-        style: function (feature) {
-          return {
-            color: '#dddddd',
-            weight: .5,
-            fillOpacity: .2,
-            fillColor: '#1f78b4'
-          };
-        }
-      });
-
-      /// Scene Three ///
-      var huc8_legend = '<i style="background: black; opacity: 0.5"></i><p><b>Cataloguing Unit: HUC8</b></p>';
+      var huc8_legend = '<i style="background: black; opacity: 0.5"></i><p><b>HUC8</b></p>';
       var huc8 = L.geoJson(epahuc8data, {
         style: function (feature) {
           return {
@@ -279,6 +292,25 @@
             fillOpacity: .1,
             fillColor: '#1f78b4'
           };
+        },
+        onEachFeature: function (feature, layer) {
+          layer.bindTooltip(feature.properties.Name + "<br>" + "HUC8: " +
+            feature.properties.HUC8 + "<br>" + " Habitat Condition Index: " + feature.properties.wsioHabitatConditionIndex, {
+              sticky: true,
+              className: "feature-tooltip"
+            });
+          layer.on('mouseover', function () {
+            layer.setStyle({
+              weight: 1,
+              fillOpacity: .6
+            })
+            layer.on('mouseout', function () {
+              layer.setStyle({
+                weight: .25,
+                fillOpacity: .1
+              })
+            })
+          })
         }
       });
 
@@ -444,7 +476,7 @@
           lat: 44,
           lng: -119,
           zoom: 5,
-          layers: [layers.huc2],
+          layers: [layers.huc2, layers.huc4],
           name: "scene 2"
         },
         scene3: {
