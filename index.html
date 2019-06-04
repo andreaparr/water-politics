@@ -143,11 +143,13 @@
             reclamation water. 25% of the nation's fruti and nut crop and 60% of the nation's vegetables are produced
             using reclamation water. The USBR is responsible for 338 reservoirs, 492 dams, and 8,116 miles of irrigation
             canals.
-          <br><i>Source:<a href="https://www.usbr.gov/main/about/fact.html" target="_blank"> USBR Fact Sheet</a></i></p>
+            <br><i>Source:<a href="https://www.usbr.gov/main/about/fact.html" target="_blank"> USBR Fact Sheet</a></i>
+          </p>
         </section>
         <section data-scene="scene6">
-          <h2>Case Study: Lake Berryessa & Monticello Dam</h2>
-          <p>In the winter of 1957, the 300-foot-high Monticello Dam was complete at Devil's Gate, where Putah Creek
+          <h2>Case Study: Solano Project</h2>
+          <p>Ecological Impact
+            In the winter of 1957, the 300-foot-high Monticello Dam was complete at Devil's Gate, where Putah Creek
             broke east through the Blue Ridge, carving a canyon on its way to the Central Valley. With the dam's
             completion, Napa County lost one-eighty of its farmland. The decision to flood Berryessa Valley reflected
             California's insatiable need for water, its most precious resource. Monticello Dam was designed to hold back
@@ -157,7 +159,12 @@
           </p>
         </section>
         <section data-scene="scene7">
-          <h2>Case Study: Lake Berryessa & Monticello Dam</h2>
+          <h2>Stressors</h2>
+          <p>this will change once I get a working choropleth map. Maybe users should be able to select which layer they
+            want to symbolize?</p>
+        </section>
+        <section data-scene="scene8">
+          <h2>Social</h2>
           <p>this will change once I get a working choropleth map. Maybe users should be able to select which layer they
             want to symbolize?</p>
         </section>
@@ -341,11 +348,12 @@
       var epa_choropleth = L.geoJson(epahuc8data, {
         style: style,
         onEachFeature: function (feature, layer) {
-          layer.bindTooltip(feature.properties.Name, {
-            className: 'feature-tooltip',
-            permanent: false,
-            direction: 'right'
-          });
+          layer.bindTooltip(feature.properties.Name + "<br> " + "Total At Risk Species: " + feature.properties
+            .total, {
+              className: 'feature-tooltip',
+              permanent: false,
+              direction: 'right'
+            });
           layer.on('mouseover', function () {
             layer.setStyle({
               weight: 1,
@@ -357,7 +365,7 @@
                 fillOpacity: .5
               })
             })
-          }) 
+          })
         },
       });
       var epa_choropleth_legend = '<p><b># of At Risk Species</b></p>' +
@@ -391,55 +399,114 @@
       });
 
       /// Scene Six ///
-      var case_study_plain_legend = '<i style="background: black; opacity: 0.5"></i><p><b>Central California</b></p>';
-      var case_study_plain = L.geoJson(casestudydata, {
-        style: function (feature) {
-          return {
-            color: '#dddddd',
-            weight: .75,
-            fillOpacity: .3,
-            fillColor: '#1f78b4'
-          };
-        }
-      });
-
-      /// Scene Seven///
-      // style choropleth case study map
-      function setColor7(rare_ecosystem) {
+      function setColor6(Ecologic) {
         // Tenary operation: condition ? valueIfTrue : valueIfFalse
-        return rare_ecosystem > 6.1771 ? '#006837' :
-          rare_ecosystem > 2.4212 ? '#31a354' :
-          rare_ecosystem > 0.8123 ? '#78c679' :
-          rare_ecosystem > 0.2414 ? '#c2e699' :
+        return Ecologic > .37 ? '#006837' :
+          Ecologic > .30 ? '#31a354' :
+          Ecologic > .24 ? '#78c679' :
+          Ecologic > .18 ? '#c2e699' :
           '#ffffee';
       }
       // Set style function that sets fill color property
-      function style7(feature) {
+      function style6(feature) {
         return {
-          fillColor: setColor7(feature.properties.rare_ecosystem),
+          fillColor: setColor6(feature.properties.Ecologic),
           fillOpacity: 0.5,
           weight: .5,
           opacity: 0.8,
           color: '#ffffff',
         };
       }
-      var case_study = L.geoJson(casestudydata, {
-        style: style7,
+      var case_study_6 = L.geoJson(casestudydata, {
+        style: style6,
         onEachFeature: function (feature, layer) {
-          layer.bindTooltip(feature.properties.Name, {
+          layer.bindTooltip(feature.properties.SUBWTRSHED, {
             className: 'feature-tooltip',
             permanent: false,
             direction: 'center'
           });
         }
       });
-      var case_study_legend = '<p><b>Percentage Rare Ecosystems in Watershed</b></p>' +
-        '<i style="background: #ffffee; opacity: 0.5"></i><p><b>0 - .24 </b></p>' +
-        '<i style="background: #c2e699; opacity: 0.5"></i><p><b>.25 - .81</b></p>' +
-        '<i style="background: #78c679; opacity: 0.5"></i><p><b>0.82 - 2.42</b></p>' +
-        '<i style="background: #31a354; opacity: 0.5"></i><p><b>2.43 - 6.17</b></p>' +
-        '<i style="background: #006837; opacity: 0.5"></i><p><b>6.18 - 9.21</b></p>';
+      var case_study_legend_6 = '<p><b>Watershed Ecological Index</b></p>' +
+        '<i style="background: #ffffee; opacity: 0.5"></i><p><b>0 - .18 </b></p>' +
+        '<i style="background: #c2e699; opacity: 0.5"></i><p><b>.19 - .24</b></p>' +
+        '<i style="background: #78c679; opacity: 0.5"></i><p><b>.25 - .30</b></p>' +
+        '<i style="background: #31a354; opacity: 0.5"></i><p><b>.31 - .37</b></p>' +
+        '<i style="background: #006837; opacity: 0.5"></i><p><b>.38 - .62</b></p>';
 
+      /// Scene Seven///
+      // style choropleth case study map
+      function setColor7(Stressor) {
+        // Tenary operation: condition ? valueIfTrue : valueIfFalse
+        return Stressor > .185 ? '#006837' :
+          Stressor > .131 ? '#31a354' :
+          Stressor > .087 ? '#78c679' :
+          Stressor > .05 ? '#c2e699' :
+          '#ffffee';
+      }
+      // Set style function that sets fill color property
+      function style7(feature) {
+        return {
+          fillColor: setColor7(feature.properties.Stressor),
+          fillOpacity: 0.5,
+          weight: .5,
+          opacity: 0.8,
+          color: '#ffffff',
+        };
+      }
+      var case_study_7 = L.geoJson(casestudydata, {
+        style: style7,
+        onEachFeature: function (feature, layer) {
+          layer.bindTooltip(feature.properties.SUBWTRSHED, {
+            className: 'feature-tooltip',
+            permanent: false,
+            direction: 'center'
+          });
+        }
+      });
+      var case_study_legend_7 = '<p><b>Watershed Stressor Index</b></p>' +
+        '<i style="background: #ffffee; opacity: 0.5"></i><p><b>0 - .049 </b></p>' +
+        '<i style="background: #c2e699; opacity: 0.5"></i><p><b>.05 - .086</b></p>' +
+        '<i style="background: #78c679; opacity: 0.5"></i><p><b>.087 - .13</b></p>' +
+        '<i style="background: #31a354; opacity: 0.5"></i><p><b>.131 - .184</b></p>' +
+        '<i style="background: #006837; opacity: 0.5"></i><p><b>.185 - .321</b></p>';
+
+      /// Scene Eight///
+      // style choropleth case study map
+      function setColor8(Social) {
+        // Tenary operation: condition ? valueIfTrue : valueIfFalse
+        return Social > .354 ? '#006837' :
+          Social > .262 ? '#31a354' :
+          Social > .176 ? '#78c679' :
+          Social > .112 ? '#c2e699' :
+          '#ffffee';
+      }
+      // Set style function that sets fill color property
+      function style8(feature) {
+        return {
+          fillColor: setColor8(feature.properties.Social),
+          fillOpacity: 0.5,
+          weight: .5,
+          opacity: 0.8,
+          color: '#ffffff',
+        };
+      }
+      var case_study_8 = L.geoJson(casestudydata, {
+        style: style8,
+        onEachFeature: function (feature, layer) {
+          layer.bindTooltip(feature.properties.SUBWTRSHED, {
+            className: 'feature-tooltip',
+            permanent: false,
+            direction: 'center'
+          });
+        }
+      });
+      var case_study_legend_8 = '<p><b>Watershed Social Index</b></p>' +
+        '<i style="background: #ffffee; opacity: 0.5"></i><p><b>.083 - .112 </b></p>' +
+        '<i style="background: #c2e699; opacity: 0.5"></i><p><b>.113 - .176</b></p>' +
+        '<i style="background: #78c679; opacity: 0.5"></i><p><b>.177 - .262</b></p>' +
+        '<i style="background: #31a354; opacity: 0.5"></i><p><b>.263 - .354</b></p>' +
+        '<i style="background: #006837; opacity: 0.5"></i><p><b>.355 - .417</b></p>';
 
       /// End of Scenes ///
 
@@ -470,13 +537,17 @@
           layer: usbr,
           legend: usbr_legend
         },
-        case_study_plain: {
-          layer: case_study_plain,
-          legend: case_study_plain_legend
+        case_study_6: {
+          layer: case_study_6,
+          legend: case_study_legend_6
         },
-        case_study: {
-          layer: case_study,
-          legend: case_study_legend
+        case_study_7: {
+          layer: case_study_7,
+          legend: case_study_legend_7
+        },
+        case_study_8: {
+          layer: case_study_8,
+          legend: case_study_legend_8
         }
       }
 
@@ -520,15 +591,22 @@
           lat: 38.6097,
           lng: -122.254,
           zoom: 9,
-          layers: [layers.case_study_plain],
+          layers: [layers.case_study_6],
           name: "scene 6"
         },
         scene7: {
           lat: 38.6097,
           lng: -122.254,
           zoom: 9,
-          layers: [layers.case_study],
+          layers: [layers.case_study_7],
           name: "scene 7"
+        },
+        scene8: {
+          lat: 38.6097,
+          lng: -122.254,
+          zoom: 9,
+          layers: [layers.case_study_8],
+          name: "scene 8"
         }
       };
 
