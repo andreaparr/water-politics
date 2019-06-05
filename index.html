@@ -59,7 +59,7 @@
 <body>
 
   <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark storymap-navbar">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand navbar-custom" href="#">
       <!--convert the style value to a class and then add the class to the css file.-->
       <!--<img src="img/logo.png" class="d-inline-block align-top">-->
       Water Reclamation Projects & Biodiversity
@@ -75,7 +75,6 @@
     <h1>Water Reclamation Projects & Biodiversity</h1>
     <h2>in Western Watersheds</h2>
   </div>
-
 
   <div id="storymap" class="container-fluid">
     <div class="row">
@@ -96,7 +95,7 @@
           </p>
         </section>
         <section data-scene="scene2">
-          <h2>Watersheds in the Western United States</h2>
+          <h2>...in the West</h2>
           <p>The American West presented unique water management challenges due to inadequate precipitation for
             agriculture. Initially, settlers diverted water from streams, but as demand outweighed supply, settlers
             pressured the federal government to undertake water storage and irrigation projects. Initially western water
@@ -106,7 +105,7 @@
             <br><i>Source:<a href="https://www.usbr.gov/history/borhist.html" target="_blank"> USBR History</a></i></p>
         </section>
         <section data-scene="scene3">
-          <h2>Watershed Administration</h2>
+          <h2>When everyone is in charge...no one is in charge</h2>
           <p>Watersheds form the best hydrological planning units for land, water, and ecosystem management....and yet,
             in the United States, one watershed can be controlled by multiple state, county, and city agencies with
             conflicting interests and needs. One connected stream can be subject to multiple water quality regulations,
@@ -119,7 +118,7 @@
           </p>
         </section>
         <section data-scene="scene4">
-          <h2>Watershed Health & Species at Risk</h2>
+          <h2>Health & Species at Risk</h2>
           <p>All land drains into a lake, river, stream or other water body and directly affects its quality. The EPA
             tracks watershed health based on six ecological attributes:
             <li>Landscape Condition</li>
@@ -136,8 +135,8 @@
           </p>
         </section>
         <section data-scene="scene5">
-          <h2>Water Reclamation Projects</h2>
-          <p>The Bureau of Reclamation, best known for dams, powerplants, and canals that facilitated the economic
+          <h2>Supplying water to arid areas</h2>
+          <p>The Bureau of Reclamation is best known for dams, powerplants, and canals that facilitated the economic
             developement of the West. Today, the USBR is the largest wholesaler of water in the US. 10 million acres of
             farmland are irrigated by reclamation water. One out of ever five farmers in the American West are served by
             reclamation water. 25% of the nation's fruti and nut crop and 60% of the nation's vegetables are produced
@@ -147,7 +146,7 @@
           </p>
         </section>
         <section data-scene="scene6">
-          <h2>Case Study: Solano Project</h2>
+          <h2>Solano Project: Ecological Impact</h2>
           <p>Ecological Impact
             In the winter of 1957, the 300-foot-high Monticello Dam was complete at Devil's Gate, where Putah Creek
             broke east through the Blue Ridge, carving a canyon on its way to the Central Valley. With the dam's
@@ -159,12 +158,12 @@
           </p>
         </section>
         <section data-scene="scene7">
-          <h2>Stressors</h2>
+          <h2>Solano Project: Stressors</h2>
           <p>this will change once I get a working choropleth map. Maybe users should be able to select which layer they
             want to symbolize?</p>
         </section>
         <section data-scene="scene8">
-          <h2>Social</h2>
+          <h2>Solano Project: Social Impact</h2>
           <p>this will change once I get a working choropleth map. Maybe users should be able to select which layer they
             want to symbolize?</p>
         </section>
@@ -381,7 +380,7 @@
         pointToLayer: function (feature, latlng) {
           return L.circle(latlng, {
             radius: 20000,
-            fillColor: chroma.random(),
+            fillColor: '#FFD700',
             fillOpacity: 0.5,
             stroke: true,
             weight: 1,
@@ -420,11 +419,15 @@
       var case_study_6 = L.geoJson(casestudydata, {
         style: style6,
         onEachFeature: function (feature, layer) {
-          layer.bindTooltip(feature.properties.SUBWTRSHED, {
-            className: 'feature-tooltip',
-            permanent: false,
-            direction: 'center'
-          });
+          layer.bindTooltip(feature.properties.SUBWTRSHED + "<br>" +"Ecologic Index: " + feature.properties
+            .Ecologic + "<br>" + "Rare Ecosystem %: " + feature.properties.RARE_ECO_PR + "<br>" +
+            "At Risk Terrestrial Species: " + feature.properties.TR_ALL_SP_C + "<br>" +
+            "At Risk Wetlands Species: " + feature.properties.WTL_ALL_SP_ + "<br>" +
+            "At Risk Aquatic Species: " + feature.properties.AQ_ALL_SP_C, {
+              className: 'feature-tooltip',
+              permanent: false,
+              direction: 'center'
+            });
         }
       });
       var case_study_legend_6 = '<p><b>Watershed Ecological Index</b></p>' +
@@ -457,7 +460,11 @@
       var case_study_7 = L.geoJson(casestudydata, {
         style: style7,
         onEachFeature: function (feature, layer) {
-          layer.bindTooltip(feature.properties.SUBWTRSHED, {
+          layer.bindTooltip(feature.properties.SUBWTRSHED + "<br>" +"Stressors Index: " + feature.properties
+            .Stressor + "<br>" + "Count of Road-Stream Crossings: " + feature.properties.ROAD_2015_S + "<br>" +
+            "% Agriculture Next to Water: " + feature.properties.AG_CONTIG_N + "<br>" +
+            "% Urban Next to Water: " + feature.properties.URB_CONTIG + "<br>" +
+            "Count of Mines: " + feature.properties.MINET_CNT, {
             className: 'feature-tooltip',
             permanent: false,
             direction: 'center'
@@ -494,7 +501,9 @@
       var case_study_8 = L.geoJson(casestudydata, {
         style: style8,
         onEachFeature: function (feature, layer) {
-          layer.bindTooltip(feature.properties.SUBWTRSHED, {
+          layer.bindTooltip(feature.properties.SUBWTRSHED + "<br>" +"Social Index: " + feature.properties
+            .Social + "<br>" + "GAP Protection 1 & 2: " + feature.properties.GAP_PROT_1_ + "<br>" +
+            "GAP Protection 3: " + feature.properties.GAP_PROT_3, {
             className: 'feature-tooltip',
             permanent: false,
             direction: 'center'
@@ -555,35 +564,35 @@
         scene1: {
           lat: 39.5,
           lng: -98.35,
-          zoom: 4,
+          zoom: 4.5,
           layers: [layers.national],
           name: "scene 1"
         },
         scene2: {
           lat: 44,
           lng: -119,
-          zoom: 5,
+          zoom: 5.25,
           layers: [layers.huc2, layers.huc4],
           name: "scene 2"
         },
         scene3: {
           lat: 44.5701158,
           lng: -119,
-          zoom: 5,
+          zoom: 5.25,
           layers: [layers.huc8],
           name: "scene 3"
         },
         scene4: {
           lat: 44,
           lng: -119,
-          zoom: 5,
+          zoom: 5.25,
           layers: [layers.epa_choropleth],
           name: "scene 4"
         },
         scene5: {
           lat: 44.5701158,
           lng: -119,
-          zoom: 5,
+          zoom: 5.25,
           layers: [layers.huc4, layers.usbr],
           name: "scene 5"
         },

@@ -253,7 +253,7 @@ video {
 }
 
 .storymap-attribution {
-    font-family: Cairo, sans-serif;
+    font-family: Roboto, sans-serif;
     background: rgba(255, 255, 255, 0.6) !important;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
     border-radius: 2px;
@@ -269,13 +269,13 @@ video {
 .storymap-legend {
     position: fixed;
     line-height: 16px;
-    width: 100px;
+    width: 150px;
     z-index: 1000;
     right: 20px;
-    top: 30px;
+    top: 42px;
     display: none;
     color: #333333;
-    font-family: Cairo, sans-serif;
+    font-family: Roboto, sans-serif;
     padding: 6px 8px;
     background: rgba(255, 255, 255, 0.5);
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
@@ -299,6 +299,7 @@ video {
 }
 
 .storymap-legend p {
+    font-family: Roboto, sans-serif;
     font-size: 12px;
     line-height: 16px;
     margin: 0;
@@ -316,14 +317,19 @@ video {
 }
 
 nav {
-    height: 34px !important;
+    height: 40px !important;
     z-index: 1001;
 }
 
 nav .navbar-brand {
     padding-top: 2px !important;
-    padding-bottom: 0 !important;
+    padding-bottom: 1px !important;
     height: 28px;
+}
+
+.navbar-custom {
+    font-family: Alegreya, serif;
+    font-size: 28px;
 }
 
 .btn {
