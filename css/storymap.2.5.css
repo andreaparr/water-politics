@@ -31,6 +31,14 @@ h1 {
     text-shadow: 0 0 6px rgba(0, 0, 0, .95);
 }
 
+h2 {
+    margin-top: 5%;
+    font-family: Alegreya Sans SC, sans-serif;
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 2vw;
+    text-shadow: 0 0 8px rgba(0, 0, 0, .95);
+}
+
 .storymap-trigger {
     left: 0;
     margin-top: -10px;
@@ -77,6 +85,7 @@ h1 {
 
     .storymap-story {
         width: 100%;
+        position: right;
     }
 
     .storymap-map {
@@ -312,7 +321,7 @@ video {
     width: 0;
     height: 3px;
     z-index: 1030;
-    background: rgba(71, 166, 245, 0.8);
+    background: #2888ce;
     box-shadow: 0 0 2px rgba(0, 75, 98, 0.87);
 }
 
@@ -328,8 +337,8 @@ nav .navbar-brand {
 }
 
 .navbar-custom {
-    font-family: Alegreya, serif;
-    font-size: 28px;
+    font-family: Roboto, serif;
+    font-size: 30px;
 }
 
 .btn {

@@ -159,13 +159,11 @@
         </section>
         <section data-scene="scene7">
           <h2>Solano Project: Stressors</h2>
-          <p>this will change once I get a working choropleth map. Maybe users should be able to select which layer they
-            want to symbolize?</p>
+          <p>Dams, Road crossings, mining, agriculture and urban areas near water bodies, population density and water demand impact the stressor score.</p>
         </section>
         <section data-scene="scene8">
           <h2>Solano Project: Social Impact</h2>
-          <p>this will change once I get a working choropleth map. Maybe users should be able to select which layer they
-            want to symbolize?</p>
+          <p>Social impacts like GAP protected areas, etc. Tie back to Berryessa story, residents displaced. Etc.</p>
         </section>
       </div>
       <div class="col-sm-6 col-md-8 storymap-map"></div>
@@ -400,11 +398,11 @@
       /// Scene Six ///
       function setColor6(Ecologic) {
         // Tenary operation: condition ? valueIfTrue : valueIfFalse
-        return Ecologic > .37 ? '#006837' :
-          Ecologic > .30 ? '#31a354' :
+        return Ecologic > .37 ? '#ffffee' :
+          Ecologic > .30 ? '#c2e699' :
           Ecologic > .24 ? '#78c679' :
-          Ecologic > .18 ? '#c2e699' :
-          '#ffffee';
+          Ecologic > .18 ? '#31a354' :
+          '#006837';
       }
       // Set style function that sets fill color property
       function style6(feature) {
@@ -431,21 +429,21 @@
         }
       });
       var case_study_legend_6 = '<p><b>Watershed Ecological Index</b></p>' +
-        '<i style="background: #ffffee; opacity: 0.5"></i><p><b>0 - .18 </b></p>' +
-        '<i style="background: #c2e699; opacity: 0.5"></i><p><b>.19 - .24</b></p>' +
+        '<i style="background: #006837; opacity: 0.5"></i><p><b>0 - .18 </b></p>' +
+        '<i style="background: #31a354; opacity: 0.5"></i><p><b>.19 - .24</b></p>' +
         '<i style="background: #78c679; opacity: 0.5"></i><p><b>.25 - .30</b></p>' +
-        '<i style="background: #31a354; opacity: 0.5"></i><p><b>.31 - .37</b></p>' +
-        '<i style="background: #006837; opacity: 0.5"></i><p><b>.38 - .62</b></p>';
+        '<i style="background: #c2e699; opacity: 0.5"></i><p><b>.31 - .37</b></p>' +
+        '<i style="background: #ffffee; opacity: 0.5"></i><p><b>.38 - .62</b></p>';
 
       /// Scene Seven///
       // style choropleth case study map
       function setColor7(Stressor) {
         // Tenary operation: condition ? valueIfTrue : valueIfFalse
-        return Stressor > .185 ? '#006837' :
-          Stressor > .131 ? '#31a354' :
-          Stressor > .087 ? '#78c679' :
-          Stressor > .05 ? '#c2e699' :
-          '#ffffee';
+        return Stressor > .185 ? '#bd0026' :
+          Stressor > .131 ? '#f03b20' :
+          Stressor > .087 ? '#fd8d3c' :
+          Stressor > .05 ? '#fecc5c' :
+          '#ffffb2';
       }
       // Set style function that sets fill color property
       function style7(feature) {
@@ -472,21 +470,21 @@
         }
       });
       var case_study_legend_7 = '<p><b>Watershed Stressor Index</b></p>' +
-        '<i style="background: #ffffee; opacity: 0.5"></i><p><b>0 - .049 </b></p>' +
-        '<i style="background: #c2e699; opacity: 0.5"></i><p><b>.05 - .086</b></p>' +
-        '<i style="background: #78c679; opacity: 0.5"></i><p><b>.087 - .13</b></p>' +
-        '<i style="background: #31a354; opacity: 0.5"></i><p><b>.131 - .184</b></p>' +
-        '<i style="background: #006837; opacity: 0.5"></i><p><b>.185 - .321</b></p>';
+        '<i style="background: #ffffb2; opacity: 0.5"></i><p><b>0 - .049 </b></p>' +
+        '<i style="background: #fecc5c; opacity: 0.5"></i><p><b>.05 - .086</b></p>' +
+        '<i style="background: #fd8d3c; opacity: 0.5"></i><p><b>.087 - .13</b></p>' +
+        '<i style="background: #f03b20; opacity: 0.5"></i><p><b>.131 - .184</b></p>' +
+        '<i style="background: #bd0026; opacity: 0.5"></i><p><b>.185 - .321</b></p>';
 
       /// Scene Eight///
       // style choropleth case study map
       function setColor8(Social) {
         // Tenary operation: condition ? valueIfTrue : valueIfFalse
-        return Social > .354 ? '#006837' :
-          Social > .262 ? '#31a354' :
-          Social > .176 ? '#78c679' :
-          Social > .112 ? '#c2e699' :
-          '#ffffee';
+        return Social > .354 ? '#810f7c' :
+          Social > .262 ? '#8856a7' :
+          Social > .176 ? '#8c96c6' :
+          Social > .112 ? '#b3cde3' :
+          '#edf8fb';
       }
       // Set style function that sets fill color property
       function style8(feature) {
@@ -511,11 +509,11 @@
         }
       });
       var case_study_legend_8 = '<p><b>Watershed Social Index</b></p>' +
-        '<i style="background: #ffffee; opacity: 0.5"></i><p><b>.083 - .112 </b></p>' +
-        '<i style="background: #c2e699; opacity: 0.5"></i><p><b>.113 - .176</b></p>' +
-        '<i style="background: #78c679; opacity: 0.5"></i><p><b>.177 - .262</b></p>' +
-        '<i style="background: #31a354; opacity: 0.5"></i><p><b>.263 - .354</b></p>' +
-        '<i style="background: #006837; opacity: 0.5"></i><p><b>.355 - .417</b></p>';
+        '<i style="background: #edf8fb; opacity: 0.5"></i><p><b>.083 - .112 </b></p>' +
+        '<i style="background: #b3cde3; opacity: 0.5"></i><p><b>.113 - .176</b></p>' +
+        '<i style="background: #8c96c6; opacity: 0.5"></i><p><b>.177 - .262</b></p>' +
+        '<i style="background: #b3cde3; opacity: 0.5"></i><p><b>.263 - .354</b></p>' +
+        '<i style="background: #edf8fb; opacity: 0.5"></i><p><b>.355 - .417</b></p>';
 
       /// End of Scenes ///
 
