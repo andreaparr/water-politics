@@ -217,7 +217,7 @@
     var watershedshuc4 = d3.json('./data/watersheds-huc4.geojson');
     var epahuc8 = d3.json('./data/epa-huc8.geojson');
     var usbr = d3.json('./data/usbrpoints.geojson')
-    var casestudy = d3.json('./data/case_study-bup2.geojson');
+    var casestudy = d3.json('./data/case_study.geojson');
 
     Promise.all([nationalwatersheds, watershedshuc2, watershedshuc4, epahuc8, usbr, casestudy]).then(ready);
 
@@ -436,18 +436,18 @@
       });
 
       /// Scene Seven ///
-      function setColor7(Ecologic) {
+      function setColor7(HabitatConditionIndexWS2015) {
         // Tenary operation: condition ? valueIfTrue : valueIfFalse
-        return Ecologic > .37 ? '#ffffee' :
-          Ecologic > .30 ? '#c2e699' :
-          Ecologic > .24 ? '#78c679' :
-          Ecologic > .18 ? '#31a354' :
-          '#006837';
+        return HabitatConditionIndexWS2015 > 4.77 ? '#006837' :
+          HabitatConditionIndexWS2015 > 4.51 ? '#31a354' :
+          HabitatConditionIndexWS2015 > 4.12 ? '#78c679' :
+          HabitatConditionIndexWS2015 > 3.42 ? '#c2e699' :
+          '#ffffee';
       }
       // Set style function that sets fill color property
       function style7(feature) {
         return {
-          fillColor: setColor7(feature.properties.Ecologic),
+          fillColor: setColor7(feature.properties.HabitatConditionIndexWS2015),
           fillOpacity: 0.5,
           weight: .5,
           opacity: 0.8,
@@ -457,32 +457,31 @@
       var case_study_7 = L.geoJson(casestudydata, {
         style: style7,
         onEachFeature: function (feature, layer) {
-          layer.bindTooltip(feature.properties.SUBWTRSHED + "<br>" + "Ecologic Index: " + feature.properties
-            .Ecologic + "<br>" + "Rare Ecosystem %: " + feature.properties.RARE_ECO_PR + "<br>" +
-            "At Risk Terrestrial Species: " + feature.properties.TR_ALL_SP_C + "<br>" +
-            "At Risk Wetlands Species: " + feature.properties.WTL_ALL_SP_ + "<br>" +
-            "At Risk Aquatic Species: " + feature.properties.AQ_ALL_SP_C, {
+          layer.bindTooltip(feature.properties.SUBWTRSHED + "<br>" + "Region: " + feature.properties.NameHUC8Watershed + "<br>" + "Habitat Condition Index: " + feature.properties.HabitatConditionIndexWS2015 + "<br>" +
+            "At Risk Aquatic Species: " + feature.properties.CountofAquaticSpecies + "<br>" +
+            "At Risk Wetlands Species: " + feature.properties.CountofWetlandsSpecies + "<br>" +
+            "At Risk Terrestrial Species: " + feature.properties.CountofTerrestrialSpecies, {
               className: 'feature-tooltip',
               permanent: false,
-              direction: 'center'
+              direction: 'right'
             });
         }
       });
-      var case_study_legend_7 = '<p><b>Watershed Ecological Index</b></p>' +
-        '<i style="background: #006837; opacity: 0.5"></i><p><b>0 - .18 </b></p>' +
-        '<i style="background: #31a354; opacity: 0.5"></i><p><b>.19 - .24</b></p>' +
-        '<i style="background: #78c679; opacity: 0.5"></i><p><b>.25 - .30</b></p>' +
-        '<i style="background: #c2e699; opacity: 0.5"></i><p><b>.31 - .37</b></p>' +
-        '<i style="background: #ffffee; opacity: 0.5"></i><p><b>.38 - .62</b></p>';
+      var case_study_legend_7 = '<p><b>Habitat Condition Index</b></p>' +
+      '<i style="background: #ffffee; opacity: 0.5"></i><p><b>2.25 - 3.42</b></p>' +
+        '<i style="background: #c2e699; opacity: 0.5"></i><p><b>3.43 - 4.12</b></p>' +
+        '<i style="background: #78c679; opacity: 0.5"></i><p><b>4.13 - 4.51</b></p>' +
+        '<i style="background: #31a354; opacity: 0.5"></i><p><b>4.52 - 4.77</b></p>' +
+        '<i style="background: #006837; opacity: 0.5"></i><p><b>4.78 - 5.00</b></p>';
 
       /// Scene Eight///
       // style choropleth case study map
       function setColor8(Stressor) {
         // Tenary operation: condition ? valueIfTrue : valueIfFalse
-        return Stressor > .185 ? '#bd0026' :
-          Stressor > .131 ? '#f03b20' :
-          Stressor > .087 ? '#fd8d3c' :
-          Stressor > .05 ? '#fecc5c' :
+        return Stressor > .29 ? '#bd0026' :
+          Stressor > .2 ? '#f03b20' :
+          Stressor > .14 ? '#fd8d3c' :
+          Stressor > .09 ? '#fecc5c' :
           '#ffffb2';
       }
       // Set style function that sets fill color property
@@ -499,31 +498,31 @@
         style: style8,
         onEachFeature: function (feature, layer) {
           layer.bindTooltip(feature.properties.SUBWTRSHED + "<br>" + "Stressors Index: " + feature.properties
-            .Stressor + "<br>" + "Count of Road-Stream Crossings: " + feature.properties.ROAD_2015_S + "<br>" +
-            "% Agriculture Next to Water: " + feature.properties.AG_CONTIG_N + "<br>" +
-            "% Urban Next to Water: " + feature.properties.URB_CONTIG + "<br>" +
-            "Count of Mines: " + feature.properties.MINET_CNT, {
+            .Stressor + "<br>" + "Population:" + feature.properties.PopulationinWS + "<br>" + "Count of Road-Stream Crossings: " + feature.properties.CountroadstreamCrossings2015 + "<br>" +
+            "% Agriculture Next to Water: " + feature.properties.AgricultureContiguoustoWaterinWS2011 + "<br>" +
+            "% Urban Next to Water: " + feature.properties.UrbanContiguoustoWaterinWS2011 + "<br>" +
+            "Count of Mines: " + feature.properties.CountAllMininginWS, + "<br>" + "Number of Dams: " + feature.properties.CountofDamsinWS, {
               className: 'feature-tooltip',
               permanent: false,
-              direction: 'center'
+              direction: 'right'
             });
         }
       });
       var case_study_legend_8 = '<p><b>Watershed Stressor Index</b></p>' +
-        '<i style="background: #ffffb2; opacity: 0.5"></i><p><b>0 - .049 </b></p>' +
-        '<i style="background: #fecc5c; opacity: 0.5"></i><p><b>.05 - .086</b></p>' +
-        '<i style="background: #fd8d3c; opacity: 0.5"></i><p><b>.087 - .13</b></p>' +
-        '<i style="background: #f03b20; opacity: 0.5"></i><p><b>.131 - .184</b></p>' +
-        '<i style="background: #bd0026; opacity: 0.5"></i><p><b>.185 - .321</b></p>';
+        '<i style="background: #ffffb2; opacity: 0.5"></i><p><b>.04 - .09 </b></p>' +
+        '<i style="background: #fecc5c; opacity: 0.5"></i><p><b>.1 - .14</b></p>' +
+        '<i style="background: #fd8d3c; opacity: 0.5"></i><p><b>.15 - .2</b></p>' +
+        '<i style="background: #f03b20; opacity: 0.5"></i><p><b>.21 - .29</b></p>' +
+        '<i style="background: #bd0026; opacity: 0.5"></i><p><b>.3 - .5</b></p>';
 
       /// Scene Nine///
       // style choropleth case study map
       function setColor9(Social) {
         // Tenary operation: condition ? valueIfTrue : valueIfFalse
-        return Social > .354 ? '#810f7c' :
-          Social > .262 ? '#8856a7' :
-          Social > .176 ? '#8c96c6' :
-          Social > .112 ? '#b3cde3' :
+        return Social > .438 ? '#810f7c' :
+          Social > .331 ? '#8856a7' :
+          Social > .249 ? '#8c96c6' :
+          Social > .192 ? '#b3cde3' :
           '#edf8fb';
       }
       // Set style function that sets fill color property
@@ -540,20 +539,19 @@
         style: style9,
         onEachFeature: function (feature, layer) {
           layer.bindTooltip(feature.properties.SUBWTRSHED + "<br>" + "Social Index: " + feature.properties
-            .Social + "<br>" + "GAP Protection 1 & 2: " + feature.properties.GAP_PROT_1_ + "<br>" +
-            "GAP Protection 3: " + feature.properties.GAP_PROT_3, {
+            .Social + "<br>" + "GAP Protection: " + feature.properties.GAPStatus123, {
               className: 'feature-tooltip',
               permanent: false,
-              direction: 'center'
+              direction: 'right'
             });
         }
       });
       var case_study_legend_9 = '<p><b>Watershed Social Index</b></p>' +
-        '<i style="background: #edf8fb; opacity: 0.5"></i><p><b>.083 - .112 </b></p>' +
-        '<i style="background: #b3cde3; opacity: 0.5"></i><p><b>.113 - .176</b></p>' +
-        '<i style="background: #8c96c6; opacity: 0.5"></i><p><b>.177 - .262</b></p>' +
-        '<i style="background: #b3cde3; opacity: 0.5"></i><p><b>.263 - .354</b></p>' +
-        '<i style="background: #edf8fb; opacity: 0.5"></i><p><b>.355 - .417</b></p>';
+        '<i style="background: #edf8fb; opacity: 0.5"></i><p><b>.167 - .191</b></p>' +
+        '<i style="background: #b3cde3; opacity: 0.5"></i><p><b>.192 - .248</b></p>' +
+        '<i style="background: #8c96c6; opacity: 0.5"></i><p><b>.249 - .330</b></p>' +
+        '<i style="background: #b3cde3; opacity: 0.5"></i><p><b>.331 - .437</b></p>' +
+        '<i style="background: #edf8fb; opacity: 0.5"></i><p><b>.438 - .500</b></p>';
 
       /// Scene Ten ///
       var national_legend = '<i style="background: black; opacity: 0.5"></i><p><b>HUC2</b></p>';
