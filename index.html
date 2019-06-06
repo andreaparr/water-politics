@@ -105,7 +105,7 @@
             <br><i>Source:<a href="https://www.usbr.gov/history/borhist.html" target="_blank"> USBR History</a></i></p>
         </section>
         <section data-scene="scene3">
-          <h2>When everyone is in charge...no one is in charge</h2>
+          <h2>Everyone is in charge</h2>
           <p>Watersheds form the best hydrological planning units for land, water, and ecosystem management....and yet,
             in the United States, one watershed can be controlled by multiple state, county, and city agencies with
             conflicting interests and needs. One connected stream can be subject to multiple water quality regulations,
@@ -394,10 +394,10 @@
         pointToLayer: function (feature, latlng) {
           return L.circle(latlng, {
             radius: 20000,
-            fillColor: '#FFD700',
-            fillOpacity: 0.4,
+            fillColor: '#ffffff',
+            fillOpacity: 0.5,
             stroke: true,
-            weight: 1,
+            weight: 1.5,
             opacity: 0.8,
             color: '#ffffff',
           });
@@ -646,7 +646,7 @@
           lat: 44.5701158,
           lng: -119,
           zoom: 5.25,
-          layers: [layers.huc4, layers.usbr],
+          layers: [layers.epa_choropleth, layers.usbr],
           name: "scene 5"
         },
         scene6: {
