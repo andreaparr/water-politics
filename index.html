@@ -146,24 +146,40 @@
           </p>
         </section>
         <section data-scene="scene6">
-          <h2>Solano Project: Ecological Impact</h2>
-          <p>Ecological Impact
-            In the winter of 1957, the 300-foot-high Monticello Dam was complete at Devil's Gate, where Putah Creek
-            broke east through the Blue Ridge, carving a canyon on its way to the Central Valley. With the dam's
-            completion, Napa County lost one-eighty of its farmland. The decision to flood Berryessa Valley reflected
-            California's insatiable need for water, its most precious resource. Monticello Dam was designed to hold back
-            1.6 million acre-feet of water. <br><i>source: Peter Jensen, Napa Register, August 19, 2012</i>
-            <br>"We were in the dam-building businesss. Whenever Reclamation has to manage recreation, our first option
-            is to have someone else do it."
+          <h2>Case Study: Solano Project</h2>
+          <p><i>In 1948, the federal government had to choose between saving Berryessa Valley for farming or flooding it
+              to benefit neighboring Solano. Napa County touted the valley’s 12,000 acres as some of the most fertile in
+              California. But in the eyes of the dam builders, the U.S. Bureau of Reclamation, Devil’s Gate was one of
+              the best dam sites in the entire Central Valley.<br>--Peter Jensen</i>
+
+            <br>And in the winter of 1957, the 300-foot-high Monticello Dam was complete at Devil’s Gate. Napa County
+            lost one-eighth of its farmland. The decision to flood Berryessa Valley reflected California’s insatiable
+            need
+            for water, its most precious resource.
+            <br><i>Source:<a
+                href="https://napavalleyregister.com/news/local/the-year-they-flooded-an-agrarian-paradise/article_63b286fe-e825-11e1-9d12-001a4bcf887a.html"
+                target="_blank">Napa Register, August 10, 2012</a></i>
           </p>
         </section>
         <section data-scene="scene7">
-          <h2>Solano Project: Stressors</h2>
-          <p>Dams, Road crossings, mining, agriculture and urban areas near water bodies, population density and water demand impact the stressor score.</p>
+          <h2>Solano Project: Ecological Impact</h2>
+          <p>Ecological Impact
+            Forest change, N-Index, NEF, Habitat condition index, PHWA WS Health Index, At Risk Counts, % Rare ecosystem
+          </p>
         </section>
         <section data-scene="scene8">
+          <h2>Solano Project: Stressors</h2>
+          <p>% Urban, % urban change, % agriculture, % agriculture change, count of mining, density of roads, count of
+            road/stream corssings, % ag and urban contiguous to water, empower density, PHWS WS Vulnerability Index,
+            Population, Pop density, count of dams</p>
+        </section>
+        <section data-scene="scene9">
           <h2>Solano Project: Social Impact</h2>
-          <p>Social impacts like GAP protected areas, etc. Tie back to Berryessa story, residents displaced. Etc.</p>
+          <p>GAP Status.</p>
+        </section>
+        <section data-scene="scene10">
+          <h2>Resources</h2>
+          <p>Brief Conclusion and list of hyperlinks to EPA, USBR, USGS, etc. here.</p>
         </section>
       </div>
       <div class="col-sm-6 col-md-8 storymap-map"></div>
@@ -201,7 +217,7 @@
     var watershedshuc4 = d3.json('./data/watersheds-huc4.geojson');
     var epahuc8 = d3.json('./data/epa-huc8.geojson');
     var usbr = d3.json('./data/usbrpoints.geojson')
-    var casestudy = d3.json('./data/case_study.geojson');
+    var casestudy = d3.json('./data/case_study-bup2.geojson');
 
     Promise.all([nationalwatersheds, watershedshuc2, watershedshuc4, epahuc8, usbr, casestudy]).then(ready);
 
@@ -379,7 +395,7 @@
           return L.circle(latlng, {
             radius: 20000,
             fillColor: '#FFD700',
-            fillOpacity: 0.5,
+            fillOpacity: 0.4,
             stroke: true,
             weight: 1,
             opacity: 0.8,
@@ -396,7 +412,31 @@
       });
 
       /// Scene Six ///
-      function setColor6(Ecologic) {
+      var case_study_6_legend =
+        '<i style="background: black; opacity: 0.5"></i><p><b>Lake Berryessa & Monticello Dam</b></p>';
+      var case_study_6 = L.geoJson(usbrdata, {
+        pointToLayer: function (feature, latlng) {
+          return L.circle(latlng, {
+            radius: 20000,
+            fillColor: '#FFD700',
+            fillOpacity: 0.,
+            stroke: true,
+            weight: 1,
+            opacity: 0.8,
+            color: '#ffffff',
+          });
+        },
+        onEachFeature: function (feature, layer) {
+          layer.bindTooltip(feature.properties.description + "<br>" + "Type: " +
+            feature.properties.type, {
+              sticky: true,
+              className: "feature-tooltip"
+            });
+        }
+      });
+
+      /// Scene Seven ///
+      function setColor7(Ecologic) {
         // Tenary operation: condition ? valueIfTrue : valueIfFalse
         return Ecologic > .37 ? '#ffffee' :
           Ecologic > .30 ? '#c2e699' :
@@ -405,19 +445,19 @@
           '#006837';
       }
       // Set style function that sets fill color property
-      function style6(feature) {
+      function style7(feature) {
         return {
-          fillColor: setColor6(feature.properties.Ecologic),
+          fillColor: setColor7(feature.properties.Ecologic),
           fillOpacity: 0.5,
           weight: .5,
           opacity: 0.8,
           color: '#ffffff',
         };
       }
-      var case_study_6 = L.geoJson(casestudydata, {
-        style: style6,
+      var case_study_7 = L.geoJson(casestudydata, {
+        style: style7,
         onEachFeature: function (feature, layer) {
-          layer.bindTooltip(feature.properties.SUBWTRSHED + "<br>" +"Ecologic Index: " + feature.properties
+          layer.bindTooltip(feature.properties.SUBWTRSHED + "<br>" + "Ecologic Index: " + feature.properties
             .Ecologic + "<br>" + "Rare Ecosystem %: " + feature.properties.RARE_ECO_PR + "<br>" +
             "At Risk Terrestrial Species: " + feature.properties.TR_ALL_SP_C + "<br>" +
             "At Risk Wetlands Species: " + feature.properties.WTL_ALL_SP_ + "<br>" +
@@ -428,16 +468,16 @@
             });
         }
       });
-      var case_study_legend_6 = '<p><b>Watershed Ecological Index</b></p>' +
+      var case_study_legend_7 = '<p><b>Watershed Ecological Index</b></p>' +
         '<i style="background: #006837; opacity: 0.5"></i><p><b>0 - .18 </b></p>' +
         '<i style="background: #31a354; opacity: 0.5"></i><p><b>.19 - .24</b></p>' +
         '<i style="background: #78c679; opacity: 0.5"></i><p><b>.25 - .30</b></p>' +
         '<i style="background: #c2e699; opacity: 0.5"></i><p><b>.31 - .37</b></p>' +
         '<i style="background: #ffffee; opacity: 0.5"></i><p><b>.38 - .62</b></p>';
 
-      /// Scene Seven///
+      /// Scene Eight///
       // style choropleth case study map
-      function setColor7(Stressor) {
+      function setColor8(Stressor) {
         // Tenary operation: condition ? valueIfTrue : valueIfFalse
         return Stressor > .185 ? '#bd0026' :
           Stressor > .131 ? '#f03b20' :
@@ -446,50 +486,9 @@
           '#ffffb2';
       }
       // Set style function that sets fill color property
-      function style7(feature) {
-        return {
-          fillColor: setColor7(feature.properties.Stressor),
-          fillOpacity: 0.5,
-          weight: .5,
-          opacity: 0.8,
-          color: '#ffffff',
-        };
-      }
-      var case_study_7 = L.geoJson(casestudydata, {
-        style: style7,
-        onEachFeature: function (feature, layer) {
-          layer.bindTooltip(feature.properties.SUBWTRSHED + "<br>" +"Stressors Index: " + feature.properties
-            .Stressor + "<br>" + "Count of Road-Stream Crossings: " + feature.properties.ROAD_2015_S + "<br>" +
-            "% Agriculture Next to Water: " + feature.properties.AG_CONTIG_N + "<br>" +
-            "% Urban Next to Water: " + feature.properties.URB_CONTIG + "<br>" +
-            "Count of Mines: " + feature.properties.MINET_CNT, {
-            className: 'feature-tooltip',
-            permanent: false,
-            direction: 'center'
-          });
-        }
-      });
-      var case_study_legend_7 = '<p><b>Watershed Stressor Index</b></p>' +
-        '<i style="background: #ffffb2; opacity: 0.5"></i><p><b>0 - .049 </b></p>' +
-        '<i style="background: #fecc5c; opacity: 0.5"></i><p><b>.05 - .086</b></p>' +
-        '<i style="background: #fd8d3c; opacity: 0.5"></i><p><b>.087 - .13</b></p>' +
-        '<i style="background: #f03b20; opacity: 0.5"></i><p><b>.131 - .184</b></p>' +
-        '<i style="background: #bd0026; opacity: 0.5"></i><p><b>.185 - .321</b></p>';
-
-      /// Scene Eight///
-      // style choropleth case study map
-      function setColor8(Social) {
-        // Tenary operation: condition ? valueIfTrue : valueIfFalse
-        return Social > .354 ? '#810f7c' :
-          Social > .262 ? '#8856a7' :
-          Social > .176 ? '#8c96c6' :
-          Social > .112 ? '#b3cde3' :
-          '#edf8fb';
-      }
-      // Set style function that sets fill color property
       function style8(feature) {
         return {
-          fillColor: setColor8(feature.properties.Social),
+          fillColor: setColor8(feature.properties.Stressor),
           fillOpacity: 0.5,
           weight: .5,
           opacity: 0.8,
@@ -499,21 +498,75 @@
       var case_study_8 = L.geoJson(casestudydata, {
         style: style8,
         onEachFeature: function (feature, layer) {
-          layer.bindTooltip(feature.properties.SUBWTRSHED + "<br>" +"Social Index: " + feature.properties
-            .Social + "<br>" + "GAP Protection 1 & 2: " + feature.properties.GAP_PROT_1_ + "<br>" +
-            "GAP Protection 3: " + feature.properties.GAP_PROT_3, {
-            className: 'feature-tooltip',
-            permanent: false,
-            direction: 'center'
-          });
+          layer.bindTooltip(feature.properties.SUBWTRSHED + "<br>" + "Stressors Index: " + feature.properties
+            .Stressor + "<br>" + "Count of Road-Stream Crossings: " + feature.properties.ROAD_2015_S + "<br>" +
+            "% Agriculture Next to Water: " + feature.properties.AG_CONTIG_N + "<br>" +
+            "% Urban Next to Water: " + feature.properties.URB_CONTIG + "<br>" +
+            "Count of Mines: " + feature.properties.MINET_CNT, {
+              className: 'feature-tooltip',
+              permanent: false,
+              direction: 'center'
+            });
         }
       });
-      var case_study_legend_8 = '<p><b>Watershed Social Index</b></p>' +
+      var case_study_legend_8 = '<p><b>Watershed Stressor Index</b></p>' +
+        '<i style="background: #ffffb2; opacity: 0.5"></i><p><b>0 - .049 </b></p>' +
+        '<i style="background: #fecc5c; opacity: 0.5"></i><p><b>.05 - .086</b></p>' +
+        '<i style="background: #fd8d3c; opacity: 0.5"></i><p><b>.087 - .13</b></p>' +
+        '<i style="background: #f03b20; opacity: 0.5"></i><p><b>.131 - .184</b></p>' +
+        '<i style="background: #bd0026; opacity: 0.5"></i><p><b>.185 - .321</b></p>';
+
+      /// Scene Nine///
+      // style choropleth case study map
+      function setColor9(Social) {
+        // Tenary operation: condition ? valueIfTrue : valueIfFalse
+        return Social > .354 ? '#810f7c' :
+          Social > .262 ? '#8856a7' :
+          Social > .176 ? '#8c96c6' :
+          Social > .112 ? '#b3cde3' :
+          '#edf8fb';
+      }
+      // Set style function that sets fill color property
+      function style9(feature) {
+        return {
+          fillColor: setColor9(feature.properties.Social),
+          fillOpacity: 0.5,
+          weight: .5,
+          opacity: 0.8,
+          color: '#ffffff',
+        };
+      }
+      var case_study_9 = L.geoJson(casestudydata, {
+        style: style9,
+        onEachFeature: function (feature, layer) {
+          layer.bindTooltip(feature.properties.SUBWTRSHED + "<br>" + "Social Index: " + feature.properties
+            .Social + "<br>" + "GAP Protection 1 & 2: " + feature.properties.GAP_PROT_1_ + "<br>" +
+            "GAP Protection 3: " + feature.properties.GAP_PROT_3, {
+              className: 'feature-tooltip',
+              permanent: false,
+              direction: 'center'
+            });
+        }
+      });
+      var case_study_legend_9 = '<p><b>Watershed Social Index</b></p>' +
         '<i style="background: #edf8fb; opacity: 0.5"></i><p><b>.083 - .112 </b></p>' +
         '<i style="background: #b3cde3; opacity: 0.5"></i><p><b>.113 - .176</b></p>' +
         '<i style="background: #8c96c6; opacity: 0.5"></i><p><b>.177 - .262</b></p>' +
         '<i style="background: #b3cde3; opacity: 0.5"></i><p><b>.263 - .354</b></p>' +
         '<i style="background: #edf8fb; opacity: 0.5"></i><p><b>.355 - .417</b></p>';
+
+      /// Scene Ten ///
+      var national_legend = '<i style="background: black; opacity: 0.5"></i><p><b>HUC2</b></p>';
+      var national = L.geoJson(nationalwatershedsdata, {
+        style: function (feature) {
+          return {
+            color: '#dddddd',
+            weight: .75,
+            fillOpacity: .25,
+            fillColor: '#2888ce'
+          };
+        }
+      });
 
       /// End of Scenes ///
 
@@ -546,7 +599,7 @@
         },
         case_study_6: {
           layer: case_study_6,
-          legend: case_study_legend_6
+          legend: case_study_6_legend
         },
         case_study_7: {
           layer: case_study_7,
@@ -555,6 +608,10 @@
         case_study_8: {
           layer: case_study_8,
           legend: case_study_legend_8
+        },
+        case_study_9: {
+          layer: case_study_9,
+          legend: case_study_legend_9
         }
       }
 
@@ -597,8 +654,8 @@
         scene6: {
           lat: 38.6097,
           lng: -122.254,
-          zoom: 9,
-          layers: [layers.case_study_6],
+          zoom: 10,
+          layers: [layers.usbr],
           name: "scene 6"
         },
         scene7: {
@@ -614,7 +671,22 @@
           zoom: 9,
           layers: [layers.case_study_8],
           name: "scene 8"
+        },
+        scene9: {
+          lat: 38.6097,
+          lng: -122.254,
+          zoom: 9,
+          layers: [layers.case_study_9],
+          name: "scene 9"
+        },
+        scene10: {
+          lat: 39.5,
+          lng: -98.35,
+          zoom: 4.5,
+          layers: [layers.national],
+          name: "scene 10"
         }
+
       };
 
       $('#storymap').storymap({
