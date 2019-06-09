@@ -224,12 +224,12 @@
     var watershedshuc4 = d3.json('./data/watersheds-huc4.geojson');
     var epahuc8 = d3.json('./data/epa-huc8.geojson');
     var usbr = d3.json('./data/usbrpoints.geojson');
-    var hydroline = d3.json('./data/hydroline.geojson');
-    var waterbody = d3.json('./data/waterbody.geojson');
+    var hydro1 = d3.json('./data/hydro1.geojson');
+    var hydro2 = d3.json('./data/hydro2.geojson');
     var station = d3.json('./data/station.geojson');
     var casestudy = d3.json('./data/case_study.geojson');
 
-    Promise.all([nationalwatersheds, watershedshuc2, watershedshuc4, epahuc8, usbr, hydroline, waterbody, station,
+    Promise.all([nationalwatersheds, watershedshuc2, watershedshuc4, epahuc8, usbr, hydro1, hydro2, station,
       casestudy
     ]).then(ready);
 
@@ -240,8 +240,8 @@
       var watershedshuc4data = data[2];
       var epahuc8data = data[3];
       var usbrdata = data[4];
-      var hydrolinedata = data[5];
-      var waterbodydata = data[6];
+      var hydro1data = data[5];
+      var hydro2data = data[6];
       var stationdata = data[7];
       var casestudydata = data[8];
 
@@ -451,11 +451,11 @@
       });
 
       var hydro_legend = '<i style="background: black; opacity: 0.5"></i><p><b>Water</b></p>';
-      var hydro = L.geoJson(waterbodydata, {
+      var hydro = L.geoJson(hydro1data, {
         style: function (feature) {
           return {
-            color: '#dddddd',
-            weight: 1,
+            color: '#2888ce',
+            weight: .25,
             fillOpacity: .75,
             fillColor: '#2888ce'
           };
@@ -469,7 +469,7 @@
         }
       });
       var hydro2_legend = '<i style="background: black; opacity: 0.5"></i><p><b>Water</b></p>';
-      var hydro2 = L.geoJson(hydrolinedata, {
+      var hydro2 = L.geoJson(hydro2data, {
         style: function (feature) {
           return {
             color: '#dddddd',
@@ -734,8 +734,8 @@
         scene6: {
           lat: 38.6097,
           lng: -122.254,
-          zoom: 9,
-          layers: [layers.case_study_6, layers.hydro, layers.hydro2],
+          zoom: 11,
+          layers: [layers.case_study_6, layers.hydro],
           name: "scene 6"
         },
         scene7: {
