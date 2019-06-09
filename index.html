@@ -80,26 +80,33 @@
     <div class="row">
       <div class="col-sm-6 col-md-4 storymap-story">
         <section data-scene="scene1">
-          <h2>Watersheds in the United States</h2>
-          <p>A watershed is an area of land in which all streams and precipitation drain into a common outlet. It
+          <h2>Organizing Water</h2>
+          <p>How you develop an organizational structure for water? A watershed is an area of land in which all streams
+            and precipitation drain into a common outlet. It
             includes all surface and underlying groundwater. Boundaries follow the highest ridgeline around the stream
-            drainage area and converge at the lowest point where water flows out of the watershed.
-            <br>Watersheds are organized into nested hydrologic units (HUC). The United States has 22 regional
-            watersheds (HUC2). Those 22 regions are divided into 223 sub-regions (HUC4), 387 basins (HUC6), and 2,318
-            sub-basins (HUC8). By the late eighties, the emergence of GIS permitted federal agencies to further divide
-            the sub-basins into 18,586 watersheds (HUC10),
-            and 101,534 sub-watersheds (HUC12).
-            <br><i>Source:<a
-                href="https://www.nrcs.usda.gov/wps/portal/nrcs/detail/national/water/watersheds/dataset/?cid=nrcs143_021617"
-                target="_blank"> USDA Natural Resources Conservation Services</a></i>
+            drainage area and converge at the lowest point where water flows out of the watershed.</p>
+          <p>Watersheds exist on several scales. are organized into nested hydrologic units (HUC).</p>
+          <li>22 regional watersheds (HUC2)</li>
+          <li>223 sub-regions (HUC4)</li>
+          <li>387 basins (HUC6)</li>
+          <li>2,318 sub-basins (HUC8)</li>
+          <br>
+          <p>By the late eighties, the emergence of GIS permitted federal agencies to further divide
+            the sub-basins into watersheds that could be used to examine trends and patterns on more local levels.</p>
+          <li>18,586 watersheds (HUC10)</li>
+          <li>101,534 sub-watersheds (HUC12)</li>
+          <br><i>Source:<a
+              href="https://www.nrcs.usda.gov/wps/portal/nrcs/detail/national/water/watersheds/dataset/?cid=nrcs143_021617"
+              target="_blank"> USDA Natural Resources Conservation Services</a></i>
           </p>
         </section>
         <section data-scene="scene2">
           <h2>...in the West</h2>
           <p>The American West presented unique water management challenges due to inadequate precipitation for
             agriculture. Initially, settlers diverted water from streams, but as demand outweighed supply, settlers
-            pressured the federal government to undertake water storage and irrigation projects. Initially western water
-            management found a home at the US Geological Survey, but was moved to an independent bureau within the
+            pressured the federal government to undertake water storage and irrigation projects.</p>
+          <p>Water management found its first home at the US Geological Survey, but was moved to an independent bureau
+            within the
             Department of the Interior by 1907. By 1923, the agency was known as the Bureau of Reclamation and by 1928,
             federal funds began flowing through the USBR for major projects like the Hoover Dam.
             <br><i>Source:<a href="https://www.usbr.gov/history/borhist.html" target="_blank"> USBR History</a></i></p>
@@ -216,10 +223,15 @@
     var watershedshuc2 = d3.json('./data/watersheds-huc2.geojson');
     var watershedshuc4 = d3.json('./data/watersheds-huc4.geojson');
     var epahuc8 = d3.json('./data/epa-huc8.geojson');
-    var usbr = d3.json('./data/usbrpoints.geojson')
+    var usbr = d3.json('./data/usbrpoints.geojson');
+    var hydroline = d3.json('./data/hydroline.geojson');
+    var waterbody = d3.json('./data/waterbody.geojson');
+    var station = d3.json('./data/station.geojson');
     var casestudy = d3.json('./data/case_study.geojson');
 
-    Promise.all([nationalwatersheds, watershedshuc2, watershedshuc4, epahuc8, usbr, casestudy]).then(ready);
+    Promise.all([nationalwatersheds, watershedshuc2, watershedshuc4, epahuc8, usbr, hydroline, waterbody, station,
+      casestudy
+    ]).then(ready);
 
     function ready(data) {
 
@@ -228,7 +240,10 @@
       var watershedshuc4data = data[2];
       var epahuc8data = data[3];
       var usbrdata = data[4];
-      var casestudydata = data[5];
+      var hydrolinedata = data[5];
+      var waterbodydata = data[6];
+      var stationdata = data[7];
+      var casestudydata = data[8];
 
       /// Scene One ///
       var national_legend = '<i style="background: black; opacity: 0.5"></i><p><b>HUC2</b></p>';
@@ -414,12 +429,12 @@
       /// Scene Six ///
       var case_study_6_legend =
         '<i style="background: black; opacity: 0.5"></i><p><b>Lake Berryessa & Monticello Dam</b></p>';
-      var case_study_6 = L.geoJson(usbrdata, {
+      var case_study_6 = L.geoJson(stationdata, {
         pointToLayer: function (feature, latlng) {
           return L.circle(latlng, {
-            radius: 20000,
+            radius: 1000,
             fillColor: '#FFD700',
-            fillOpacity: 0.,
+            fillOpacity: 0.2,
             stroke: true,
             weight: 1,
             opacity: 0.8,
@@ -427,14 +442,50 @@
           });
         },
         onEachFeature: function (feature, layer) {
-          layer.bindTooltip(feature.properties.description + "<br>" + "Type: " +
-            feature.properties.type, {
+          layer.bindTooltip(feature.properties.Station + "<br>" + "Agency: " +
+            feature.properties.Agency, {
               sticky: true,
               className: "feature-tooltip"
             });
         }
       });
 
+      var hydro_legend = '<i style="background: black; opacity: 0.5"></i><p><b>Water</b></p>';
+      var hydro = L.geoJson(waterbodydata, {
+        style: function (feature) {
+          return {
+            color: '#dddddd',
+            weight: 1,
+            fillOpacity: .75,
+            fillColor: '#2888ce'
+          };
+        },
+        onEachFeature: function (feature, layer) {
+          layer.bindTooltip(feature.properties.Name + "<br>" + "Type: " +
+            feature.properties.Feature, {
+              sticky: true,
+              className: "feature-tooltip"
+            });
+        }
+      });
+      var hydro2_legend = '<i style="background: black; opacity: 0.5"></i><p><b>Water</b></p>';
+      var hydro2 = L.geoJson(hydrolinedata, {
+        style: function (feature) {
+          return {
+            color: '#dddddd',
+            weight: 1,
+            fillOpacity: .75,
+            fillColor: '#2888ce'
+          };
+        },
+        onEachFeature: function (feature, layer) {
+          layer.bindTooltip(feature.properties.Name + "<br>" + "Type: " +
+            feature.properties.Feature, {
+              sticky: true,
+              className: "feature-tooltip"
+            });
+        }
+      });
       /// Scene Seven ///
       function setColor7(HabitatConditionIndexWS2015) {
         // Tenary operation: condition ? valueIfTrue : valueIfFalse
@@ -457,7 +508,9 @@
       var case_study_7 = L.geoJson(casestudydata, {
         style: style7,
         onEachFeature: function (feature, layer) {
-          layer.bindTooltip(feature.properties.SUBWTRSHED + "<br>" + "Region: " + feature.properties.NameHUC8Watershed + "<br>" + "Habitat Condition Index: " + feature.properties.HabitatConditionIndexWS2015 + "<br>" +
+          layer.bindTooltip(feature.properties.SUBWTRSHED + "<br>" + "Region: " + feature.properties
+            .NameHUC8Watershed + "<br>" + "Habitat Condition Index: " + feature.properties
+            .HabitatConditionIndexWS2015 + "<br>" +
             "At Risk Aquatic Species: " + feature.properties.CountofAquaticSpecies + "<br>" +
             "At Risk Wetlands Species: " + feature.properties.CountofWetlandsSpecies + "<br>" +
             "At Risk Terrestrial Species: " + feature.properties.CountofTerrestrialSpecies, {
@@ -468,7 +521,7 @@
         }
       });
       var case_study_legend_7 = '<p><b>Habitat Condition Index</b></p>' +
-      '<i style="background: #ffffee; opacity: 0.5"></i><p><b>2.25 - 3.42</b></p>' +
+        '<i style="background: #ffffee; opacity: 0.5"></i><p><b>2.25 - 3.42</b></p>' +
         '<i style="background: #c2e699; opacity: 0.5"></i><p><b>3.43 - 4.12</b></p>' +
         '<i style="background: #78c679; opacity: 0.5"></i><p><b>4.13 - 4.51</b></p>' +
         '<i style="background: #31a354; opacity: 0.5"></i><p><b>4.52 - 4.77</b></p>' +
@@ -498,10 +551,12 @@
         style: style8,
         onEachFeature: function (feature, layer) {
           layer.bindTooltip(feature.properties.SUBWTRSHED + "<br>" + "Stressors Index: " + feature.properties
-            .Stressor + "<br>" + "Population:" + feature.properties.PopulationinWS + "<br>" + "Count of Road-Stream Crossings: " + feature.properties.CountroadstreamCrossings2015 + "<br>" +
+            .Stressor + "<br>" + "Population:" + feature.properties.PopulationinWS + "<br>" +
+            "Count of Road-Stream Crossings: " + feature.properties.CountroadstreamCrossings2015 + "<br>" +
             "% Agriculture Next to Water: " + feature.properties.AgricultureContiguoustoWaterinWS2011 + "<br>" +
             "% Urban Next to Water: " + feature.properties.UrbanContiguoustoWaterinWS2011 + "<br>" +
-            "Count of Mines: " + feature.properties.CountAllMininginWS, + "<br>" + "Number of Dams: " + feature.properties.CountofDamsinWS, {
+            "Count of Mines: " + feature.properties.CountAllMininginWS, +"<br>" + "Number of Dams: " + feature
+            .properties.CountofDamsinWS, {
               className: 'feature-tooltip',
               permanent: false,
               direction: 'right'
@@ -563,6 +618,25 @@
             fillOpacity: .25,
             fillColor: '#2888ce'
           };
+        },
+        onEachFeature: function (feature, layer) {
+          layer.bindTooltip(feature.properties.NAME + "<br>" + "HUC2: " +
+            feature.properties.HUC2, {
+              sticky: true,
+              className: "feature-tooltip"
+            });
+          layer.on('mouseover', function () {
+            layer.setStyle({
+              weight: 2,
+              fillOpacity: .7
+            })
+            layer.on('mouseout', function () {
+              layer.setStyle({
+                weight: 1,
+                fillOpacity: .25
+              })
+            })
+          })
         }
       });
 
@@ -599,6 +673,14 @@
           layer: case_study_6,
           legend: case_study_6_legend
         },
+        hydro: {
+          layer: hydro,
+          legend: hydro_legend
+        },
+        hydro2: {
+          layer: hydro2,
+          legend: hydro2_legend
+        },
         case_study_7: {
           layer: case_study_7,
           legend: case_study_legend_7
@@ -616,7 +698,7 @@
       var scenes = {
         scene1: {
           lat: 39.5,
-          lng: -98.35,
+          lng: -105.35,
           zoom: 4.5,
           layers: [layers.national],
           name: "scene 1"
@@ -652,29 +734,29 @@
         scene6: {
           lat: 38.6097,
           lng: -122.254,
-          zoom: 10,
-          layers: [layers.usbr],
+          zoom: 9,
+          layers: [layers.case_study_6, layers.hydro, layers.hydro2],
           name: "scene 6"
         },
         scene7: {
           lat: 38.6097,
           lng: -122.254,
           zoom: 9,
-          layers: [layers.case_study_7],
+          layers: [layers.case_study_7, layers.case_study_6, layers.hydro],
           name: "scene 7"
         },
         scene8: {
           lat: 38.6097,
           lng: -122.254,
           zoom: 9,
-          layers: [layers.case_study_8],
+          layers: [layers.case_study_8, layers.case_study_6, layers.hydro],
           name: "scene 8"
         },
         scene9: {
           lat: 38.6097,
           lng: -122.254,
           zoom: 9,
-          layers: [layers.case_study_9],
+          layers: [layers.case_study_9, layers.case_study_6, layers.hydro],
           name: "scene 9"
         },
         scene10: {
