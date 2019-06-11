@@ -4,7 +4,7 @@
 
 This map seeks to explore a possible relationship between water reclamation projects and biodiversity in western watersheds. There is an overwhelming amount of data and a lot of confusing measurements that federal agencies use to track the health of the environment (see [resources](#resources) below for some examples). My goal is to create a compelling story map that helps users understand a geographic feature (watersheds) that regulatory agencies (like the EPA) use to organize information about water. Specifically, I looked to see if there was a noticeable pattern between at-risk species by watershed (the EPA measures this) and the location of major water reclamation projects (which are managed by the Bureau of Reclamation).
 
-I do not have much (any) background knowledge in ecology or hydrology, so I am approaching this project as an journalist. I expect that the map user is equally uninformed, so the narrative structure of the story map echo my research process. The map opens on the highest level of watersheds and introduces the concept of watersheds. As the user progresses through the map, the watersheds break down into smaller components and additional data layers are added. 
+I do not have much (any) background knowledge in ecology or hydrology, so I am approaching this project as a journalist. I expect that the map user is equally uninformed, so the narrative structure of the story map echo my research process. The map opens on the highest level of watersheds and introduces the concept of watersheds. As the user progresses through the map, the watersheds break down into smaller components and additional data layers are added. 
 
 ### II. Methodology
 
