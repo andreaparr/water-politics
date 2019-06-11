@@ -39,13 +39,25 @@ I downloaded shapefiles for the six levels of watersheads for the four regions. 
 
 I frequently used [geoJSON.io](http://geojson.io/#map=2/20.0/0.0) to check the files.
 
+**USGS NHD Data**
+The hydro and stations layers ultimately came from the USGS's National Hydrography Database, but I took a few step to get there: First I used OpenStreetMaps to get bounding box coordinates for the area for which I wanted hydro data:
+![OSM](images/OSM.jpg)
+
+Then I used the Natural Resources Conservation Service's [GeoSpatialDataGateway](https://datagateway.nrcs.usda.gov/GDGOrder.aspx?order=MBROrder) to select the datasets I wanted to download for that region:
+
+![GSDG](images/GSDG.jpg)
+
+From there, I examined the shapefiles in QGIS, changed the CRS, and exported the layers as GeoJSONs. These layers are areas for potential improvement. The NHD is a massive dataset...
+* [water-monitoring-stations](data/stations.geojson)
+* [hydro](data/hydro1.geojson)
+
 **EPA Data**
 * Watershed Index Online [(WSIO) Indicator Library](https://www.epa.gov/wsio/wsio-indicator-data-library) (Regions 8-10)
 
 I used both the spreadsheet WSIO Indicator Data for EPA Regions 8-10 as well as the [WSIO Tool](https://www.epa.gov/wsio/download-and-use-wsio-tool) to review the 460 data points the EPA collects for each sub-watershed (HUC12). One of the most complicated parts of this project was decoding the language and choosing data points to include in my map. I started with the At-Risk Species information as it was directly related to my initial question: *Is there a relationship between water reclamation projects and biodiversity?* 
 
 Showing symbolized HUC12s for all four regions (thousands of polygons) was not useful, so I took the largest HUC12 values for At-Risk Species in each of the HUC8s (my assumption was that the HUC12s had more in commmon than not and that it would be unlikely for each HUC12 in a HUC8 area to have different At-Risk Species) and created a summary EPA-HUC8 spreadsheet to join to the watersheds-huc8.geojson on the HUC8 value.
-*[epa-huc8.geojson](data/epa-huc8.geojson) 
+* [epa-huc8.geojson](data/epa-huc8.geojson) 
 
 As the project developed, and I became more familiar with different types of data available and the different agencies collecting the data (note that the WSIO data is aggregated by the EPA, but multiple agencies are involved in the production of the data), I selected additional data points that were used to create the thematic maps centered around Lake Berryessa and the Monticello Dam.
 

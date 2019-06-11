@@ -120,7 +120,7 @@
             funding and expertise. The federal government finally intervened with the passage of the Reclamation
             Act in 1902. Western water management found its first home at the US Geological Survey, and was moved to an
             independent bureau within the Department of the Interior by 1907. By 1923, the agency was known as the
-            Bureauof Reclamation (USBR) and by 1928, federal funds began flowing through the agency for major projects
+            Bureau of Reclamation (USBR) and by 1928, federal funds began flowing through the agency for major projects
             like the Hoover Dam. The abundance of open space in the west helped to facilitate the system of large water
             developments that we see today.</p>
           <p>Imagine how different states would look if they were structured around water management issues. This map
@@ -253,7 +253,7 @@
             that have a positive impact on a watershed. This social index measures the percentage of each watershed that
             is classified as GAP Status 1, 2, or 3. Status 1 lands have permanent protection from conversion of natural
             land cover and a mandated management plan to maintain a natural state. Status 2 lands must maintain a
-            primarily naturual state. Status 3 lands are defined as having permanent protection, but are subject to
+            primarily natural state. Status 3 lands are defined as having permanent protection, but are subject to
             extractive uses like logging or mining.</p>
         </section>
         <section data-scene="scene10">
@@ -521,9 +521,9 @@
           return L.circle(latlng, {
             radius: 1000,
             fillColor: '#FFD700',
-            fillOpacity: 0.2,
+            fillOpacity: 0.4,
             stroke: true,
-            weight: 1,
+            weight: .5,
             opacity: 0.8,
             color: '#ffffff',
           });
@@ -540,10 +540,10 @@
       var hydro = L.geoJson(hydro1data, {
         style: function (feature) {
           return {
-            color: '#2888ce',
+            color: '#f5f5f5',
             weight: .25,
-            fillOpacity: .65,
-            fillColor: '#2888ce'
+            fillOpacity: .75,
+            fillColor: '#0099bf'
           };
         },
       });
@@ -551,10 +551,10 @@
       var hydro2 = L.geoJson(hydro2data, {
         style: function (feature) {
           return {
-            color: '#dddddd',
-            weight: 1,
+            color: '#f5f5f5',
+            weight: .5,
             fillOpacity: .75,
-            fillColor: '#2888ce'
+            fillColor: '#0099bf'
           };
         },
         onEachFeature: function (feature, layer) {
@@ -820,21 +820,21 @@
           lat: 38.6097,
           lng: -122.254,
           zoom: 9,
-          layers: [layers.case_study_7, layers.case_study_6, layers.hydro],
+          layers: [layers.case_study_7, layers.hydro],
           name: "scene 7"
         },
         scene8: {
           lat: 38.6097,
           lng: -122.254,
           zoom: 9,
-          layers: [layers.case_study_8, layers.case_study_6, layers.hydro],
+          layers: [layers.case_study_8, layers.hydro],
           name: "scene 8"
         },
         scene9: {
           lat: 38.6097,
           lng: -122.254,
           zoom: 9,
-          layers: [layers.case_study_9, layers.case_study_6, layers.hydro],
+          layers: [layers.case_study_9, layers.hydro],
           name: "scene 9"
         },
         scene10: {

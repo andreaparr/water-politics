@@ -34,9 +34,9 @@ h1 {
 h2 {
     margin-top: 5%;
     font-family: Alegreya Sans SC, sans-serif;
-    color: rgba(255, 255, 255, 0.95);
+    color: rgba(25, 25, 25, 0.95);
     font-size: 2vw;
-    text-shadow: 0 0 8px rgba(0, 0, 0, .95);
+    text-shadow: 0 0 8px rgba(117, 117, 117, .95);
 }
 
 .storymap-trigger {
@@ -320,7 +320,7 @@ video {
     width: 0;
     height: 3px;
     z-index: 1030;
-    background: #2888ce;
+    background: #0099bf;
     box-shadow: 0 0 2px rgba(0, 75, 98, 0.87);
 }
 
