@@ -300,6 +300,8 @@
   <script src="js/storymap.2.4.js"></script>
   <!-- d3 -->
   <script src="https://d3js.org/d3.v5.js"></script>
+  <!-- topojson -->
+  <script src="https://unpkg.com/topojson@3"></script>
 
   <script type="text/javascript">
     // Load data using d3, promise //
@@ -310,10 +312,10 @@
     var watershedshuc6 = d3.json('./data/watersheds-huc6.geojson');
     var epahuc8 = d3.json('./data/epa-huc8.geojson');
     var usbr = d3.json('./data/usbrpoints.geojson');
-    var hydro1 = d3.json('./data/hydro1.geojson');
+    var hydro1 = d3.json('./data/hydro1.json');
     var hydro2 = d3.json('./data/hydro2.geojson');
     var station = d3.json('./data/station.geojson');
-    var casestudy = d3.json('./data/case_study.geojson');
+    var casestudy = d3.json('./data/case_study.json');
 
     Promise.all([nationalwatersheds, watershedshuc2, watershedshuc4, watershedshuc6, epahuc8, usbr, hydro1, hydro2,
       station,
@@ -332,6 +334,27 @@
       var hydro2data = data[7];
       var stationdata = data[8];
       var casestudydata = data[9];
+
+            //extend Leaflet to create a GeoJSON layer from a TopoJSON file
+            L.TopoJSON = L.GeoJSON.extend({
+        addData: function (data) {
+          var geojson, key;
+          if (data.type === "Topology") {
+            for (key in data.objects) {
+              if (data.objects.hasOwnProperty(key)) {
+                geojson = topojson.feature(data, data.objects[key]);
+                L.GeoJSON.prototype.addData.call(this, geojson);
+              }
+            }
+            return this;
+          }
+          L.GeoJSON.prototype.addData.call(this, data);
+          return this;
+        }
+      });
+      L.topoJson = function (data, options) {
+        return new L.TopoJSON(data, options);
+      };
 
       /// Scene One ///
       var national_legend = '<i style="background: black; opacity: 0.5"></i><p><b>Regions (HUC2)</b></p>';
@@ -537,7 +560,7 @@
         }
       });
 
-      var hydro = L.geoJson(hydro1data, {
+      var hydro = L.topoJson(hydro1data, {
         style: function (feature) {
           return {
             color: '#f5f5f5',
@@ -584,7 +607,7 @@
           color: '#ffffff',
         };
       }
-      var case_study_7 = L.geoJson(casestudydata, {
+      var case_study_7 = L.topoJson(casestudydata, {
         style: style7,
         onEachFeature: function (feature, layer) {
           layer.bindTooltip(feature.properties.SUBWTRSHED + "<br>" + "Region: " + feature.properties
@@ -626,7 +649,7 @@
           color: '#ffffff',
         };
       }
-      var case_study_8 = L.geoJson(casestudydata, {
+      var case_study_8 = L.topoJson(casestudydata, {
         style: style8,
         onEachFeature: function (feature, layer) {
           layer.bindTooltip(feature.properties.SUBWTRSHED + "<br>" + "Stressors Index: " + feature.properties
@@ -669,7 +692,7 @@
           color: '#ffffff',
         };
       }
-      var case_study_9 = L.geoJson(casestudydata, {
+      var case_study_9 = L.topoJson(casestudydata, {
         style: style9,
         onEachFeature: function (feature, layer) {
           layer.bindTooltip(feature.properties.SUBWTRSHED + "<br>" + "Social Index: " + feature.properties
