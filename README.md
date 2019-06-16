@@ -29,7 +29,7 @@ This map is primarily focused on 4 of the 22 water resource regions (HUC2). Spec
 * California (HUC18 - EPA9)
 
 **USGS Boundaries**
-I downloaded shapefiles for the six levels of watersheads for the four regions. I combined the shapefilesfiles at each HUC level, updated the CRS to EPSG:4326, and convert the shapefiles to geojsons using gdal/ogr2ogr. Once that task was complete I simplified the large geojson files, sometimes using mapshaper in Node and sometimes using the [Mapshaper](https://mapshaper.org) webtool. These files are labeled watersheds-HUCX.geojson.
+I downloaded shapefiles for the six levels of watersheads for the four regions. I combined the shapefiles at each HUC level, updated the CRS to EPSG:4326, and convert the shapefiles to geojsons using gdal/ogr2ogr. Once that task was complete I simplified the large geojson files, sometimes using mapshaper in Node and sometimes using the [Mapshaper](https://mapshaper.org) web tool. These files are labeled watersheds-HUCX.geojson.
  * [watersheds-huc2.geojson](data/watersheds-huc2.geojson)
  * [watersheds-huc4.geojson](data/watersheds-huc4.geojson)
  * [watersheds-huc6.geojson](data/watersheds-huc6.geojson)
@@ -104,7 +104,7 @@ Aggregate data from WISO is be represented in a choropleth map organized by sub-
 
 #### E. User interaction
 
-This map is divided into scenes and the user progresses through them by scrolling. When the user hovers over an area on the map, a tooltip with additional information populates. 
+This map is divided into scenes and the user progresses through them by scrolling. When the user hovers over an area on the map, a tooltip with additional information populates.
 
 #### F. Aesthetics and design considerations
 
