@@ -112,7 +112,8 @@
             things: lack of precipitation and a bounty of open space. The lack of precipitation presented unique water
             management challenges. Initially, settlers diverted water from streams to support agriculture, but as demand
             outweighed supply settlers pressured the federal government to undertake water storage and irrigation
-            projects. Explorer and scholar of the West, John Wesley Powell, recognized the unique water needs and
+            projects.</p>
+            <p>Explorer and scholar of the West, John Wesley Powell, recognized the unique water needs and
             proposed
             a river-basin/watershed-based approach to water management in the West, but it was not enough to prevent the
             grid pattern that organized the East from reaching West.</p>
@@ -158,7 +159,8 @@
             <li>Biological Condition</li>
             <br>When watersheds are not healthy, wildlife suffers. Pollutants introduced to the ecosystem alter
             habitats. This reduced biodiversity by eliminating some species and introducing new, invasive ones that
-            destroy native species. This, in turn, can affect the food chain. Freshwater ecosystems are tightly linked to
+            destroy native species. This, in turn, can affect the food chain. Freshwater ecosystems are tightly linked
+            to
             watersheds and they are greatly influenced by human uses or modifications of land as well as water.
           </p>
           <p>This map shows the number of at-risk terrestrial, wetland, and aquatic species by sub-basins. At-risk
@@ -271,6 +273,11 @@
                 Database</a></li>
             <li><a href="https://water.usbr.gov" target="_blank">Reclamation Water Information System</a></li>
             <li><a href="https://www.epa.gov/wsio" target="_blank">Watershed Index Online</a></li>
+            <br>
+            <br>
+            <i>This map was created in June 2019 by Andrea Parr. Details can be found on <a
+                href="https://github.com/andreaparr/watersheds-biodiversity" target="
+            _blank">Github.</a></i>
           </p>
         </section>
       </div>
@@ -335,8 +342,8 @@
       var stationdata = data[8];
       var casestudydata = data[9];
 
-            //extend Leaflet to create a GeoJSON layer from a TopoJSON file
-            L.TopoJSON = L.GeoJSON.extend({
+      //extend Leaflet to create a GeoJSON layer from a TopoJSON file
+      L.TopoJSON = L.GeoJSON.extend({
         addData: function (data) {
           var geojson, key;
           if (data.type === "Topology") {
@@ -710,37 +717,7 @@
         '<i style="background: #8856a7; opacity: 0.5"></i><p><b>.331 - .437</b></p>' +
         '<i style="background: #810f7c; opacity: 0.5"></i><p><b>.438 - .500</b></p>';
 
-      /// Scene Ten ///
-      var national_legend = '<i style="background: black; opacity: 0.5"></i><p><b>HUC2</b></p>';
-      var national = L.geoJson(nationalwatershedsdata, {
-        style: function (feature) {
-          return {
-            color: '#dddddd',
-            weight: .75,
-            fillOpacity: .25,
-            fillColor: '#2888ce'
-          };
-        },
-        onEachFeature: function (feature, layer) {
-          layer.bindTooltip(feature.properties.NAME + "<br>" + "HUC2: " +
-            feature.properties.HUC2, {
-              sticky: true,
-              className: "feature-tooltip"
-            });
-          layer.on('mouseover', function () {
-            layer.setStyle({
-              weight: 2,
-              fillOpacity: .7
-            })
-            layer.on('mouseout', function () {
-              layer.setStyle({
-                weight: 1,
-                fillOpacity: .25
-              })
-            })
-          })
-        }
-      });
+
 
       /// End of Scenes ///
 
